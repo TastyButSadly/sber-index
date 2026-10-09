@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "metric": "paired MAE, candidate minus comparator; negative is better",
+  "pair_keys": ["territory_id","origin","date","horizon"],
+  "primary_window": "public_origins_jun_sep",
+  "secondary_window": "later_origins",
+  "bootstrap_repetitions": 10000,
+  "seed": 20261009,
+  "time_block_months": 3,
+  "primary_test": "two-sided paired sign flip of chronological target-month blocks; independent symmetric blocks assumed",
+  "sensitivity_test": "two-sided paired sign flip of individual target months",
+  "confidence_intervals": "small-sample cluster-t interval with block scores and df=blocks-1, plus descriptive moving time-block and conditional region bootstraps",
+  "multiple_testing": "Holm across every available point comparison in this registry, separately for each p-value method",
+  "alpha": 0.05,
+  "confirmatory": false,
+  "limitations": ["previously inspected history and repeated model selection","three-month blocks do not prove independence","few time blocks yield coarse p-values and unstable confidence intervals","region resampling conditions on fixed calendar months","latest external snapshots do not establish historical as-of availability"],
+  "future_rule": "save paired predictions, fixed config, source vintages, comparator and protocol before scoring; append all candidates, including failures"
+}

@@ -1,0 +1,18 @@
+{
+  "seed": 42,
+  "horizons": [1, 2, 3, 6, 12],
+  "alpha_grid": [3.0, 30.0, 300.0],
+  "q_grid": [0.0, 0.5, 1.0, 1.5],
+  "factor_methods": ["last_yoy", "median3_yoy", "ema_yoy", "damped_yoy_trend"],
+  "calibration_end": "2024-05-01",
+  "reproduction_start": "2024-06-01",
+  "reproduction_end": "2024-09-01",
+  "stress_end": "2024-11-01",
+  "ensemble_weights": [0.0, 0.1, 0.2, 0.3, 0.5, 0.7, 0.9, 1.0],
+  "catboost": {"iterations": 300, "depth": 4, "learning_rate": 0.05, "loss_function": "MAE", "l2_leaf_reg": 10},
+  "expert_groups": [2, 3, 5],
+  "expert_weight": 0.5,
+  "municipality_bias_prior_months": 6.0,
+  "pls_ranks": [2, 4, 6],
+  "min_training_origins": 2
+}

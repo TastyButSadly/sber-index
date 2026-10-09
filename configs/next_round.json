@@ -1,0 +1,14 @@
+{
+  "anchor_model": "bolt_ridge_seasonal_ema",
+  "horizons": [1, 2, 3],
+  "calendar_day_elasticities": [0.5, 1.0],
+  "calendar_weekday_elasticity": 0.25,
+  "calendar_ridge_feature_scale": 0.03,
+  "factor_ridge_alpha": 1.0,
+  "factor_correction_weight": 0.5,
+  "stacking_prior_penalty": 0.05,
+  "stacking_lookback_target_months": 4,
+  "calibration_target_cutoff": "2024-05-01",
+  "availability_mode": "observation_time; official publication timestamps for news",
+  "warning": "previously inspected history; new algorithms not a blind test"
+}

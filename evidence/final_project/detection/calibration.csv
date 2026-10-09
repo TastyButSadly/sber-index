@@ -1,0 +1,5 @@
+method,threshold_or_bh_q,calibration_alerts_per_100_mo_months,unit
+cusum,4.035758572644467,2.9476686507936503,normalized detector threshold
+page_hinkley,5.53532957640215,2.822420634920635,normalized detector threshold
+ewma,1.3061185167877485,2.8206845238095237,normalized detector threshold
+conformal_bh,0.45652176470588235,2.978918650793651,BH nominal q

@@ -1,0 +1,13 @@
+{
+  "first_evaluation_origin": "2024-06-01",
+  "horizons": [1, 2, 3],
+  "factor_methods": ["mean1", "mean3", "ema"],
+  "ridge_alpha": 3.0,
+  "ridge_weight_power": 1.5,
+  "minimum_selection_target_months": 3,
+  "selection_lookback_target_months": 4,
+  "selection_shrinkage": 0.5,
+  "blend_weights": [0.0, 0.1, 0.2, 0.3],
+  "availability_mode": "observation_time",
+  "status": "fixed new-round algorithms after earlier exploratory inspection; not blind validation"
+}

@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "unique_manifest": true,
+  "frozen_point_forecasts": true,
+  "scale_and_calibration_targets_disjoint": true,
+  "future_labels_and_values_excluded": true,
+  "interval_bounds_explained": true,
+  "population_size_unavailable": true,
+  "strict_real_time_eligible": false,
+  "reconstruction": "extended Ridge recovered algebraically from frozen equal-weight ensemble; cached Bolt and seasonal converted to identical EMA factor"
+}

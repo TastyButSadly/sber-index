@@ -1,0 +1,8 @@
+{
+  "main": 706.9075123895138,
+  "late": 854.425259668274,
+  "main_reweighted_to_late_horizons": 638.4741081548715,
+  "horizon_composition_effect": -68.43340423464235,
+  "within_horizon_period_effect": 215.95115151340246,
+  "interpretation": "descriptive accounting; overlapping windows, not a causal decomposition"
+}

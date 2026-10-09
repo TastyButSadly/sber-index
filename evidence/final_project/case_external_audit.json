@@ -1,0 +1,39 @@
+{
+  "selected_at": "2026-10-09T12:28:17.693569+00:00",
+  "external_review_completed_at": "2026-10-09T12:45:27.035990+00:00",
+  "selection_precedes_news": true,
+  "events": [
+    {
+      "territory_id": 2145,
+      "status": "context only; causality unverified",
+      "event": "Conversion from urban district to municipal district",
+      "initiative_date": "2024-12-10",
+      "law_date": "2024-12-27",
+      "source": "https://bill.duma.tomsk.ru/pravotvorchestvo/zakonoproekty/1166",
+      "asof_feature_eligible": false,
+      "reason": "After November origin; no evidence of expenditure or denominator effect"
+    },
+    {
+      "territory_id": 542,
+      "status": "no verified municipality-month causal event found"
+    },
+    {
+      "territory_id": 1329,
+      "status": "no verified municipality-month causal event found"
+    },
+    {
+      "territory_id": 1909,
+      "status": "national context only; not a municipality-specific event",
+      "source": "https://www.cbr.ru/press/event/?id=23232",
+      "publication_date": "2024-12-11",
+      "asof_feature_eligible": false
+    }
+  ],
+  "rejected": [
+    {
+      "source": "https://70.mchs.gov.ru/deyatelnost/press-centr/operativnaya-informaciya/5192290",
+      "reason": "January 16 fire does not match December case"
+    }
+  ],
+  "causal_events_confirmed": 0
+}

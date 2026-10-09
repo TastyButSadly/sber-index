@@ -1,0 +1,17 @@
+{
+  "comparator": "structure_macro_prices_wages",
+  "variants": ["residual_only", "residual_credit", "residual_savings", "residual_expectations", "residual_all", "residual_all_exposures", "residual_all_lag3"],
+  "horizons": [1, 2, 3],
+  "minimum_training_months": 4,
+  "ridge_alpha": 10.0,
+  "shrinkage": 0.25,
+  "clip_log": 0.03,
+  "rates_lag_months": 2,
+  "survey_lag_months": 1,
+  "sensitivity_lag_months": 3,
+  "primary_window": "public_origins_jun_sep",
+  "secondary_window": "later_origins",
+  "availability": "Exploratory latest snapshots. Lag assumptions are not verified release times. Target release lag and historical upstream vintages unknown.",
+  "exposures": "Past spending level and marketplace share; no pensioner or public-employment proxies fabricated.",
+  "selection": "Fixed candidates and settings, no grid, all failures retained; previously inspected history, no confirmatory claim."
+}

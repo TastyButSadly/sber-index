@@ -1,0 +1,9 @@
+{
+  "independent_calibration_and_evaluation_seeds": true,
+  "test": "exact binomial test on discordant paired binary outcomes (McNemar)",
+  "holm_family": 33,
+  "bootstrap_repetitions": 10000,
+  "seed": 20261009,
+  "real_event_significance": "unavailable: no labels of economic consumption breaks",
+  "conditional_detection_delays": "no paired significance claim; sets of detected sequences differ"
+}

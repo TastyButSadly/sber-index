@@ -1,0 +1,20 @@
+{
+  "pages": 36,
+  "conclusion_page": 24,
+  "appendix_first_page": 26,
+  "empty_pages": 0,
+  "overfull_boxes": 0,
+  "source_sha256": "e42994f72be6ca7af48d872fb399461d93ba804ea7510da18636e7c9097f7d28",
+  "pdf_sha256": "e3c08f303758e18428d8a284d94fda47fdb5a8dce0f794ebedef003cf2791607",
+  "compiler": "local Tectonic; built-in preview blocked by Windows sandbox setup",
+  "architecture_checked_against": [
+    "scripts/forecast_point.py",
+    "scripts/panel_features.py",
+    "scripts/architecture_extensions.py",
+    "scripts/develop_point_ensemble.py",
+    "scripts/final_protocol_intervals.py",
+    "configs/final_project.json",
+    "scripts/final_detection_benchmark.py"
+  ],
+  "divider_page": 25
+}

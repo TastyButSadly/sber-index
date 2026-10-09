@@ -1,0 +1,7 @@
+{
+  "window_metrics.csv": "passed",
+  "interval_window_metrics.csv": "passed",
+  "unique_forecast_keys": "passed",
+  "detector_summary": "passed",
+  "report_pdf_sha256": "e3c08f303758e18428d8a284d94fda47fdb5a8dce0f794ebedef003cf2791607"
+}

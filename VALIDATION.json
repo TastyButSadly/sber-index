@@ -1,0 +1,23 @@
+{
+  "syntax": "all core and research Python files compiled",
+  "fit_check": {
+    "origin": "2024-09-01",
+    "municipalities": 2016,
+    "horizons": [
+      1,
+      2,
+      3
+    ],
+    "forecasts": 6048,
+    "max_difference_rub": 0.0036700411001220345
+  },
+  "cached_protocol": "point metrics, interval metrics and detector metrics match evidence",
+  "statistical_audit": {
+    "point_comparisons": 1727,
+    "interval_comparisons": 58,
+    "checks": "passed",
+    "final_detector_comparisons": 44
+  },
+  "full_training_all_origins": "implemented; not rerun during repository preparation",
+  "fresh_git_clone": "input hashes verified; cached forecasts, intervals and detector benchmark reproduced"
+}

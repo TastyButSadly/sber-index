@@ -1,0 +1,12 @@
+{
+  "horizons": [1,2,3],
+  "ridge_alpha": 3.0,
+  "sample_weight_power": 1.5,
+  "structure_scale": 0.1,
+  "national_macro_scale": 0.03,
+  "regional_scale": 0.1,
+  "variants": ["structure_macro","regional_prices","regional_wages","regional_prices_wages","structure_macro_prices","structure_macro_wages","structure_macro_prices_wages"],
+  "primary_comparator": "composition",
+  "secondary_comparator": "anchor",
+  "analysis": "exploratory, already inspected target history; latest revised external snapshots; assumed lags; no strict real-time claim"
+}

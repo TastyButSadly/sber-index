@@ -1,0 +1,20 @@
+{
+  "join_keys": [
+    "territory_id or documented region crosswalk",
+    "observation_month"
+  ],
+  "required_external_fields": [
+    "source_url",
+    "observation_date",
+    "available_at",
+    "vintage",
+    "value"
+  ],
+  "rule": "available_at <= as_of; forecast covariates also require issued_at <= as_of",
+  "calendar": "known-in-advance values with calendar version provenance",
+  "missing_release_date": "exclude from real-time experiment; do not invent availability",
+  "truth": "evaluation_truth.parquet is for matured labels and scoring only",
+  "news": "published_at/first_seen separate from event_date and effective_date",
+  "weather": "future realized weather excluded; archived forecast issue time required",
+  "point_features": "factor/local/calendars maintained independently of uncertainty"
+}

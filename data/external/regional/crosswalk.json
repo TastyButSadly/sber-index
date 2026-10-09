@@ -1,0 +1,1362 @@
+[
+  {
+    "source": "prices",
+    "region_code": 1,
+    "region_name": "Республика Адыгея",
+    "source_region_names": [
+      "Республика Адыгея"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 4,
+    "region_name": "Республика Алтай",
+    "source_region_names": [
+      "Республика Алтай"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 2,
+    "region_name": "Республика Башкортостан",
+    "source_region_names": [
+      "Республика Башкортостан"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 3,
+    "region_name": "Республика Бурятия",
+    "source_region_names": [
+      "Республика Бурятия"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 5,
+    "region_name": "Республика Дагестан",
+    "source_region_names": [
+      "Республика Дагестан"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 6,
+    "region_name": "Республика Ингушетия",
+    "source_region_names": [
+      "Республика Ингушетия"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 7,
+    "region_name": "Кабардино-Балкарская Республика",
+    "source_region_names": [
+      "Кабардино-Балкарская Республика"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 8,
+    "region_name": "Республика Калмыкия",
+    "source_region_names": [
+      "Республика Калмыкия"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 9,
+    "region_name": "Карачаево-Черкесская Республика",
+    "source_region_names": [
+      "Карачаево-Черкесская Республика"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 10,
+    "region_name": "Республика Карелия",
+    "source_region_names": [
+      "Республика Карелия"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 11,
+    "region_name": "Республика Коми",
+    "source_region_names": [
+      "Республика Коми"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 91,
+    "region_name": "Республика Крым",
+    "source_region_names": [
+      "Республика Крым"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 12,
+    "region_name": "Республика Марий Эл",
+    "source_region_names": [
+      "Республика Марий Эл"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 13,
+    "region_name": "Республика Мордовия",
+    "source_region_names": [
+      "Республика Мордовия"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 14,
+    "region_name": "Республика Саха (Якутия)",
+    "source_region_names": [
+      "Республика Саха (Якутия)"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 15,
+    "region_name": "Республика Северная Осетия — Алания",
+    "source_region_names": [
+      "Республика Северная Осетия\n - Алания"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 16,
+    "region_name": "Республика Татарстан",
+    "source_region_names": [
+      "Республика Татарстан"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 17,
+    "region_name": "Республика Тыва",
+    "source_region_names": [
+      "Республика Тыва"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 18,
+    "region_name": "Удмуртская Республика",
+    "source_region_names": [
+      "Удмуртская Республика"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 19,
+    "region_name": "Республика Хакасия",
+    "source_region_names": [
+      "Республика Хакасия"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 20,
+    "region_name": "Чеченская Республика",
+    "source_region_names": [
+      "Чеченская Республика"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 21,
+    "region_name": "Чувашская Республика",
+    "source_region_names": [
+      "Чувашская Республика"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 22,
+    "region_name": "Алтайский край",
+    "source_region_names": [
+      "Алтайский край"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 75,
+    "region_name": "Забайкальский край",
+    "source_region_names": [
+      "Забайкальский край"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 41,
+    "region_name": "Камчатский край",
+    "source_region_names": [
+      "Камчатский край"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 23,
+    "region_name": "Краснодарский край",
+    "source_region_names": [
+      "Краснодарский край"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 24,
+    "region_name": "Красноярский край",
+    "source_region_names": [
+      "Красноярский край"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 59,
+    "region_name": "Пермский край",
+    "source_region_names": [
+      "Пермский край"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 25,
+    "region_name": "Приморский край",
+    "source_region_names": [
+      "Приморский край"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 26,
+    "region_name": "Ставропольский край",
+    "source_region_names": [
+      "Ставропольский край"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 27,
+    "region_name": "Хабаровский край",
+    "source_region_names": [
+      "Хабаровский край"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 28,
+    "region_name": "Амурская область",
+    "source_region_names": [
+      "Амурская область"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 29,
+    "region_name": "Архангельская область",
+    "source_region_names": [
+      "Архангельская область (кроме Ненецкого автономного округа)"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 83,
+    "region_name": "Ненецкий автономный округ",
+    "source_region_names": [
+      "Ненецкий авт.округ"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 30,
+    "region_name": "Астраханская область",
+    "source_region_names": [
+      "Астраханская область"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 31,
+    "region_name": "Белгородская область",
+    "source_region_names": [
+      "Белгородская область"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 32,
+    "region_name": "Брянская область",
+    "source_region_names": [
+      "Брянская область"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 33,
+    "region_name": "Владимирская область",
+    "source_region_names": [
+      "Владимирская область"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 34,
+    "region_name": "Волгоградская область",
+    "source_region_names": [
+      "Волгоградская область"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 35,
+    "region_name": "Вологодская область",
+    "source_region_names": [
+      "Вологодская область"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 36,
+    "region_name": "Воронежская область",
+    "source_region_names": [
+      "Воронежская область"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 37,
+    "region_name": "Ивановская область",
+    "source_region_names": [
+      "Ивановская область"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 38,
+    "region_name": "Иркутская область",
+    "source_region_names": [
+      "Иркутская область"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 39,
+    "region_name": "Калининградская область",
+    "source_region_names": [
+      "Калининградская область"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 40,
+    "region_name": "Калужская область",
+    "source_region_names": [
+      "Калужская область"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 42,
+    "region_name": "Кемеровская область",
+    "source_region_names": [
+      "Кемеровская область - Кузбасс"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 43,
+    "region_name": "Кировская область",
+    "source_region_names": [
+      "Кировская область"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 44,
+    "region_name": "Костромская область",
+    "source_region_names": [
+      "Костромская область"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 45,
+    "region_name": "Курганская область",
+    "source_region_names": [
+      "Курганская область"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 46,
+    "region_name": "Курская область",
+    "source_region_names": [
+      "Курская область"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 47,
+    "region_name": "Ленинградская область",
+    "source_region_names": [
+      "Ленинградская область"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 48,
+    "region_name": "Липецкая область",
+    "source_region_names": [
+      "Липецкая область"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 49,
+    "region_name": "Магаданская область",
+    "source_region_names": [
+      "Магаданская область"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 50,
+    "region_name": "Московская область",
+    "source_region_names": [
+      "Московская область"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 51,
+    "region_name": "Мурманская область",
+    "source_region_names": [
+      "Мурманская область"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 52,
+    "region_name": "Нижегородская область",
+    "source_region_names": [
+      "Нижегородская область"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 53,
+    "region_name": "Новгородская область",
+    "source_region_names": [
+      "Новгородская область"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 54,
+    "region_name": "Новосибирская область",
+    "source_region_names": [
+      "Новосибирская область"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 55,
+    "region_name": "Омская область",
+    "source_region_names": [
+      "Омская область"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 56,
+    "region_name": "Оренбургская область",
+    "source_region_names": [
+      "Оренбургская область"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 57,
+    "region_name": "Орловская область",
+    "source_region_names": [
+      "Орловская область"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 58,
+    "region_name": "Пензенская область",
+    "source_region_names": [
+      "Пензенская область"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 60,
+    "region_name": "Псковская область",
+    "source_region_names": [
+      "Псковская область"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 61,
+    "region_name": "Ростовская область",
+    "source_region_names": [
+      "Ростовская область"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 62,
+    "region_name": "Рязанская область",
+    "source_region_names": [
+      "Рязанская область"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 63,
+    "region_name": "Самарская область",
+    "source_region_names": [
+      "Самарская область"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 64,
+    "region_name": "Саратовская область",
+    "source_region_names": [
+      "Саратовская область"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 65,
+    "region_name": "Сахалинская область",
+    "source_region_names": [
+      "Сахалинская область"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 66,
+    "region_name": "Свердловская область",
+    "source_region_names": [
+      "Свердловская область"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 67,
+    "region_name": "Смоленская область",
+    "source_region_names": [
+      "Смоленская область"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 68,
+    "region_name": "Тамбовская область",
+    "source_region_names": [
+      "Тамбовская область"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 69,
+    "region_name": "Тверская область",
+    "source_region_names": [
+      "Тверская область"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 70,
+    "region_name": "Томская область",
+    "source_region_names": [
+      "Томская область"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 71,
+    "region_name": "Тульская область",
+    "source_region_names": [
+      "Тульская область"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 72,
+    "region_name": "Тюменская область",
+    "source_region_names": [
+      "Тюменская область (кроме \nХанты-Мансийского автономного округа - Югры и Ямало-Ненецкого автономного округа)"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 86,
+    "region_name": "Ханты-Мансийский автономный округ — Югра",
+    "source_region_names": [
+      "Ханты-Мансийский авт.округ\n - Югра"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 89,
+    "region_name": "Ямало-Ненецкий автономный округ",
+    "source_region_names": [
+      "Ямало-Hенецкий авт.округ"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 73,
+    "region_name": "Ульяновская область",
+    "source_region_names": [
+      "Ульяновская область"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 74,
+    "region_name": "Челябинская область",
+    "source_region_names": [
+      "Челябинская область"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 76,
+    "region_name": "Ярославская область",
+    "source_region_names": [
+      "Ярославская область"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 79,
+    "region_name": "Еврейская автономная область",
+    "source_region_names": [
+      "Еврейская авт.область"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 87,
+    "region_name": "Чукотский автономный округ",
+    "source_region_names": [
+      "Чукотский авт.округ"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 78,
+    "region_name": "Санкт-Петербург",
+    "source_region_names": [
+      "г.Санкт-Петербург"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 77,
+    "region_name": "Москва",
+    "source_region_names": [
+      "г. Москва"
+    ]
+  },
+  {
+    "source": "prices",
+    "region_code": 92,
+    "region_name": "Севастополь",
+    "source_region_names": [
+      "г.Севастополь"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 1,
+    "region_name": "Республика Адыгея",
+    "source_region_names": [
+      "Республика Адыгея"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 4,
+    "region_name": "Республика Алтай",
+    "source_region_names": [
+      "Республика Алтай"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 2,
+    "region_name": "Республика Башкортостан",
+    "source_region_names": [
+      "Республика Башкортостан"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 3,
+    "region_name": "Республика Бурятия",
+    "source_region_names": [
+      "Республика Бурятия"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 5,
+    "region_name": "Республика Дагестан",
+    "source_region_names": [
+      "Республика Дагестан"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 6,
+    "region_name": "Республика Ингушетия",
+    "source_region_names": [
+      "Республика Ингушетия"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 7,
+    "region_name": "Кабардино-Балкарская Республика",
+    "source_region_names": [
+      "Кабардино-Балкарская Республика"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 8,
+    "region_name": "Республика Калмыкия",
+    "source_region_names": [
+      "Республика Калмыкия"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 9,
+    "region_name": "Карачаево-Черкесская Республика",
+    "source_region_names": [
+      "Карачаево-Черкесская Республика"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 10,
+    "region_name": "Республика Карелия",
+    "source_region_names": [
+      "Республика Карелия"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 11,
+    "region_name": "Республика Коми",
+    "source_region_names": [
+      "Республика Коми"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 91,
+    "region_name": "Республика Крым",
+    "source_region_names": [
+      "Республика Крым"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 12,
+    "region_name": "Республика Марий Эл",
+    "source_region_names": [
+      "Республика Марий Эл"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 13,
+    "region_name": "Республика Мордовия",
+    "source_region_names": [
+      "Республика Мордовия"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 14,
+    "region_name": "Республика Саха (Якутия)",
+    "source_region_names": [
+      "Республика Саха (Якутия)"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 15,
+    "region_name": "Республика Северная Осетия — Алания",
+    "source_region_names": [
+      "Республика Северная  Осетия - Алания"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 16,
+    "region_name": "Республика Татарстан",
+    "source_region_names": [
+      "Республика Татарстан"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 17,
+    "region_name": "Республика Тыва",
+    "source_region_names": [
+      "Республика Тыва"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 18,
+    "region_name": "Удмуртская Республика",
+    "source_region_names": [
+      "Удмуртская Республика"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 19,
+    "region_name": "Республика Хакасия",
+    "source_region_names": [
+      "Республика Хакасия"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 20,
+    "region_name": "Чеченская Республика",
+    "source_region_names": [
+      "Чеченская Республика"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 21,
+    "region_name": "Чувашская Республика",
+    "source_region_names": [
+      "Чувашская Республика"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 22,
+    "region_name": "Алтайский край",
+    "source_region_names": [
+      "Алтайский край"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 75,
+    "region_name": "Забайкальский край",
+    "source_region_names": [
+      "Забайкальский край"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 41,
+    "region_name": "Камчатский край",
+    "source_region_names": [
+      "Камчатский край"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 23,
+    "region_name": "Краснодарский край",
+    "source_region_names": [
+      "Краснодарский край"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 24,
+    "region_name": "Красноярский край",
+    "source_region_names": [
+      "Красноярский край"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 59,
+    "region_name": "Пермский край",
+    "source_region_names": [
+      "Пермский край"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 25,
+    "region_name": "Приморский край",
+    "source_region_names": [
+      "Приморский край"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 26,
+    "region_name": "Ставропольский край",
+    "source_region_names": [
+      "Ставропольский край"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 27,
+    "region_name": "Хабаровский край",
+    "source_region_names": [
+      "Хабаровский край"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 28,
+    "region_name": "Амурская область",
+    "source_region_names": [
+      "Амурская область"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 29,
+    "region_name": "Архангельская область",
+    "source_region_names": [
+      "Архангельская область без авт. округа."
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 83,
+    "region_name": "Ненецкий автономный округ",
+    "source_region_names": [
+      "в том числе Ненецкий авт.округ"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 30,
+    "region_name": "Астраханская область",
+    "source_region_names": [
+      "Астраханская область"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 31,
+    "region_name": "Белгородская область",
+    "source_region_names": [
+      "Белгородская область"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 32,
+    "region_name": "Брянская область",
+    "source_region_names": [
+      "Брянская область"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 33,
+    "region_name": "Владимирская область",
+    "source_region_names": [
+      "Владимирская область"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 34,
+    "region_name": "Волгоградская область",
+    "source_region_names": [
+      "Волгоградская область"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 35,
+    "region_name": "Вологодская область",
+    "source_region_names": [
+      "Вологодская область"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 36,
+    "region_name": "Воронежская область",
+    "source_region_names": [
+      "Воронежская область"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 37,
+    "region_name": "Ивановская область",
+    "source_region_names": [
+      "Ивановская область"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 38,
+    "region_name": "Иркутская область",
+    "source_region_names": [
+      "Иркутская область"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 39,
+    "region_name": "Калининградская область",
+    "source_region_names": [
+      "Калининградская область"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 40,
+    "region_name": "Калужская область",
+    "source_region_names": [
+      "Калужская область"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 42,
+    "region_name": "Кемеровская область",
+    "source_region_names": [
+      "Кемеровская область - Кузбасс"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 43,
+    "region_name": "Кировская область",
+    "source_region_names": [
+      "Кировская область"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 44,
+    "region_name": "Костромская область",
+    "source_region_names": [
+      "Костромская область"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 45,
+    "region_name": "Курганская область",
+    "source_region_names": [
+      "Курганская область"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 46,
+    "region_name": "Курская область",
+    "source_region_names": [
+      "Курская область"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 47,
+    "region_name": "Ленинградская область",
+    "source_region_names": [
+      "Ленинградская область"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 48,
+    "region_name": "Липецкая область",
+    "source_region_names": [
+      "Липецкая область"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 49,
+    "region_name": "Магаданская область",
+    "source_region_names": [
+      "Магаданская область"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 50,
+    "region_name": "Московская область",
+    "source_region_names": [
+      "Московская область"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 51,
+    "region_name": "Мурманская область",
+    "source_region_names": [
+      "Мурманская область"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 52,
+    "region_name": "Нижегородская область",
+    "source_region_names": [
+      "Нижегородская область"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 53,
+    "region_name": "Новгородская область",
+    "source_region_names": [
+      "Новгородская область"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 54,
+    "region_name": "Новосибирская область",
+    "source_region_names": [
+      "Новосибирская область"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 55,
+    "region_name": "Омская область",
+    "source_region_names": [
+      "Омская область"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 56,
+    "region_name": "Оренбургская область",
+    "source_region_names": [
+      "Оренбургская область"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 57,
+    "region_name": "Орловская область",
+    "source_region_names": [
+      "Орловская область"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 58,
+    "region_name": "Пензенская область",
+    "source_region_names": [
+      "Пензенская область"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 60,
+    "region_name": "Псковская область",
+    "source_region_names": [
+      "Псковская область"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 61,
+    "region_name": "Ростовская область",
+    "source_region_names": [
+      "Ростовская область"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 62,
+    "region_name": "Рязанская область",
+    "source_region_names": [
+      "Рязанская область"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 63,
+    "region_name": "Самарская область",
+    "source_region_names": [
+      "Самарская область"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 64,
+    "region_name": "Саратовская область",
+    "source_region_names": [
+      "Саратовская область"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 65,
+    "region_name": "Сахалинская область",
+    "source_region_names": [
+      "Сахалинская область"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 66,
+    "region_name": "Свердловская область",
+    "source_region_names": [
+      "Свердловская область"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 67,
+    "region_name": "Смоленская область",
+    "source_region_names": [
+      "Смоленская область"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 68,
+    "region_name": "Тамбовская область",
+    "source_region_names": [
+      "Тамбовская область"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 69,
+    "region_name": "Тверская область",
+    "source_region_names": [
+      "Тверская область"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 70,
+    "region_name": "Томская область",
+    "source_region_names": [
+      "Томская область"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 71,
+    "region_name": "Тульская область",
+    "source_region_names": [
+      "Тульская область"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 72,
+    "region_name": "Тюменская область",
+    "source_region_names": [
+      "Тюменская область без авт. округов"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 86,
+    "region_name": "Ханты-Мансийский автономный округ — Югра",
+    "source_region_names": [
+      "Ханты-Мансийский  авт. округ - Югра"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 89,
+    "region_name": "Ямало-Ненецкий автономный округ",
+    "source_region_names": [
+      "Ямало-Ненецкий авт. округ"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 73,
+    "region_name": "Ульяновская область",
+    "source_region_names": [
+      "Ульяновская область"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 74,
+    "region_name": "Челябинская область",
+    "source_region_names": [
+      "Челябинская область"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 76,
+    "region_name": "Ярославская область",
+    "source_region_names": [
+      "Ярославская область"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 79,
+    "region_name": "Еврейская автономная область",
+    "source_region_names": [
+      "Еврейская авт.область"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 87,
+    "region_name": "Чукотский автономный округ",
+    "source_region_names": [
+      "Чукотский авт.округ"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 78,
+    "region_name": "Санкт-Петербург",
+    "source_region_names": [
+      "г.Санкт-Петербург"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 77,
+    "region_name": "Москва",
+    "source_region_names": [
+      "г.Москва"
+    ]
+  },
+  {
+    "source": "wages",
+    "region_code": 92,
+    "region_name": "Севастополь",
+    "source_region_names": [
+      "г.Севастополь"
+    ]
+  }
+]

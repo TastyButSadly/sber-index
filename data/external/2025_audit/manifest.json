@@ -1,0 +1,80 @@
+[
+  {
+    "url": "https://sberindex.ru/api/dataset/v1/download/potrebitelskie-beznalicnye-rashody-na-urovne-munizipalnyh-obrazovanij/parquet",
+    "file": "data\\external\\2025_audit\\consumption_live.parquet",
+    "bytes": 1364792,
+    "sha256": "dbe07d6a3a974ab4fd13258a36382a3b056aa35d12ed6c2b132ae5775115e0f1",
+    "tls_certificate_verified": false,
+    "content_type": "unknown: native curl fallback",
+    "checked_at": "2026-10-09T08:24:14.175714+00:00",
+    "columns": [
+      "period",
+      "value",
+      "obs_status",
+      "source",
+      "category_15",
+      "mo",
+      "freq",
+      "decimals",
+      "unit_measure",
+      "unit_mult"
+    ],
+    "rows": 303126,
+    "period_min": "2023-01-01",
+    "period_max": "2024-12-01"
+  },
+  {
+    "url": "https://sberindex.ru/",
+    "file": "data\\external\\2025_audit\\home.html",
+    "bytes": 2616,
+    "sha256": "488c7562e24afce978188f67587a9ec59588133b009daf05e98eee4efcbaef44",
+    "tls_certificate_verified": false,
+    "content_type": "unknown: native curl fallback",
+    "checked_at": "2026-10-09T08:24:15.778791+00:00"
+  },
+  {
+    "url": "https://sberindex.ru/static/js/main.18e545fe.js",
+    "file": "data\\external\\2025_audit\\frontend_0.js",
+    "bytes": 9049,
+    "sha256": "b14f3ff51910b3af83e3d1f0b256b406435e663e7de3e787980015ddf379c117",
+    "tls_certificate_verified": false,
+    "content_type": "unknown: native curl fallback",
+    "checked_at": "2026-10-09T08:24:16.951570+00:00"
+  },
+  {
+    "url": "https://sberindex.ru/static/js/4147.66f779c4.chunk.js",
+    "file": "data\\external\\2025_audit\\chunk_4147.js",
+    "bytes": 3628514,
+    "sha256": "1250370b6369c0b6536d50cd74e820b0ace6f23e133bf0b2d17e07522286729b",
+    "tls_certificate_verified": false,
+    "content_type": "unknown: native curl fallback",
+    "checked_at": "2026-10-09T08:24:39.377198+00:00"
+  },
+  {
+    "url": "https://sberindex.ru/static/js/9554.9685f28d.chunk.js",
+    "file": "data\\external\\2025_audit\\chunk_9554.js",
+    "bytes": 878304,
+    "sha256": "79bc21d9257ac1e6afa53f19d2265acc142bae8a425deb9a47daa95f61de11a9",
+    "tls_certificate_verified": false,
+    "content_type": "unknown: native curl fallback",
+    "checked_at": "2026-10-09T08:24:47.548455+00:00"
+  },
+  {
+    "url": "https://sberindex.ru/api/files/download/f054e921-a3d6-4d11-b47c-4112f80ef184",
+    "file": "data\\external\\2025_audit\\sber_week_2025_01_27.pdf",
+    "bytes": 1735493,
+    "sha256": "0fb7aea7481ca0cb05ee5d0164a390e67327ff1ef862311da4b39301fdd3fb46",
+    "pdf_magic_valid": true,
+    "tls_certificate_verified": false,
+    "role": "2025 national/category proxy; not municipal target labels"
+  },
+  {
+    "url": "https://sberindex.ru/api/files/download/a7e35e5a-c69d-4a88-a35b-c5d69734fde7",
+    "file": "data\\external\\2025_audit\\sber_week_2025_04_21.pdf",
+    "bytes": 1807435,
+    "sha256": "3c6e928eb0eb1ad3011687df40a3b221f8aabba951cc38f78f9806a4a2636664",
+    "pdf_magic_valid": true,
+    "tls_certificate_verified": false,
+    "role": "2025 national/category proxy; not municipal target labels"
+  }
+]

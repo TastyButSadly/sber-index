@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "manifest_rows": 60480,
+  "future_interval_rows": 72576,
+  "future_interval_formula": true,
+  "calibration_before_origin": true,
+  "case_explanations": 4,
+  "statistics_prior_round_passed": true,
+  "sha256": {
+    "configs/final_project.json": "aba7e4382b834b8e19153f5dd3f807ce55189f25d87e6fe53f703e4553722d00",
+    "reports/final_project_report.md": "23bbc8cb79c605149c3cabc41d3225d8f6cfc124823165cc2e21e6ffa55d7c3f",
+    "output/pdf/final_project_report.pdf": "ed335a08646d4e053d921edadafbd845a14812a9ebfeec0477fca14c05998736",
+    "results/final_project/forecast_manifest.parquet": "c0e0dbcabca28dcd2c196923755ca7b4c6c912a25f182c2a02db5540ce638611",
+    "results/final_project/case_selection.json": "44baf6bf8708fc45f23761c771c7c32c023d25c3523acedf83c3c71fd2df4294"
+  }
+}

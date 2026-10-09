@@ -1,0 +1,15 @@
+{
+  "origin": "2024-12-01",
+  "target_months": [
+    "2025-01",
+    "2025-02",
+    "2025-03"
+  ],
+  "point_model": "structure_macro_prices_wages",
+  "robust_variants_preserved": true,
+  "interval_model": "frozen baseline only; robust variants are point ablations",
+  "labels_2025_available": false,
+  "coverage_2025": "unknown",
+  "prediction_bounds_explained": true,
+  "strict_real_time_eligible": false
+}

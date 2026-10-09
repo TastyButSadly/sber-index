@@ -1,0 +1,14 @@
+{
+  "operation": "report aggregation; no new model experiments",
+  "source_draft": "D:/downloads/sberindex_hackathon_latex_v4.zip",
+  "sources": {
+    "results/final_project/predictions.parquet": "e34ff3df66e5bc03b53ca973e1b329543fa83f3b4fdeb779a9c14b6c4a23a994",
+    "results/final_project/interval_predictions.parquet": "dbcba29cda641ed0842a91933efda96276fd921c177da6a81ca11311ae54f76b",
+    "results/final_project/detection/metrics.csv": "fbbc25b2313cf34691fe0e8d1a91430eab7af479e50afe3bbd84b73646b03048",
+    "results/contest_horizons/ensemble_checkpoint.parquet": "2beac697be94b4e62c52baa3683e1d7abc2f10141f55d04c564bd5c1324e739b",
+    "results/contest_horizons/prophet_checkpoint.parquet": "6f539e8fc522f80f75f1ccced69419370bd507376ff602765b261f6333cb86db",
+    "data/external/news/registry.json": "d0d8add3d58791c11cd6d90b802751db3170ed7c58b172b23674916ca0df02a5",
+    "materials/contest_current_text.txt": "049997c21f6c06ddad81457a9828a485f34f41c4ea7abdd1caeae2777ed912b5",
+    "reports/all_experiments_and_hypotheses.md": "9471214b483973c3f8425ed40daf1d7c136724685a82b8667fc816ddffc28940"
+  }
+}

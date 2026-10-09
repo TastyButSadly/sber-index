@@ -1,0 +1,15 @@
+{
+  "geographic_folds": 5,
+  "geographic_assignment": "region_code modulo 5; all MO of each region in one fold",
+  "evaluation_origins_start": "2024-06-01",
+  "purge_latest_target_months": 3,
+  "synthetic_log_level_sd": 0.05,
+  "synthetic_seed": 20261009,
+  "synthetic_weight": {"original":0.5,"positive_clone":0.25,"negative_clone":0.25},
+  "horizons": [1,2,3],
+  "ridge_alpha":3.0,
+  "sample_weight_power":1.5,
+  "structure_scale":0.1,
+  "national_macro_scale":0.03,
+  "warning":"exploratory on inspected history; geographic transfer with known local past, not a no-history cold start; foundation outputs cached and shared; latest macro snapshots"
+}

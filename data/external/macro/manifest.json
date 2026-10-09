@@ -1,0 +1,37 @@
+{
+  "retrieved_at": "2026-10-09T06:51:03.433700+00:00",
+  "sources": [
+    {
+      "name": "usd",
+      "source_url": "https://www.cbr.ru/scripts/XML_dynamic.asp?date_req1=01%2F01%2F2018&date_req2=31%2F12%2F2024&VAL_NM_RQ=R01235",
+      "sha256": "ec74bf55ebec320d9fe7f771816e2b9e8050f9f059aa605b559150c033808d8b",
+      "rows": 1726,
+      "definition": "official RUB per 1 currency unit; monthly mean",
+      "first_seen_at": null,
+      "publication_timestamp": "unknown; effective dates supplied",
+      "lag_months": 1
+    },
+    {
+      "name": "cny",
+      "source_url": "https://www.cbr.ru/scripts/XML_dynamic.asp?date_req1=01%2F01%2F2018&date_req2=31%2F12%2F2024&VAL_NM_RQ=R01375",
+      "sha256": "0a4bc8929246a111b12fd75dfdd7ab36985aedcb1a19365534fdaa6e70181ab3",
+      "rows": 1726,
+      "definition": "official RUB per 1 currency unit; monthly mean",
+      "first_seen_at": null,
+      "publication_timestamp": "unknown; effective dates supplied",
+      "lag_months": 1
+    },
+    {
+      "name": "inflation_and_rate",
+      "source_url": "https://www.cbr.ru/hd_base/infl/?UniDbQuery.Posted=True&UniDbQuery.From=01.01.2018&UniDbQuery.To=31.12.2024",
+      "sha256": "a49df59a8e1aa21dc38c7a83dc0864fb69ed68307036c6c2749e8bb7edf8d099",
+      "rows": 84,
+      "definition": "CPI YoY %, policy rate at month end",
+      "first_seen_at": null,
+      "publication_timestamp": "unknown; latest historical snapshot",
+      "inflation_lag_months": 2,
+      "policy_rate_lag_months": 1
+    }
+  ],
+  "warning": "lags are conservative modelling assumptions, not verified historical release timestamps; no archived vintages"
+}

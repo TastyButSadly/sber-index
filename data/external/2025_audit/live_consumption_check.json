@@ -1,0 +1,20 @@
+{
+  "rows": 303126,
+  "columns": [
+    "period",
+    "value",
+    "obs_status",
+    "source",
+    "category_15",
+    "mo",
+    "freq",
+    "decimals",
+    "unit_measure",
+    "unit_mult"
+  ],
+  "min": "2023-01-01",
+  "max": "2024-12-01",
+  "sha256": "dbe07d6a3a974ab4fd13258a36382a3b056aa35d12ed6c2b132ae5775115e0f1",
+  "matches_original": true,
+  "tls_certificate_verified": false
+}

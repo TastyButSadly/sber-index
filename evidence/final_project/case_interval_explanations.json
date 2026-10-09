@@ -1,0 +1,178 @@
+[
+  {
+    "case_rule": "negative_surprise",
+    "territory_id": 542,
+    "target": "2024-12-01",
+    "nominal": 0.9,
+    "prediction_rub": 25556.346844498654,
+    "lower_rub": 24395.53691073284,
+    "upper_rub": 26772.39145939733,
+    "scale_log": 0.021996107520071202,
+    "quantile": 2.113350849539852,
+    "log_radius": 0.0464854925141124,
+    "lower_multiplier": 0.9545784090023143,
+    "upper_multiplier": 1.0475828811644279,
+    "calibration_start": "2024-10-01",
+    "calibration_end": "2024-11-01",
+    "calibration_n": 4032,
+    "quantile_rank": 3630,
+    "training_municipal_errors": 7,
+    "municipal_old_median_abs_log_error": 0.0218641339081002,
+    "horizon_old_median_abs_log_error": 0.022150076734037374,
+    "municipal_scale_weight": 0.5384615384615384,
+    "nearest_quantile_observations": [
+      {
+        "territory_id": 1180,
+        "origin": "2024-09-01",
+        "target": "2024-10-01",
+        "score": 2.113350849539852
+      },
+      {
+        "territory_id": 2228,
+        "origin": "2024-10-01",
+        "target": "2024-11-01",
+        "score": 2.110937614059764
+      },
+      {
+        "territory_id": 447,
+        "origin": "2024-09-01",
+        "target": "2024-10-01",
+        "score": 2.118934961504781
+      }
+    ],
+    "explanation": "Bounds = frozen point forecast multiplied by exp(plus/minus empirical quantile times municipality scale). Scale uses older errors, quantile uses separate recent matured errors.",
+    "interpretation": "Prediction interval for the published municipal estimate; not a confidence interval for the mean or total consumption of every resident. Marginal empirical coverage, no municipal conditional guarantee."
+  },
+  {
+    "case_rule": "positive_surprise",
+    "territory_id": 2145,
+    "target": "2024-12-01",
+    "nominal": 0.9,
+    "prediction_rub": 34927.6740001485,
+    "lower_rub": 33634.00980362543,
+    "upper_rub": 36271.09637487087,
+    "scale_log": 0.017858707516709416,
+    "quantile": 2.113350849539852,
+    "log_radius": 0.037741714702121586,
+    "lower_multiplier": 0.9629616276045874,
+    "upper_multiplier": 1.0384629785171682,
+    "calibration_start": "2024-10-01",
+    "calibration_end": "2024-11-01",
+    "calibration_n": 4032,
+    "quantile_rank": 3630,
+    "training_municipal_errors": 7,
+    "municipal_old_median_abs_log_error": 0.014180391044714021,
+    "horizon_old_median_abs_log_error": 0.022150076734037374,
+    "municipal_scale_weight": 0.5384615384615384,
+    "nearest_quantile_observations": [
+      {
+        "territory_id": 1180,
+        "origin": "2024-09-01",
+        "target": "2024-10-01",
+        "score": 2.113350849539852
+      },
+      {
+        "territory_id": 2228,
+        "origin": "2024-10-01",
+        "target": "2024-11-01",
+        "score": 2.110937614059764
+      },
+      {
+        "territory_id": 447,
+        "origin": "2024-09-01",
+        "target": "2024-10-01",
+        "score": 2.118934961504781
+      }
+    ],
+    "explanation": "Bounds = frozen point forecast multiplied by exp(plus/minus empirical quantile times municipality scale). Scale uses older errors, quantile uses separate recent matured errors.",
+    "interpretation": "Prediction interval for the published municipal estimate; not a confidence interval for the mean or total consumption of every resident. Marginal empirical coverage, no municipal conditional guarantee."
+  },
+  {
+    "case_rule": "national_movement_low_local_surprise",
+    "territory_id": 1909,
+    "target": "2024-11-01",
+    "nominal": 0.9,
+    "prediction_rub": 22713.791526735324,
+    "lower_rub": 21690.850659516156,
+    "upper_rub": 23784.974301764043,
+    "scale_log": 0.02438485384450438,
+    "quantile": 1.8897695059039639,
+    "log_radius": 0.04608175320126942,
+    "lower_multiplier": 0.9549638876444244,
+    "upper_multiplier": 1.0471600161412014,
+    "calibration_start": "2024-09-01",
+    "calibration_end": "2024-10-01",
+    "calibration_n": 4032,
+    "quantile_rank": 3630,
+    "training_municipal_errors": 6,
+    "municipal_old_median_abs_log_error": 0.025175534578347356,
+    "horizon_old_median_abs_log_error": 0.023594173110661407,
+    "municipal_scale_weight": 0.5,
+    "nearest_quantile_observations": [
+      {
+        "territory_id": 46,
+        "origin": "2024-08-01",
+        "target": "2024-09-01",
+        "score": 1.8897695059039639
+      },
+      {
+        "territory_id": 2601,
+        "origin": "2024-08-01",
+        "target": "2024-09-01",
+        "score": 1.8910526876007794
+      },
+      {
+        "territory_id": 720,
+        "origin": "2024-08-01",
+        "target": "2024-09-01",
+        "score": 1.891077812893395
+      }
+    ],
+    "explanation": "Bounds = frozen point forecast multiplied by exp(plus/minus empirical quantile times municipality scale). Scale uses older errors, quantile uses separate recent matured errors.",
+    "interpretation": "Prediction interval for the published municipal estimate; not a confidence interval for the mean or total consumption of every resident. Marginal empirical coverage, no municipal conditional guarantee."
+  },
+  {
+    "case_rule": "local_peer_surprise",
+    "territory_id": 1329,
+    "target": "2024-12-01",
+    "nominal": 0.9,
+    "prediction_rub": 27924.47848908976,
+    "lower_rub": 26969.76608045878,
+    "upper_rub": 28912.987104201537,
+    "scale_log": 0.01646068639529727,
+    "quantile": 2.113350849539852,
+    "log_radius": 0.03478720557751057,
+    "lower_multiplier": 0.9658109135680369,
+    "upper_multiplier": 1.0353993581472969,
+    "calibration_start": "2024-10-01",
+    "calibration_end": "2024-11-01",
+    "calibration_n": 4032,
+    "quantile_rank": 3630,
+    "training_municipal_errors": 7,
+    "municipal_old_median_abs_log_error": 0.01158406610494861,
+    "horizon_old_median_abs_log_error": 0.022150076734037374,
+    "municipal_scale_weight": 0.5384615384615384,
+    "nearest_quantile_observations": [
+      {
+        "territory_id": 1180,
+        "origin": "2024-09-01",
+        "target": "2024-10-01",
+        "score": 2.113350849539852
+      },
+      {
+        "territory_id": 2228,
+        "origin": "2024-10-01",
+        "target": "2024-11-01",
+        "score": 2.110937614059764
+      },
+      {
+        "territory_id": 447,
+        "origin": "2024-09-01",
+        "target": "2024-10-01",
+        "score": 2.118934961504781
+      }
+    ],
+    "explanation": "Bounds = frozen point forecast multiplied by exp(plus/minus empirical quantile times municipality scale). Scale uses older errors, quantile uses separate recent matured errors.",
+    "interpretation": "Prediction interval for the published municipal estimate; not a confidence interval for the mean or total consumption of every resident. Marginal empirical coverage, no municipal conditional guarantee."
+  }
+]

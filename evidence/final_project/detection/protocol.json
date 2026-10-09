@@ -1,0 +1,31 @@
+{
+  "methods": [
+    "cusum",
+    "page_hinkley",
+    "ewma",
+    "conformal_bh"
+  ],
+  "calibration_seed": 202610091,
+  "reference_seed": 202610090,
+  "evaluation_seed": 202610092,
+  "calibration_panels": 20,
+  "evaluation_panels": 20,
+  "municipalities_per_panel": 2016,
+  "target_false_alerts_per_mo_month": 0.03,
+  "notification_refractory_months": 3,
+  "event_index": 5,
+  "hit_window_months": 4,
+  "affected_fraction": 0.1,
+  "log_step": 0.15,
+  "log_drift_per_month": 0.04,
+  "log_temporary_shock": 0.2,
+  "temporary_duration_months": 2,
+  "scenarios": [
+    "control",
+    "step",
+    "drift",
+    "temporary",
+    "national"
+  ],
+  "scope": "Independent resampled panels conditional on the real fixed background. Null means no added change; real background may contain unlabelled events. After-observation detection, not early forecast. BH is audited empirically; dependent scores do not establish a universal FDR guarantee."
+}

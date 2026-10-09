@@ -1,0 +1,22 @@
+{
+  "checked_at": "2026-10-09T12:28:18.091007+00:00",
+  "source": "https://sberindex.ru/api/dataset/v1/download/indeks-mobilnosti/parquet",
+  "file": "data\\raw\\mobility_current.parquet",
+  "sha256": "f16f7d8088c7d0a02ea770915c512343807e65fc5bcc177af3bd64512add5708",
+  "rows": 594,
+  "periods": {
+    "2024-12-31": 297,
+    "2025-11-01": 297
+  },
+  "frequency_values": [
+    "Год"
+  ],
+  "geographic_field": "ref_area display names; no territory_id",
+  "unique_names": 297,
+  "available_at_present": false,
+  "monthly_history_before_2024_origin": false,
+  "hypothesis": "Monthly municipal mobility change at origin predicts next-month error; require stable geographic keys, monthly history and verified releases.",
+  "ablation_status": "not estimable on this source: only 2024-12-31 and 2025-11-01, no monthly within-2024 changes, unverified geography/release times",
+  "p_value": null,
+  "interpretation": "data eligibility failure, not a measured negative predictive result; no further external source search"
+}

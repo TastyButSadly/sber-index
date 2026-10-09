@@ -1,0 +1,44 @@
+[
+  {
+    "event_id": "cbr_initial16",
+    "url": "https://www.cbr.ru/rbr/dir_decisions/rsd_2023-12-15_20_02/",
+    "sha256": "e0636b65eb2b6fb9b212bcc0920a8102eb22f6c9ca3fad9079fd4a764a69a40b",
+    "bytes": 27438
+  },
+  {
+    "event_id": "cbr_apr16",
+    "url": "https://www.cbr.ru/press/pr/?file=26042024_133000Key.htm",
+    "sha256": "9a54820e9bdde745047661ddc46ab0477aa24090ea76f242c24381d2d1291f9d",
+    "bytes": 39484
+  },
+  {
+    "event_id": "cbr_jul18",
+    "url": "https://www.cbr.ru/press/pr/?file=26072024_133000Key.htm",
+    "sha256": "c27192defffbc00a1475c8907ae12b45663ca659747dfa647cfbcfa579ea617f",
+    "bytes": 40200
+  },
+  {
+    "event_id": "cbr_sep19",
+    "url": "https://www.cbr.ru/press/pr/?file=13092024_133000Key.htm",
+    "sha256": "dec96d61a9691d63aa63246832b9b11097a16f3c0591f9f1c4293e413780e760",
+    "bytes": 41284
+  },
+  {
+    "event_id": "cbr_oct21",
+    "url": "https://www.cbr.ru/press/pr/?file=25102024_133000Key.htm",
+    "sha256": "a71ecdf8ae297f4b72402a2e9f4cffd3616c295a3c6d1ed8117e96b6021a3ceb",
+    "bytes": 40340
+  },
+  {
+    "event_id": "flood_apr10",
+    "url": "https://mchs.gov.ru/deyatelnost/press-centr/novosti/5252100",
+    "sha256": "0422b5aa8e8db94faab8da21a428481d85b12c1bed107f967b1f287007bd5187",
+    "bytes": 37785
+  },
+  {
+    "event_id": "kurgan_warning_apr22",
+    "url": "https://45.mchs.gov.ru/deyatelnost/press-centr/operativnaya-informaciya/5259955",
+    "sha256": "0422b5aa8e8db94faab8da21a428481d85b12c1bed107f967b1f287007bd5187",
+    "bytes": 37785
+  }
+]

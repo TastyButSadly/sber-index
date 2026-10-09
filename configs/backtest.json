@@ -1,0 +1,12 @@
+{
+  "target": "Все категории",
+  "horizons": [1, 2, 3, 6, 12],
+  "first_origin": "2023-12-01",
+  "development_end": "2024-09-01",
+  "ridge_alpha": 30.0,
+  "weight_power": 1.5,
+  "panel_weight": 0.7,
+  "growth_window": 3,
+  "min_training_origins": 2,
+  "seed": 42
+}

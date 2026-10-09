@@ -1,0 +1,98 @@
+{
+  "checked_at_utc": "2026-10-08T12:48:22.682636+00:00",
+  "download_date_moscow": "2026-10-08",
+  "model_revision": "ddec01313e50b6bc58ebaa92ede81bc24a3d9f9a",
+  "sber_tls_verification_disabled_on_initial_download": true,
+  "files": [
+    {
+      "file": "materials/contest_page.html",
+      "url": "https://sber.ru/sberindex/konkurs_sberindex",
+      "bytes": 646987,
+      "sha256": "761b1c4e86461c1160e8a6911f47f34620cb5617b6e2f2f21114226919e6868c"
+    },
+    {
+      "file": "data/raw/hackathonlicence.zip",
+      "url": "https://www.sberbank.com/common/img/uploaded/files/pdf/sberindex/hackathonlicence.zip",
+      "bytes": 19603203,
+      "sha256": "a9f932ff4096a7df797d1547987937f34d3995ac445b4748177114488d12b010"
+    },
+    {
+      "file": "data/raw/mo_borders.rar",
+      "url": "https://www.sberbank.com/common/files/t_dict_municipal.rar",
+      "bytes": 26925727,
+      "sha256": "319ed22684b77716641bc15b61f7325adc44e9fc47e9be2973d88412d27d21f5"
+    },
+    {
+      "file": "materials/metadata_municipal_dict.pdf",
+      "url": "https://www.sberbank.ru/common/img/uploaded/files/pdf/sberindex/metadata_municipal_dict_sberindex_2.pdf",
+      "bytes": 333567,
+      "sha256": "05707427a64061552d1f23f74f578a99fdabeff69f0c8a0fc99d924210fee0b3"
+    },
+    {
+      "file": "data/raw/consumption_current.parquet",
+      "url": "https://sberindex.ru/api/dataset/v1/download/potrebitelskie-beznalicnye-rashody-na-urovne-munizipalnyh-obrazovanij/parquet",
+      "bytes": 1364792,
+      "sha256": "dbe07d6a3a974ab4fd13258a36382a3b056aa35d12ed6c2b132ae5775115e0f1"
+    },
+    {
+      "file": "data/raw/mobility_current.parquet",
+      "url": "https://sberindex.ru/api/dataset/v1/download/indeks-mobilnosti/parquet",
+      "bytes": 7959,
+      "sha256": "f16f7d8088c7d0a02ea770915c512343807e65fc5bcc177af3bd64512add5708"
+    },
+    {
+      "file": "materials/chronos_README.md",
+      "url": "https://raw.githubusercontent.com/amazon-science/chronos-forecasting/main/README.md",
+      "bytes": 11168,
+      "sha256": "7f9e55723daadb20f79f3d76d23370888301d917f075e9eafa3e780c78f9ff35"
+    },
+    {
+      "file": "materials/chronos_quickstart.ipynb",
+      "url": "https://raw.githubusercontent.com/amazon-science/chronos-forecasting/main/notebooks/chronos-2-quickstart.ipynb",
+      "bytes": 609473,
+      "sha256": "c33dc42f9f131c706dee79b83c88bd983b6a1535c1d591219c8da27b6f2d6559"
+    },
+    {
+      "file": "materials/chronos_model_api.json",
+      "url": "https://huggingface.co/api/models/autogluon/chronos-2-small",
+      "bytes": 1646,
+      "sha256": "6bcb99234dca557466241ac1cfc8aa334003e3a3b8798f8e43530b9d71c9a775"
+    },
+    {
+      "file": "materials/chronos2_pipeline.py",
+      "url": "https://raw.githubusercontent.com/amazon-science/chronos-forecasting/main/src/chronos/chronos2/pipeline.py",
+      "bytes": 57203,
+      "sha256": "9fad1e4fb7251471463a40408a32d25d31b23b7afb88069911f095071b9b0599"
+    },
+    {
+      "file": "materials/borders.html",
+      "url": "https://sberindex.ru/ru/research/dataset-borders-and-changes-of-municipalities",
+      "bytes": 2616,
+      "sha256": "488c7562e24afce978188f67587a9ec59588133b009daf05e98eee4efcbaef44"
+    },
+    {
+      "file": "materials/data_description.html",
+      "url": "https://sberindex.ru/ru/research/data-sense-opisanie-nabora-dannikh-khakatona-sberindeksa-po-munitsipalnim-dannim",
+      "bytes": 2616,
+      "sha256": "488c7562e24afce978188f67587a9ec59588133b009daf05e98eee4efcbaef44"
+    },
+    {
+      "file": "models/chronos-2-small/README.md",
+      "url": "https://huggingface.co/autogluon/chronos-2-small/resolve/ddec01313e50b6bc58ebaa92ede81bc24a3d9f9a/README.md",
+      "bytes": 1360,
+      "sha256": "c27a3415d8482238aef5c419a7e58ef2f3fd2a45247148f17e5237521059abf7"
+    },
+    {
+      "file": "models/chronos-2-small/config.json",
+      "url": "https://huggingface.co/autogluon/chronos-2-small/resolve/ddec01313e50b6bc58ebaa92ede81bc24a3d9f9a/config.json",
+      "bytes": 969,
+      "sha256": "f2780468adc8b16322aa0b6e28b26476c9401ecf64ab53292b6d2b0d3f423722"
+    },
+    {
+      "file": "models/chronos-2-small/model.safetensors",
+      "url": "https://huggingface.co/autogluon/chronos-2-small/resolve/ddec01313e50b6bc58ebaa92ede81bc24a3d9f9a/model.safetensors",
+      "bytes": 111749048,
+      "sha256": "492290ae82bb89f9769e3479ce90b3179de1f33e600c34daa0352531538b23cd"
+    }
+  ]
+}

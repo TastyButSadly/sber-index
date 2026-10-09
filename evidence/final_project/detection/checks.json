@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "independent_reference_calibration_evaluation_seeds": true,
+  "identical_injected_panels_across_methods": true,
+  "calibration_targets_fixed_without_evaluation_feedback": true,
+  "national_common_movement_removed": true,
+  "detector_future_inputs_excluded": true,
+  "statistical_unit": "panel, conditional on fixed background",
+  "FDR_guarantee": "not established under dependent nonexchangeable scores",
+  "event_scope": "after-observation detection of injected change; no real economic event labels"
+}

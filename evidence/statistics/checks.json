@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "sign_flip_matches_scipy_exact": true,
+  "holm_matches_statsmodels": true,
+  "reported_effects_match_paired_mae": true,
+  "point_windows_reproduced": true,
+  "minimum_p_resolution_respected": true,
+  "confirmatory_claims": false
+}

@@ -1,0 +1,12 @@
+{
+  "point_model_frozen": "structure_macro_prices_wages",
+  "robust_candidate": "ridge_light",
+  "candidate_primary_mae": 702.677352,
+  "candidate_late_mae": 834.998886,
+  "significant_point_improvement": false,
+  "adaptive_90_coverage_main": 0.92208168,
+  "adaptive_90_coverage_late": 0.87863757,
+  "fdr_005_control_confirmed": false,
+  "mobility_ablation_eligible": false,
+  "case_causal_events_confirmed": 0
+}

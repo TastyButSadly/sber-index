@@ -1,0 +1,19 @@
+{
+  "comparator": "structure_macro",
+  "horizons": [1, 2, 3],
+  "ridge_alpha": 3,
+  "sample_weight_power": 1.5,
+  "structure_scale": 0.1,
+  "macro_scale": 0.03,
+  "calendar_scale": 0.03,
+  "variants": ["calendar_local", "calendar_interactions", "calendar_factor", "calendar_local_factor"],
+  "factor_alpha": 10,
+  "factor_shrinkage": 0.25,
+  "factor_clip_log": 0.03,
+  "factor_min_matured_months": 4,
+  "primary_window": "public_origins_jun_sep",
+  "secondary_window": "later_origins",
+  "calendar_scope": "Federal five-day working week. Regional religious holidays, shifts and actual payment schedules not represented.",
+  "availability": "2022/2023/2024 annual decrees predate every applicable training origin. Latest calendar source checked; historical web snapshots not verified. Panel publication lag unknown: this remains an idealized observed-prefix backtest.",
+  "analysis": "Exploratory, previously inspected target history. No grid or selection by November/December labels. Save all fixed candidates."
+}

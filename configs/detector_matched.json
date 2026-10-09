@@ -1,0 +1,15 @@
+{
+  "seed_calibration": 1701,
+  "seed_evaluation": 1702,
+  "calibration_controls": 1000,
+  "evaluation_sequences_per_scenario": 1000,
+  "target_control_alarm_probability": 0.05,
+  "length": 48,
+  "initial_calibration_months": 12,
+  "event_index": 24,
+  "hit_window_months": 6,
+  "noise_sd": 0.04,
+  "ar1": 0.3,
+  "methods": ["cusum", "page_hinkley", "ewma"],
+  "real_scope": "after-observation monitoring, not forecast of future economic shock"
+}

@@ -1,0 +1,6 @@
+{
+  "strict_q005": "Supplementary nominal-FDR diagnostic added after initial matched-budget run; not a matched-budget competitor",
+  "threshold_refinement": "Numerical refinement of BH grid uses calibration controls only, evaluation thresholds untouched",
+  "execution_failures": "Two initial full-reference-parquet loads exceeded memory. Streaming batch reads fixed execution; all predefined candidates retained.",
+  "evaluation_reuse": "All conclusions exploratory; evaluation examined in prior experiments. No untouched independent holdout."
+}

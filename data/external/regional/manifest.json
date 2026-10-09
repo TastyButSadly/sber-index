@@ -1,0 +1,29 @@
+{
+  "retrieved_at": "2026-10-09T07:10:18.615232+00:00",
+  "research_only": true,
+  "available_at": null,
+  "vintage": "2026 snapshot",
+  "first_seen_at": null,
+  "tls_certificate_verified": false,
+  "strict_real_time_eligible": false,
+  "history_end": "2024-12-01",
+  "lag_months": {
+    "prices": 2,
+    "wages": 3
+  },
+  "warning": "revisions and exact historical publication timestamps unknown; conservative lags do not establish as-of availability",
+  "sources": [
+    {
+      "name": "prices",
+      "source_url": "https://rosstat.gov.ru/storage/mediabank/ipc_RF_fo_sub_08-2026.xlsx",
+      "published_snapshot_date": "2026-09-11",
+      "sha256": "7e77a1a7b726a0c3f8f5ce373e2e554eca4de7a3944370710ccc5d8ff5fdf4f1"
+    },
+    {
+      "name": "wages",
+      "source_url": "https://rosstat.gov.ru/storage/mediabank/tab2-zpl_07-2026.xlsx",
+      "published_snapshot_date": "2026-09-30",
+      "sha256": "69b591b3d37699d22e4242d8de1b56af342097a49d00c0d0cc82063e46eab30d"
+    }
+  ]
+}

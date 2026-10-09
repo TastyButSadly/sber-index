@@ -1,0 +1,46 @@
+{
+  "selected_at": "2026-10-09T12:28:17.693569+00:00",
+  "rules": [
+    "negative_surprise",
+    "positive_surprise",
+    "national_movement_low_local_surprise",
+    "local_peer_surprise"
+  ],
+  "source_sha256": "dbcba29cda641ed0842a91933efda96276fd921c177da6a81ca11311ae54f76b",
+  "news_read_before_selection": false,
+  "external_event_explanations": "not yet looked up; this file freezes choices",
+  "cases": [
+    {
+      "rule": "negative_surprise",
+      "territory_id": 542,
+      "origin": "2024-11-01",
+      "target": "2024-12-01",
+      "municipality": "Зональный",
+      "region": "Алтайский край"
+    },
+    {
+      "rule": "positive_surprise",
+      "territory_id": 2145,
+      "origin": "2024-11-01",
+      "target": "2024-12-01",
+      "municipality": "Кедровый",
+      "region": "Томская область"
+    },
+    {
+      "rule": "national_movement_low_local_surprise",
+      "territory_id": 1909,
+      "origin": "2024-10-01",
+      "target": "2024-11-01",
+      "municipality": "Шенталинский",
+      "region": "Самарская область"
+    },
+    {
+      "rule": "local_peer_surprise",
+      "territory_id": 1329,
+      "origin": "2024-11-01",
+      "target": "2024-12-01",
+      "municipality": "Судиславский",
+      "region": "Костромская область"
+    }
+  ]
+}

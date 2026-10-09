@@ -1,0 +1,11 @@
+{
+  "nominal_coverage": 0.9,
+  "first_origin": "2024-06-01",
+  "calibration_target_months": 2,
+  "minimum_training_target_months": 2,
+  "scale_floor_log": 0.005,
+  "models": ["global_log", "disagreement_log", "bayesian_predictive", "bayesian_error_scale"],
+  "availability_mode": "observation_time",
+  "point_model": "public_ens3_mean",
+  "status": "exploratory; previously inspected history; no conditional coverage guarantee"
+}

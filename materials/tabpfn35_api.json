@@ -1,0 +1,114 @@
+{
+  "_id": "6aa189405c48dc855a14f8bf",
+  "id": "Prior-Labs/tabpfn_3_5",
+  "private": false,
+  "pipeline_tag": "tabular-classification",
+  "tags": [
+    "chemistry",
+    "biology",
+    "finance",
+    "legal",
+    "climate",
+    "medical",
+    "tabular-classification",
+    "license:other",
+    "region:us"
+  ],
+  "downloads": 11002,
+  "likes": 58,
+  "modelId": "Prior-Labs/tabpfn_3_5",
+  "author": "Prior-Labs",
+  "sha": "06bf2ba35c80a92a3b9abb436b99cf49e7a0365e",
+  "lastModified": "2026-09-09T20:05:09.000Z",
+  "gated": false,
+  "disabled": false,
+  "model-index": null,
+  "config": {},
+  "cardData": {
+    "license": "other",
+    "license_name": "tabpfn-3-5-license-v1.0",
+    "license_link": "LICENSE",
+    "extra_gated_fields": {
+      "Organization": "text",
+      "Role": {
+        "type": "select",
+        "options": [
+          "Field practitioners",
+          "Researcher",
+          "Student"
+        ]
+      },
+      "Use-case": "text",
+      "May we contact you about future updates?": "checkbox"
+    },
+    "extra_gated_button_content": "Agree to license terms and send request to access repo.",
+    "extra_gated_description": "Model weights released under `tabpfn-3-5-license-v1.0`. This license is designed to be permissive for research and internal evaluation. It *explicitly allows* testing, evaluation, and internal benchmarking, so an organization can download the model and run preliminary assessments on its own datasets.\nThe key restriction is that the model, its derivatives, and its outputs cannot be used for any commercial or production purpose. This includes, but is not limited to, revenue-generating products, competitive benchmarking for procurement, client deliverables, or using the model’s results for internal commercial decision-making.\nFor all production use cases, we offer a *Commercial Enterprise License*. This provides access to our proprietary high-speed inference engine, dedicated support, integration tooling, and other internal models. Please contact us at sales@priorlabs.ai for commercial licensing inquiries.",
+    "pipeline_tag": "tabular-classification",
+    "tags": [
+      "chemistry",
+      "biology",
+      "finance",
+      "legal",
+      "climate",
+      "medical"
+    ]
+  },
+  "siblings": [
+    {
+      "rfilename": ".gitattributes",
+      "blobId": "a6344aac8c09253b3b630fb776ae94478aa0275b",
+      "size": 1519
+    },
+    {
+      "rfilename": "LICENSE",
+      "blobId": "f2ccdfbafd475b61f5cba1061b78131633b0c9fe",
+      "size": 16905
+    },
+    {
+      "rfilename": "README.md",
+      "blobId": "ad27780616fcd3f6b818ea36c57a55adc4f6e824",
+      "size": 5395
+    },
+    {
+      "rfilename": "config.json",
+      "blobId": "e127e878bc3fc3e343180d391a98ec6f3a12de09",
+      "size": 36
+    },
+    {
+      "rfilename": "tabpfn-v3.5-20260909.safetensors",
+      "blobId": "dc86700a221dbdc708ad9d92928679d027007d08",
+      "size": 876027932,
+      "lfs": {
+        "sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+        "size": 876027932,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "tabpfn-v3.5-20260909_multiclass.safetensors",
+      "blobId": "cbf98d233c0094822e27593853865762c73aaab1",
+      "size": 876028348,
+      "lfs": {
+        "sha256": "4f1e155b09ae1c9860c75cd0a16f811b7431ddac4cb8022ee5e4498070f44149",
+        "size": 876028348,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "tabpfn-v3.5-fast-20260909.safetensors",
+      "blobId": "3668ff11d2b1167f290182cfe51390ad611cec67",
+      "size": 334181708,
+      "lfs": {
+        "sha256": "14e0b81285bca7a6d1ef121169f27f651f76dff49cad6c0b8779d5c836018550",
+        "size": 334181708,
+        "pointerSize": 134
+      }
+    }
+  ],
+  "spaces": [
+    "tardellirs/model-pulse",
+    "hugging-apps/tabpfn-3-5-demo"
+  ],
+  "createdAt": "2026-09-09T16:28:48.000Z",
+  "usedStorage": 2086237988
+}

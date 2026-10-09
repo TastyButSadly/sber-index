@@ -1,0 +1,10 @@
+{
+  "unique_point_comparisons": 1727,
+  "comparison_aliases": 153,
+  "catalog_records": 337,
+  "coverage_diagnostics": 80,
+  "holm_family_size": 603,
+  "significant_improvements_time_block_holm": 0,
+  "all_results_exploratory": true,
+  "seed": 20261009
+}

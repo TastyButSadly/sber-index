@@ -1,0 +1,338 @@
+﻿source,experiment,status,comparator,available_predictions,paired_predictions
+results/baselines/predictions.parquet,naive,paired forecast statistics recorded,ridge_seasonal_ensemble,82656.0,64512.0
+results/baselines/predictions.parquet,seasonal_growth,paired forecast statistics recorded,ridge_seasonal_ensemble,82656.0,64512.0
+results/baselines/predictions.parquet,seasonal_naive,paired forecast statistics recorded,ridge_seasonal_ensemble,82656.0,64512.0
+results/baselines/predictions.parquet,weighted_panel_ridge,paired forecast statistics recorded,ridge_seasonal_ensemble,64512.0,64512.0
+results/hypotheses/predictions.parquet,catboost_multi,paired forecast statistics recorded,ridge_seasonal_ensemble,64512.0,64512.0
+results/hypotheses/predictions.parquet,factor_only,paired forecast statistics recorded,ridge_seasonal_ensemble,82656.0,64512.0
+results/hypotheses/predictions.parquet,growth_ridge_fixed_0.3,paired forecast statistics recorded,ridge_seasonal_ensemble,42336.0,42336.0
+results/hypotheses/predictions.parquet,growth_space_ridge,paired forecast statistics recorded,ridge_seasonal_ensemble,42336.0,42336.0
+results/hypotheses/predictions.parquet,hierarchical_2,paired forecast statistics recorded,ridge_seasonal_ensemble,64512.0,64512.0
+results/hypotheses/predictions.parquet,hierarchical_3,paired forecast statistics recorded,ridge_seasonal_ensemble,64512.0,64512.0
+results/hypotheses/predictions.parquet,hierarchical_5,paired forecast statistics recorded,ridge_seasonal_ensemble,64512.0,64512.0
+results/hypotheses/predictions.parquet,joint_ridge,paired forecast statistics recorded,ridge_seasonal_ensemble,54432.0,54432.0
+results/hypotheses/predictions.parquet,multi_fixed_a30_q0,paired forecast statistics recorded,ridge_seasonal_ensemble,64512.0,64512.0
+results/hypotheses/predictions.parquet,multi_fixed_a30_q0.5,paired forecast statistics recorded,ridge_seasonal_ensemble,64512.0,64512.0
+results/hypotheses/predictions.parquet,multi_fixed_a30_q1,paired forecast statistics recorded,ridge_seasonal_ensemble,64512.0,64512.0
+results/hypotheses/predictions.parquet,multi_fixed_a30_q1.5,paired forecast statistics recorded,ridge_seasonal_ensemble,64512.0,64512.0
+results/hypotheses/predictions.parquet,multivariate_ridge,paired forecast statistics recorded,ridge_seasonal_ensemble,64512.0,64512.0
+results/hypotheses/predictions.parquet,municipality_bias,paired forecast statistics recorded,ridge_seasonal_ensemble,64512.0,64512.0
+results/hypotheses/predictions.parquet,pls_rank2,paired forecast statistics recorded,ridge_seasonal_ensemble,64512.0,64512.0
+results/hypotheses/predictions.parquet,pls_rank4,paired forecast statistics recorded,ridge_seasonal_ensemble,64512.0,64512.0
+results/hypotheses/predictions.parquet,pls_rank6,paired forecast statistics recorded,ridge_seasonal_ensemble,64512.0,64512.0
+results/hypotheses/predictions.parquet,ridge_on_growth_folds,paired forecast statistics recorded,ridge_seasonal_ensemble,42336.0,42336.0
+results/hypotheses/predictions.parquet,ridge_seasonal_fixed_0.7,paired forecast statistics recorded,ridge_seasonal_ensemble,64512.0,64512.0
+results/hypotheses/predictions.parquet,seasonal_growth_ema,paired forecast statistics recorded,ridge_seasonal_ensemble,82656.0,64512.0
+results/hypotheses/predictions.parquet,seasonal_growth_median3,paired forecast statistics recorded,ridge_seasonal_ensemble,82656.0,64512.0
+results/hypotheses/predictions.parquet,seasonal_naive,paired forecast statistics recorded,ridge_seasonal_ensemble,82656.0,64512.0
+results/hypotheses/predictions.parquet,uni_fixed_a30_q1.5,paired forecast statistics recorded,ridge_seasonal_ensemble,64512.0,64512.0
+results/hypotheses/predictions.parquet,univariate_ridge,paired forecast statistics recorded,ridge_seasonal_ensemble,64512.0,64512.0
+results/hypotheses/predictions.parquet,weighted_factor_damped_yoy_trend,paired forecast statistics recorded,ridge_seasonal_ensemble,64512.0,64512.0
+results/hypotheses/predictions.parquet,weighted_factor_ema_yoy,paired forecast statistics recorded,ridge_seasonal_ensemble,64512.0,64512.0
+results/hypotheses/predictions.parquet,weighted_factor_last_yoy,paired forecast statistics recorded,ridge_seasonal_ensemble,64512.0,64512.0
+results/hypotheses/predictions.parquet,weighted_factor_median3_yoy,paired forecast statistics recorded,ridge_seasonal_ensemble,64512.0,64512.0
+results/hypotheses/predictions.parquet,weighted_panel_ridge,paired forecast statistics recorded,ridge_seasonal_ensemble,64512.0,64512.0
+results/ridge_grid/predictions.parquet,multi_q0.5_a3,paired forecast statistics recorded,weighted_panel_ridge,64512.0,64512.0
+results/ridge_grid/predictions.parquet,multi_q0.5_a30,paired forecast statistics recorded,weighted_panel_ridge,64512.0,64512.0
+results/ridge_grid/predictions.parquet,multi_q0.5_a300,paired forecast statistics recorded,weighted_panel_ridge,64512.0,64512.0
+results/ridge_grid/predictions.parquet,multi_q0_a3,paired forecast statistics recorded,weighted_panel_ridge,64512.0,64512.0
+results/ridge_grid/predictions.parquet,multi_q0_a30,paired forecast statistics recorded,weighted_panel_ridge,64512.0,64512.0
+results/ridge_grid/predictions.parquet,multi_q0_a300,paired forecast statistics recorded,weighted_panel_ridge,64512.0,64512.0
+results/ridge_grid/predictions.parquet,multi_q1.5_a3,paired forecast statistics recorded,weighted_panel_ridge,64512.0,64512.0
+results/ridge_grid/predictions.parquet,multi_q1.5_a30,paired forecast statistics recorded,weighted_panel_ridge,64512.0,64512.0
+results/ridge_grid/predictions.parquet,multi_q1.5_a300,paired forecast statistics recorded,weighted_panel_ridge,64512.0,64512.0
+results/ridge_grid/predictions.parquet,multi_q1_a3,paired forecast statistics recorded,weighted_panel_ridge,64512.0,64512.0
+results/ridge_grid/predictions.parquet,multi_q1_a30,paired forecast statistics recorded,weighted_panel_ridge,64512.0,64512.0
+results/ridge_grid/predictions.parquet,multi_q1_a300,paired forecast statistics recorded,weighted_panel_ridge,64512.0,64512.0
+results/ridge_grid/predictions.parquet,uni_q0.5_a3,paired forecast statistics recorded,weighted_panel_ridge,64512.0,64512.0
+results/ridge_grid/predictions.parquet,uni_q0.5_a30,paired forecast statistics recorded,weighted_panel_ridge,64512.0,64512.0
+results/ridge_grid/predictions.parquet,uni_q0.5_a300,paired forecast statistics recorded,weighted_panel_ridge,64512.0,64512.0
+results/ridge_grid/predictions.parquet,uni_q0_a3,paired forecast statistics recorded,weighted_panel_ridge,64512.0,64512.0
+results/ridge_grid/predictions.parquet,uni_q0_a30,paired forecast statistics recorded,weighted_panel_ridge,64512.0,64512.0
+results/ridge_grid/predictions.parquet,uni_q0_a300,paired forecast statistics recorded,weighted_panel_ridge,64512.0,64512.0
+results/ridge_grid/predictions.parquet,uni_q1.5_a3,paired forecast statistics recorded,weighted_panel_ridge,64512.0,64512.0
+results/ridge_grid/predictions.parquet,uni_q1.5_a30,paired forecast statistics recorded,weighted_panel_ridge,64512.0,64512.0
+results/ridge_grid/predictions.parquet,uni_q1.5_a300,paired forecast statistics recorded,weighted_panel_ridge,64512.0,64512.0
+results/ridge_grid/predictions.parquet,uni_q1_a3,paired forecast statistics recorded,weighted_panel_ridge,64512.0,64512.0
+results/ridge_grid/predictions.parquet,uni_q1_a30,paired forecast statistics recorded,weighted_panel_ridge,64512.0,64512.0
+results/ridge_grid/predictions.parquet,uni_q1_a300,paired forecast statistics recorded,weighted_panel_ridge,64512.0,64512.0
+results/reference_audit/predictions.parquet,catboost_multi,paired forecast statistics recorded,public_ens3_mean,54432.0,54432.0
+results/reference_audit/predictions.parquet,factor_only,paired forecast statistics recorded,public_ens3_mean,66528.0,60480.0
+results/reference_audit/predictions.parquet,growth_ridge_fixed_0.3,paired forecast statistics recorded,public_ens3_mean,42336.0,42336.0
+results/reference_audit/predictions.parquet,growth_space_ridge,paired forecast statistics recorded,public_ens3_mean,42336.0,42336.0
+results/reference_audit/predictions.parquet,hierarchical_2,paired forecast statistics recorded,public_ens3_mean,54432.0,54432.0
+results/reference_audit/predictions.parquet,hierarchical_3,paired forecast statistics recorded,public_ens3_mean,54432.0,54432.0
+results/reference_audit/predictions.parquet,hierarchical_5,paired forecast statistics recorded,public_ens3_mean,54432.0,54432.0
+results/reference_audit/predictions.parquet,joint_ridge,paired forecast statistics recorded,public_ens3_mean,54432.0,54432.0
+results/reference_audit/predictions.parquet,multi_fixed_a30_q0,paired forecast statistics recorded,public_ens3_mean,54432.0,54432.0
+results/reference_audit/predictions.parquet,multi_fixed_a30_q0.5,paired forecast statistics recorded,public_ens3_mean,54432.0,54432.0
+results/reference_audit/predictions.parquet,multi_fixed_a30_q1,paired forecast statistics recorded,public_ens3_mean,54432.0,54432.0
+results/reference_audit/predictions.parquet,multi_fixed_a30_q1.5,paired forecast statistics recorded,public_ens3_mean,54432.0,54432.0
+results/reference_audit/predictions.parquet,multivariate_ridge,paired forecast statistics recorded,public_ens3_mean,54432.0,54432.0
+results/reference_audit/predictions.parquet,multivariate_ridge_public_factor_mean1,paired forecast statistics recorded,public_ens3_mean,54432.0,54432.0
+results/reference_audit/predictions.parquet,multivariate_ridge_public_factor_mean3,paired forecast statistics recorded,public_ens3_mean,54432.0,54432.0
+results/reference_audit/predictions.parquet,municipality_bias,paired forecast statistics recorded,public_ens3_mean,54432.0,54432.0
+results/reference_audit/predictions.parquet,pls_rank2,paired forecast statistics recorded,public_ens3_mean,54432.0,54432.0
+results/reference_audit/predictions.parquet,pls_rank4,paired forecast statistics recorded,public_ens3_mean,54432.0,54432.0
+results/reference_audit/predictions.parquet,pls_rank6,paired forecast statistics recorded,public_ens3_mean,54432.0,54432.0
+results/reference_audit/predictions.parquet,public_bolt_base,paired forecast statistics recorded,public_ens3_mean,60480.0,60480.0
+results/reference_audit/predictions.parquet,public_ets_relative,paired forecast statistics recorded,public_ens3_mean,60480.0,60480.0
+results/reference_audit/predictions.parquet,public_factor_only,paired forecast statistics recorded,public_ens3_mean,60480.0,60480.0
+results/reference_audit/predictions.parquet,public_snaive,paired forecast statistics recorded,public_ens3_mean,60480.0,60480.0
+results/reference_audit/predictions.parquet,public_snaive_growth,paired forecast statistics recorded,public_ens3_mean,60480.0,60480.0
+results/reference_audit/predictions.parquet,ridge_on_growth_folds,paired forecast statistics recorded,public_ens3_mean,42336.0,42336.0
+results/reference_audit/predictions.parquet,ridge_seasonal_ensemble,paired forecast statistics recorded,public_ens3_mean,54432.0,54432.0
+results/reference_audit/predictions.parquet,ridge_seasonal_fixed_0.7,paired forecast statistics recorded,public_ens3_mean,54432.0,54432.0
+results/reference_audit/predictions.parquet,seasonal_growth_ema,paired forecast statistics recorded,public_ens3_mean,66528.0,60480.0
+results/reference_audit/predictions.parquet,seasonal_growth_median3,paired forecast statistics recorded,public_ens3_mean,66528.0,60480.0
+results/reference_audit/predictions.parquet,seasonal_naive,paired forecast statistics recorded,public_ens3_mean,66528.0,60480.0
+results/reference_audit/predictions.parquet,uni_fixed_a30_q1.5,paired forecast statistics recorded,public_ens3_mean,54432.0,54432.0
+results/reference_audit/predictions.parquet,univariate_ridge,paired forecast statistics recorded,public_ens3_mean,54432.0,54432.0
+results/reference_audit/predictions.parquet,univariate_ridge_public_factor_mean1,paired forecast statistics recorded,public_ens3_mean,54432.0,54432.0
+results/reference_audit/predictions.parquet,univariate_ridge_public_factor_mean3,paired forecast statistics recorded,public_ens3_mean,54432.0,54432.0
+results/reference_audit/predictions.parquet,weighted_factor_damped_yoy_trend,paired forecast statistics recorded,public_ens3_mean,54432.0,54432.0
+results/reference_audit/predictions.parquet,weighted_factor_ema_yoy,paired forecast statistics recorded,public_ens3_mean,54432.0,54432.0
+results/reference_audit/predictions.parquet,weighted_factor_last_yoy,paired forecast statistics recorded,public_ens3_mean,54432.0,54432.0
+results/reference_audit/predictions.parquet,weighted_factor_median3_yoy,paired forecast statistics recorded,public_ens3_mean,54432.0,54432.0
+results/reference_audit/predictions.parquet,weighted_panel_ridge,paired forecast statistics recorded,public_ens3_mean,54432.0,54432.0
+results/reference_audit/predictions.parquet,weighted_panel_ridge_public_factor_mean1,paired forecast statistics recorded,public_ens3_mean,54432.0,54432.0
+results/reference_audit/predictions.parquet,weighted_panel_ridge_public_factor_mean3,paired forecast statistics recorded,public_ens3_mean,54432.0,54432.0
+results/formula_variants/predictions.parquet,literal_no_intercept_multi_damped_yoy_trend,paired forecast statistics recorded,ridge_seasonal_ensemble,64512.0,64512.0
+results/formula_variants/predictions.parquet,literal_no_intercept_multi_damped_yoy_trend_blend07,paired forecast statistics recorded,ridge_seasonal_ensemble,64512.0,64512.0
+results/formula_variants/predictions.parquet,literal_no_intercept_multi_ema_yoy,paired forecast statistics recorded,ridge_seasonal_ensemble,64512.0,64512.0
+results/formula_variants/predictions.parquet,literal_no_intercept_multi_ema_yoy_blend07,paired forecast statistics recorded,ridge_seasonal_ensemble,64512.0,64512.0
+results/formula_variants/predictions.parquet,literal_no_intercept_uni_damped_yoy_trend,paired forecast statistics recorded,ridge_seasonal_ensemble,64512.0,64512.0
+results/formula_variants/predictions.parquet,literal_no_intercept_uni_damped_yoy_trend_blend07,paired forecast statistics recorded,ridge_seasonal_ensemble,64512.0,64512.0
+results/formula_variants/predictions.parquet,literal_no_intercept_uni_ema_yoy,paired forecast statistics recorded,ridge_seasonal_ensemble,64512.0,64512.0
+results/formula_variants/predictions.parquet,literal_no_intercept_uni_ema_yoy_blend07,paired forecast statistics recorded,ridge_seasonal_ensemble,64512.0,64512.0
+results/point_ensemble/all_candidate_predictions.parquet,bolt_ridge_seasonal_ema,paired forecast statistics recorded,reference_ens3,54432.0,54432.0
+results/point_ensemble/all_candidate_predictions.parquet,bolt_ridge_seasonal_mean1,paired forecast statistics recorded,reference_ens3,54432.0,54432.0
+results/point_ensemble/all_candidate_predictions.parquet,bolt_ridge_seasonal_mean3,paired forecast statistics recorded,reference_ens3,54432.0,54432.0
+results/point_ensemble/all_candidate_predictions.parquet,ens3_factor_ema,paired forecast statistics recorded,reference_ens3,54432.0,54432.0
+results/point_ensemble/all_candidate_predictions.parquet,ens3_factor_mean1,paired forecast statistics recorded,reference_ens3,54432.0,54432.0
+results/point_ensemble/all_candidate_predictions.parquet,ens3_factor_mean3,paired forecast statistics recorded,reference_ens3,54432.0,54432.0
+results/point_ensemble/all_candidate_predictions.parquet,ens4_factor_ema,paired forecast statistics recorded,reference_ens3,54432.0,54432.0
+results/point_ensemble/all_candidate_predictions.parquet,ens4_factor_mean1,paired forecast statistics recorded,reference_ens3,54432.0,54432.0
+results/point_ensemble/all_candidate_predictions.parquet,ens4_factor_mean3,paired forecast statistics recorded,reference_ens3,54432.0,54432.0
+results/point_ensemble/all_candidate_predictions.parquet,local_ema_ens4,paired forecast statistics recorded,reference_ens3,54432.0,54432.0
+results/point_ensemble/all_candidate_predictions.parquet,mixed_ets_bolt_ema,paired forecast statistics recorded,reference_ens3,54432.0,54432.0
+results/point_ensemble/all_candidate_predictions.parquet,mixed_ridge_ema,paired forecast statistics recorded,reference_ens3,54432.0,54432.0
+results/point_ensemble/all_candidate_predictions.parquet,reference_plus_previous_0.1,paired forecast statistics recorded,reference_ens3,54432.0,54432.0
+results/point_ensemble/all_candidate_predictions.parquet,reference_plus_previous_0.2,paired forecast statistics recorded,reference_ens3,54432.0,54432.0
+results/point_ensemble/all_candidate_predictions.parquet,reference_plus_previous_0.3,paired forecast statistics recorded,reference_ens3,54432.0,54432.0
+results/point_ensemble/predictions.parquet,bolt_ridge_seasonal_ema,paired forecast statistics recorded,reference_ens3,30240.0,30240.0
+results/point_ensemble/predictions.parquet,bolt_ridge_seasonal_mean1,paired forecast statistics recorded,reference_ens3,30240.0,30240.0
+results/point_ensemble/predictions.parquet,bolt_ridge_seasonal_mean3,paired forecast statistics recorded,reference_ens3,30240.0,30240.0
+results/point_ensemble/predictions.parquet,ens3_factor_ema,paired forecast statistics recorded,reference_ens3,30240.0,30240.0
+results/point_ensemble/predictions.parquet,ens3_factor_mean1,paired forecast statistics recorded,reference_ens3,30240.0,30240.0
+results/point_ensemble/predictions.parquet,ens3_factor_mean3,paired forecast statistics recorded,reference_ens3,30240.0,30240.0
+results/point_ensemble/predictions.parquet,ens4_factor_ema,paired forecast statistics recorded,reference_ens3,30240.0,30240.0
+results/point_ensemble/predictions.parquet,ens4_factor_mean1,paired forecast statistics recorded,reference_ens3,30240.0,30240.0
+results/point_ensemble/predictions.parquet,ens4_factor_mean3,paired forecast statistics recorded,reference_ens3,30240.0,30240.0
+results/point_ensemble/predictions.parquet,local_ema_ens4,paired forecast statistics recorded,reference_ens3,30240.0,30240.0
+results/point_ensemble/predictions.parquet,mixed_ets_bolt_ema,paired forecast statistics recorded,reference_ens3,30240.0,30240.0
+results/point_ensemble/predictions.parquet,mixed_ridge_ema,paired forecast statistics recorded,reference_ens3,30240.0,30240.0
+results/point_ensemble/predictions.parquet,past_horizon_select_shrunk,paired forecast statistics recorded,reference_ens3,30240.0,30240.0
+results/point_ensemble/predictions.parquet,past_select_shrunk,paired forecast statistics recorded,reference_ens3,30240.0,30240.0
+results/point_ensemble/predictions.parquet,past_top3_mean,paired forecast statistics recorded,reference_ens3,30240.0,30240.0
+results/point_ensemble/predictions.parquet,reference_plus_previous_0.1,paired forecast statistics recorded,reference_ens3,30240.0,30240.0
+results/point_ensemble/predictions.parquet,reference_plus_previous_0.2,paired forecast statistics recorded,reference_ens3,30240.0,30240.0
+results/point_ensemble/predictions.parquet,reference_plus_previous_0.3,paired forecast statistics recorded,reference_ens3,30240.0,30240.0
+results/next_forecast_checks/predictions.parquet,calendar_days_full,paired forecast statistics recorded,anchor_ema,54432.0,54432.0
+results/next_forecast_checks/predictions.parquet,calendar_days_half,paired forecast statistics recorded,anchor_ema,54432.0,54432.0
+results/next_forecast_checks/predictions.parquet,calendar_weekdays_quarter,paired forecast statistics recorded,anchor_ema,54432.0,54432.0
+results/next_forecast_checks/predictions.parquet,factor_ar_calendar,paired forecast statistics recorded,anchor_ema,54432.0,54432.0
+results/next_forecast_checks/predictions.parquet,factor_ar_calendar_rate,paired forecast statistics recorded,anchor_ema,54432.0,54432.0
+results/next_forecast_checks/predictions.parquet,local_calendar_ridge,paired forecast statistics recorded,anchor_ema,54432.0,54432.0
+results/next_forecast_checks/predictions.parquet,past_mae_stacking,paired forecast statistics recorded,anchor_ema,54432.0,54432.0
+results/architecture_extensions/predictions.parquet,composition,paired forecast statistics recorded,anchor,54432.0,54432.0
+results/architecture_extensions/predictions.parquet,hist_mae_local,paired forecast statistics recorded,anchor,54432.0,54432.0
+results/architecture_extensions/predictions.parquet,huber_local,paired forecast statistics recorded,anchor,54432.0,54432.0
+results/architecture_extensions/predictions.parquet,macro_interactions,paired forecast statistics recorded,anchor,54432.0,54432.0
+results/architecture_extensions/predictions.parquet,momentum,paired forecast statistics recorded,anchor,54432.0,54432.0
+results/architecture_extensions/predictions.parquet,past_selection_half,paired forecast statistics recorded,anchor,54432.0,54432.0
+results/architecture_extensions/predictions.parquet,regional,paired forecast statistics recorded,anchor,54432.0,54432.0
+results/architecture_extensions/predictions.parquet,structure_region,paired forecast statistics recorded,anchor,54432.0,54432.0
+results/architecture_extensions/predictions.parquet,structure_region_macro,paired forecast statistics recorded,anchor,54432.0,54432.0
+results/architecture_extensions/ablation_predictions.parquet,remainder_only,paired forecast statistics recorded,anchor,54432.0,54432.0
+results/architecture_extensions/ablation_predictions.parquet,share_changes_only,paired forecast statistics recorded,anchor,54432.0,54432.0
+results/architecture_extensions/ablation_predictions.parquet,shares_without_remainder,paired forecast statistics recorded,anchor,54432.0,54432.0
+results/generalization/predictions.parquet,anchor,paired forecast statistics recorded,pooled_structure_macro,30240.0,30240.0
+results/generalization/predictions.parquet,pooled_augmented,paired forecast statistics recorded,pooled_structure_macro,30240.0,30240.0
+results/generalization/predictions.parquet,pooled_purged,paired forecast statistics recorded,pooled_structure_macro,30240.0,30240.0
+results/generalization/predictions.parquet,region_holdout,paired forecast statistics recorded,pooled_structure_macro,30240.0,30240.0
+results/generalization/predictions.parquet,region_holdout_augmented,paired forecast statistics recorded,pooled_structure_macro,30240.0,30240.0
+results/full_calendar/predictions.parquet,calendar_factor,paired forecast statistics recorded,structure_macro,54432.0,54432.0
+results/full_calendar/predictions.parquet,calendar_interactions,paired forecast statistics recorded,structure_macro,54432.0,54432.0
+results/full_calendar/predictions.parquet,calendar_local,paired forecast statistics recorded,structure_macro,54432.0,54432.0
+results/full_calendar/predictions.parquet,calendar_local_factor,paired forecast statistics recorded,structure_macro,54432.0,54432.0
+results/residual_economy/predictions.parquet,residual_all,paired forecast statistics recorded,structure_macro_prices_wages,54432.0,54432.0
+results/residual_economy/predictions.parquet,residual_all_exposures,paired forecast statistics recorded,structure_macro_prices_wages,54432.0,54432.0
+results/residual_economy/predictions.parquet,residual_all_lag3,paired forecast statistics recorded,structure_macro_prices_wages,54432.0,54432.0
+results/residual_economy/predictions.parquet,residual_credit,paired forecast statistics recorded,structure_macro_prices_wages,54432.0,54432.0
+results/residual_economy/predictions.parquet,residual_expectations,paired forecast statistics recorded,structure_macro_prices_wages,54432.0,54432.0
+results/residual_economy/predictions.parquet,residual_only,paired forecast statistics recorded,structure_macro_prices_wages,54432.0,54432.0
+results/residual_economy/predictions.parquet,residual_savings,paired forecast statistics recorded,structure_macro_prices_wages,54432.0,54432.0
+results/final_project/predictions.parquet,component_median,paired forecast statistics recorded,structure_macro_prices_wages,54432.0,54432.0
+results/final_project/predictions.parquet,ridge_light,paired forecast statistics recorded,structure_macro_prices_wages,54432.0,54432.0
+results/final_project/predictions.parquet,seasonal_blend,paired forecast statistics recorded,structure_macro_prices_wages,54432.0,54432.0
+results/tabpfn35_pilot/predictions.parquet,tabpfn35_pilot,paired forecast statistics recorded,ridge_same_training_sample,384.0,384.0
+results/tabpfn35_panel_pilot/predictions.parquet,tabpfn35_pilot,paired forecast statistics recorded,ridge_same_training_sample,1536.0,1536.0
+results/prophet_smoke/predictions.parquet,prophet_monthly,paired forecast statistics recorded,seasonal_naive,32.0,32.0
+results/chronos_cross/predictions.parquet,chronos2_small_cross,paired forecast statistics recorded,ridge_seasonal_ensemble,82656.0,64512.0
+results/chronos_multivariate/predictions.parquet,chronos2_small_multivariate,paired forecast statistics recorded,ridge_seasonal_ensemble,82656.0,64512.0
+results/chronos_residual/predictions.parquet,chronos2_small_residual,paired forecast statistics recorded,ridge_seasonal_ensemble,82656.0,64512.0
+results/chronos_univariate/predictions.parquet,chronos2_small_univariate,paired forecast statistics recorded,ridge_seasonal_ensemble,82656.0,64512.0
+results/chronos_smoke/predictions.parquet,chronos2_small_multivariate,paired forecast statistics recorded,ridge_seasonal_ensemble,32.0,32.0
+results/combined_sources/predictions.parquet,composition,paired forecast statistics recorded,anchor,54432.0,54432.0
+results/combined_sources/predictions.parquet,macro_interactions,paired forecast statistics recorded,anchor,54432.0,54432.0
+results/combined_sources/predictions.parquet,regional_prices,paired forecast statistics recorded,anchor,54432.0,54432.0
+results/combined_sources/predictions.parquet,regional_prices_wages,paired forecast statistics recorded,anchor,54432.0,54432.0
+results/combined_sources/predictions.parquet,regional_wages,paired forecast statistics recorded,anchor,54432.0,54432.0
+results/combined_sources/predictions.parquet,structure_macro,paired forecast statistics recorded,anchor,54432.0,54432.0
+results/combined_sources/predictions.parquet,structure_macro_blend,paired forecast statistics recorded,anchor,54432.0,54432.0
+results/combined_sources/predictions.parquet,structure_macro_prices,paired forecast statistics recorded,anchor,54432.0,54432.0
+results/combined_sources/predictions.parquet,structure_macro_prices_wages,paired forecast statistics recorded,anchor,54432.0,54432.0
+results/combined_sources/predictions.parquet,structure_macro_wages,paired forecast statistics recorded,anchor,54432.0,54432.0
+results/combined_sources/predictions.parquet,anchor,paired forecast statistics recorded,composition,54432.0,54432.0
+results/combined_sources/predictions.parquet,macro_interactions,paired forecast statistics recorded,composition,54432.0,54432.0
+results/combined_sources/predictions.parquet,regional_prices,paired forecast statistics recorded,composition,54432.0,54432.0
+results/combined_sources/predictions.parquet,regional_prices_wages,paired forecast statistics recorded,composition,54432.0,54432.0
+results/combined_sources/predictions.parquet,regional_wages,paired forecast statistics recorded,composition,54432.0,54432.0
+results/combined_sources/predictions.parquet,structure_macro,paired forecast statistics recorded,composition,54432.0,54432.0
+results/combined_sources/predictions.parquet,structure_macro_blend,paired forecast statistics recorded,composition,54432.0,54432.0
+results/combined_sources/predictions.parquet,structure_macro_prices,paired forecast statistics recorded,composition,54432.0,54432.0
+results/combined_sources/predictions.parquet,structure_macro_prices_wages,paired forecast statistics recorded,composition,54432.0,54432.0
+results/combined_sources/predictions.parquet,structure_macro_wages,paired forecast statistics recorded,composition,54432.0,54432.0
+results/combined_sources/predictions.parquet,anchor,paired forecast statistics recorded,macro_interactions,54432.0,54432.0
+results/combined_sources/predictions.parquet,composition,paired forecast statistics recorded,macro_interactions,54432.0,54432.0
+results/combined_sources/predictions.parquet,regional_prices,paired forecast statistics recorded,macro_interactions,54432.0,54432.0
+results/combined_sources/predictions.parquet,regional_prices_wages,paired forecast statistics recorded,macro_interactions,54432.0,54432.0
+results/combined_sources/predictions.parquet,regional_wages,paired forecast statistics recorded,macro_interactions,54432.0,54432.0
+results/combined_sources/predictions.parquet,structure_macro,paired forecast statistics recorded,macro_interactions,54432.0,54432.0
+results/combined_sources/predictions.parquet,structure_macro_blend,paired forecast statistics recorded,macro_interactions,54432.0,54432.0
+results/combined_sources/predictions.parquet,structure_macro_prices,paired forecast statistics recorded,macro_interactions,54432.0,54432.0
+results/combined_sources/predictions.parquet,structure_macro_prices_wages,paired forecast statistics recorded,macro_interactions,54432.0,54432.0
+results/combined_sources/predictions.parquet,structure_macro_wages,paired forecast statistics recorded,macro_interactions,54432.0,54432.0
+results/new_model_calibration/corrected_point_predictions.parquet,bolt_ridge_seasonal_ema/log_bias_half,paired forecast statistics recorded,bolt_ridge_seasonal_ema/original,30240.0,30240.0
+results/new_model_calibration/corrected_point_predictions.parquet,bolt_ridge_seasonal_ema/ridge_correction_half,paired forecast statistics recorded,bolt_ridge_seasonal_ema/original,30240.0,30240.0
+results/new_model_calibration/corrected_point_predictions.parquet,bolt_ridge_seasonal_ema/ridge_correction_quarter,paired forecast statistics recorded,bolt_ridge_seasonal_ema/original,30240.0,30240.0
+results/new_model_calibration/corrected_point_predictions.parquet,bolt_ridge_seasonal_mean1/log_bias_half,paired forecast statistics recorded,bolt_ridge_seasonal_mean1/original,30240.0,30240.0
+results/new_model_calibration/corrected_point_predictions.parquet,bolt_ridge_seasonal_mean1/ridge_correction_half,paired forecast statistics recorded,bolt_ridge_seasonal_mean1/original,30240.0,30240.0
+results/new_model_calibration/corrected_point_predictions.parquet,bolt_ridge_seasonal_mean1/ridge_correction_quarter,paired forecast statistics recorded,bolt_ridge_seasonal_mean1/original,30240.0,30240.0
+results/contest_horizons/predictions.parquet,portfolio_early_bolt_seasonal/h1,paired forecast statistics recorded,prophet_monthly/h1,128.0,128.0
+results/contest_horizons/predictions.parquet,portfolio_short_ema/h1,paired forecast statistics recorded,prophet_monthly/h1,384.0,384.0
+results/contest_horizons/predictions.parquet,portfolio_early_bolt_seasonal/h1,paired forecast statistics recorded,seasonal_naive/h1,128.0,128.0
+results/contest_horizons/predictions.parquet,portfolio_short_ema/h1,paired forecast statistics recorded,seasonal_naive/h1,384.0,384.0
+results/contest_horizons/predictions.parquet,portfolio_early_bolt_seasonal/h3,paired forecast statistics recorded,prophet_monthly/h3,128.0,128.0
+results/contest_horizons/predictions.parquet,portfolio_short_ema/h3,paired forecast statistics recorded,prophet_monthly/h3,384.0,384.0
+results/contest_horizons/predictions.parquet,portfolio_early_bolt_seasonal/h3,paired forecast statistics recorded,seasonal_naive/h3,128.0,128.0
+results/contest_horizons/predictions.parquet,portfolio_short_ema/h3,paired forecast statistics recorded,seasonal_naive/h3,384.0,384.0
+results/contest_horizons/predictions.parquet,portfolio_early_bolt_seasonal/h6,paired forecast statistics recorded,prophet_monthly/h6,128.0,128.0
+results/contest_horizons/predictions.parquet,portfolio_h6_ridge_seasonal/h6,paired forecast statistics recorded,prophet_monthly/h6,256.0,256.0
+results/contest_horizons/predictions.parquet,portfolio_early_bolt_seasonal/h6,paired forecast statistics recorded,seasonal_naive/h6,128.0,128.0
+results/contest_horizons/predictions.parquet,portfolio_h6_ridge_seasonal/h6,paired forecast statistics recorded,seasonal_naive/h6,256.0,256.0
+results/contest_horizons/predictions.parquet,portfolio_early_bolt_seasonal/h12,paired forecast statistics recorded,prophet_monthly/h12,128.0,128.0
+results/contest_horizons/predictions.parquet,portfolio_early_bolt_seasonal/h12,paired forecast statistics recorded,seasonal_naive/h12,128.0,128.0
+results/hypothesis_analysis/selected_ensemble_predictions.parquet,selected_foundation_ensemble,paired forecast statistics recorded,ridge_seasonal_ensemble,54432.0,54432.0
+results/uncertainty/predictions.parquet,bayesian_error_scale,clustered coverage diagnostics recorded; formal p-value unavailable,,,
+results/uncertainty/predictions.parquet,bayesian_predictive,clustered coverage diagnostics recorded; formal p-value unavailable,,,
+results/uncertainty/predictions.parquet,disagreement_log,clustered coverage diagnostics recorded; formal p-value unavailable,,,
+results/uncertainty/predictions.parquet,global_log,clustered coverage diagnostics recorded; formal p-value unavailable,,,
+results/new_model_calibration/interval_predictions.parquet,bolt_ridge_seasonal_ema/conditional_log/0.8,clustered coverage diagnostics recorded; formal p-value unavailable,,,
+results/new_model_calibration/interval_predictions.parquet,bolt_ridge_seasonal_ema/conditional_log/0.9,clustered coverage diagnostics recorded; formal p-value unavailable,,,
+results/new_model_calibration/interval_predictions.parquet,bolt_ridge_seasonal_ema/conditional_log/0.95,clustered coverage diagnostics recorded; formal p-value unavailable,,,
+results/new_model_calibration/interval_predictions.parquet,bolt_ridge_seasonal_ema/global_log/0.8,clustered coverage diagnostics recorded; formal p-value unavailable,,,
+results/new_model_calibration/interval_predictions.parquet,bolt_ridge_seasonal_ema/global_log/0.9,clustered coverage diagnostics recorded; formal p-value unavailable,,,
+results/new_model_calibration/interval_predictions.parquet,bolt_ridge_seasonal_ema/global_log/0.95,clustered coverage diagnostics recorded; formal p-value unavailable,,,
+results/new_model_calibration/interval_predictions.parquet,bolt_ridge_seasonal_ema/global_rub/0.8,clustered coverage diagnostics recorded; formal p-value unavailable,,,
+results/new_model_calibration/interval_predictions.parquet,bolt_ridge_seasonal_ema/global_rub/0.9,clustered coverage diagnostics recorded; formal p-value unavailable,,,
+results/new_model_calibration/interval_predictions.parquet,bolt_ridge_seasonal_ema/global_rub/0.95,clustered coverage diagnostics recorded; formal p-value unavailable,,,
+results/new_model_calibration/interval_predictions.parquet,bolt_ridge_seasonal_ema/size_group_log/0.8,clustered coverage diagnostics recorded; formal p-value unavailable,,,
+results/new_model_calibration/interval_predictions.parquet,bolt_ridge_seasonal_ema/size_group_log/0.9,clustered coverage diagnostics recorded; formal p-value unavailable,,,
+results/new_model_calibration/interval_predictions.parquet,bolt_ridge_seasonal_ema/size_group_log/0.95,clustered coverage diagnostics recorded; formal p-value unavailable,,,
+results/new_model_calibration/interval_predictions.parquet,bolt_ridge_seasonal_mean1/conditional_log/0.8,clustered coverage diagnostics recorded; formal p-value unavailable,,,
+results/new_model_calibration/interval_predictions.parquet,bolt_ridge_seasonal_mean1/conditional_log/0.9,clustered coverage diagnostics recorded; formal p-value unavailable,,,
+results/new_model_calibration/interval_predictions.parquet,bolt_ridge_seasonal_mean1/conditional_log/0.95,clustered coverage diagnostics recorded; formal p-value unavailable,,,
+results/new_model_calibration/interval_predictions.parquet,bolt_ridge_seasonal_mean1/global_log/0.8,clustered coverage diagnostics recorded; formal p-value unavailable,,,
+results/new_model_calibration/interval_predictions.parquet,bolt_ridge_seasonal_mean1/global_log/0.9,clustered coverage diagnostics recorded; formal p-value unavailable,,,
+results/new_model_calibration/interval_predictions.parquet,bolt_ridge_seasonal_mean1/global_log/0.95,clustered coverage diagnostics recorded; formal p-value unavailable,,,
+results/new_model_calibration/interval_predictions.parquet,bolt_ridge_seasonal_mean1/global_rub/0.8,clustered coverage diagnostics recorded; formal p-value unavailable,,,
+results/new_model_calibration/interval_predictions.parquet,bolt_ridge_seasonal_mean1/global_rub/0.9,clustered coverage diagnostics recorded; formal p-value unavailable,,,
+results/new_model_calibration/interval_predictions.parquet,bolt_ridge_seasonal_mean1/global_rub/0.95,clustered coverage diagnostics recorded; formal p-value unavailable,,,
+results/new_model_calibration/interval_predictions.parquet,bolt_ridge_seasonal_mean1/size_group_log/0.8,clustered coverage diagnostics recorded; formal p-value unavailable,,,
+results/new_model_calibration/interval_predictions.parquet,bolt_ridge_seasonal_mean1/size_group_log/0.9,clustered coverage diagnostics recorded; formal p-value unavailable,,,
+results/new_model_calibration/interval_predictions.parquet,bolt_ridge_seasonal_mean1/size_group_log/0.95,clustered coverage diagnostics recorded; formal p-value unavailable,,,
+results/final_project/interval_predictions.parquet,structure_macro_prices_wages/adaptive_log/0.5,clustered coverage diagnostics recorded; formal p-value unavailable,,,
+results/final_project/interval_predictions.parquet,structure_macro_prices_wages/adaptive_log/0.8,clustered coverage diagnostics recorded; formal p-value unavailable,,,
+results/final_project/interval_predictions.parquet,structure_macro_prices_wages/adaptive_log/0.9,clustered coverage diagnostics recorded; formal p-value unavailable,,,
+results/final_project/interval_predictions.parquet,structure_macro_prices_wages/adaptive_log/0.95,clustered coverage diagnostics recorded; formal p-value unavailable,,,
+results/final_project/interval_predictions.parquet,structure_macro_prices_wages/global_log/0.5,clustered coverage diagnostics recorded; formal p-value unavailable,,,
+results/final_project/interval_predictions.parquet,structure_macro_prices_wages/global_log/0.8,clustered coverage diagnostics recorded; formal p-value unavailable,,,
+results/final_project/interval_predictions.parquet,structure_macro_prices_wages/global_log/0.9,clustered coverage diagnostics recorded; formal p-value unavailable,,,
+results/final_project/interval_predictions.parquet,structure_macro_prices_wages/global_log/0.95,clustered coverage diagnostics recorded; formal p-value unavailable,,,
+results/final_project/interval_predictions.parquet,structure_macro_prices_wages/horizon_log/0.5,clustered coverage diagnostics recorded; formal p-value unavailable,,,
+results/final_project/interval_predictions.parquet,structure_macro_prices_wages/horizon_log/0.8,clustered coverage diagnostics recorded; formal p-value unavailable,,,
+results/final_project/interval_predictions.parquet,structure_macro_prices_wages/horizon_log/0.9,clustered coverage diagnostics recorded; formal p-value unavailable,,,
+results/final_project/interval_predictions.parquet,structure_macro_prices_wages/horizon_log/0.95,clustered coverage diagnostics recorded; formal p-value unavailable,,,
+results/combined_sources/future_forecasts.parquet,structure_macro_mean1,no observed evaluation labels,,,
+results/combined_sources/future_forecasts.parquet,structure_macro_ema,no observed evaluation labels,,,
+results/combined_sources/future_forecasts.parquet,regional_prices_mean1,no observed evaluation labels,,,
+results/combined_sources/future_forecasts.parquet,regional_prices_ema,no observed evaluation labels,,,
+results/combined_sources/future_forecasts.parquet,regional_wages_mean1,no observed evaluation labels,,,
+results/combined_sources/future_forecasts.parquet,regional_wages_ema,no observed evaluation labels,,,
+results/combined_sources/future_forecasts.parquet,regional_prices_wages_mean1,no observed evaluation labels,,,
+results/combined_sources/future_forecasts.parquet,regional_prices_wages_ema,no observed evaluation labels,,,
+results/combined_sources/future_forecasts.parquet,structure_macro_prices_mean1,no observed evaluation labels,,,
+results/combined_sources/future_forecasts.parquet,structure_macro_prices_ema,no observed evaluation labels,,,
+results/combined_sources/future_forecasts.parquet,structure_macro_wages_mean1,no observed evaluation labels,,,
+results/combined_sources/future_forecasts.parquet,structure_macro_wages_ema,no observed evaluation labels,,,
+results/combined_sources/future_forecasts.parquet,structure_macro_prices_wages_mean1,no observed evaluation labels,,,
+results/combined_sources/future_forecasts.parquet,structure_macro_prices_wages_ema,no observed evaluation labels,,,
+results/point_forecast/predictions.parquet,bolt_ridge_seasonal_mean1,no observed evaluation labels,,,
+results/point_forecast/predictions.parquet,bolt_ridge_seasonal_ema,no observed evaluation labels,,,
+results/point_forecast_verification/predictions.parquet,bolt_ridge_seasonal_mean1,no observed evaluation labels,,,
+results/point_forecast_verification/predictions.parquet,bolt_ridge_seasonal_ema,no observed evaluation labels,,,
+results/reference_audit/reference_predictions.parquet,public_snaive,duplicate audit artifact; see canonical paired comparisons,,,
+results/reference_audit/reference_predictions.parquet,public_snaive_growth,duplicate audit artifact; see canonical paired comparisons,,,
+results/reference_audit/reference_predictions.parquet,public_factor_only,duplicate audit artifact; see canonical paired comparisons,,,
+results/reference_audit/reference_predictions.parquet,public_ets_relative,duplicate audit artifact; see canonical paired comparisons,,,
+results/reference_audit/reference_predictions.parquet,public_bolt_base,duplicate audit artifact; see canonical paired comparisons,,,
+results/residual_economy/future_forecasts.parquet,residual_only,no observed evaluation labels,,,
+results/residual_economy/future_forecasts.parquet,residual_credit,no observed evaluation labels,,,
+results/residual_economy/future_forecasts.parquet,residual_savings,no observed evaluation labels,,,
+results/residual_economy/future_forecasts.parquet,residual_expectations,no observed evaluation labels,,,
+results/residual_economy/future_forecasts.parquet,residual_all,no observed evaluation labels,,,
+results/residual_economy/future_forecasts.parquet,residual_all_exposures,no observed evaluation labels,,,
+results/residual_economy/future_forecasts.parquet,residual_all_lag3,no observed evaluation labels,,,
+results/structural_forecast/predictions.parquet,bolt_structural_ridge_seasonal_mean1,no observed evaluation labels,,,
+results/structural_forecast/predictions.parquet,bolt_structural_ridge_seasonal_ema,no observed evaluation labels,,,
+results/structural_forecast_verification/predictions.parquet,bolt_structural_ridge_seasonal_mean1,no observed evaluation labels,,,
+results/structural_forecast_verification/predictions.parquet,bolt_structural_ridge_seasonal_ema,no observed evaluation labels,,,
+results/hypotheses/ridge_grid_metrics.csv,multi_q0.5_a3,individual predictions recovered and metrics reproduced; see results/ridge_grid,,,
+results/hypotheses/ridge_grid_metrics.csv,multi_q0.5_a30,individual predictions recovered and metrics reproduced; see results/ridge_grid,,,
+results/hypotheses/ridge_grid_metrics.csv,multi_q0.5_a300,individual predictions recovered and metrics reproduced; see results/ridge_grid,,,
+results/hypotheses/ridge_grid_metrics.csv,multi_q0_a3,individual predictions recovered and metrics reproduced; see results/ridge_grid,,,
+results/hypotheses/ridge_grid_metrics.csv,multi_q0_a30,individual predictions recovered and metrics reproduced; see results/ridge_grid,,,
+results/hypotheses/ridge_grid_metrics.csv,multi_q0_a300,individual predictions recovered and metrics reproduced; see results/ridge_grid,,,
+results/hypotheses/ridge_grid_metrics.csv,multi_q1.5_a3,individual predictions recovered and metrics reproduced; see results/ridge_grid,,,
+results/hypotheses/ridge_grid_metrics.csv,multi_q1.5_a30,individual predictions recovered and metrics reproduced; see results/ridge_grid,,,
+results/hypotheses/ridge_grid_metrics.csv,multi_q1.5_a300,individual predictions recovered and metrics reproduced; see results/ridge_grid,,,
+results/hypotheses/ridge_grid_metrics.csv,multi_q1_a3,individual predictions recovered and metrics reproduced; see results/ridge_grid,,,
+results/hypotheses/ridge_grid_metrics.csv,multi_q1_a30,individual predictions recovered and metrics reproduced; see results/ridge_grid,,,
+results/hypotheses/ridge_grid_metrics.csv,multi_q1_a300,individual predictions recovered and metrics reproduced; see results/ridge_grid,,,
+results/hypotheses/ridge_grid_metrics.csv,uni_q0.5_a3,individual predictions recovered and metrics reproduced; see results/ridge_grid,,,
+results/hypotheses/ridge_grid_metrics.csv,uni_q0.5_a30,individual predictions recovered and metrics reproduced; see results/ridge_grid,,,
+results/hypotheses/ridge_grid_metrics.csv,uni_q0.5_a300,individual predictions recovered and metrics reproduced; see results/ridge_grid,,,
+results/hypotheses/ridge_grid_metrics.csv,uni_q0_a3,individual predictions recovered and metrics reproduced; see results/ridge_grid,,,
+results/hypotheses/ridge_grid_metrics.csv,uni_q0_a30,individual predictions recovered and metrics reproduced; see results/ridge_grid,,,
+results/hypotheses/ridge_grid_metrics.csv,uni_q0_a300,individual predictions recovered and metrics reproduced; see results/ridge_grid,,,
+results/hypotheses/ridge_grid_metrics.csv,uni_q1.5_a3,individual predictions recovered and metrics reproduced; see results/ridge_grid,,,
+results/hypotheses/ridge_grid_metrics.csv,uni_q1.5_a30,individual predictions recovered and metrics reproduced; see results/ridge_grid,,,
+results/hypotheses/ridge_grid_metrics.csv,uni_q1.5_a300,individual predictions recovered and metrics reproduced; see results/ridge_grid,,,
+results/hypotheses/ridge_grid_metrics.csv,uni_q1_a3,individual predictions recovered and metrics reproduced; see results/ridge_grid,,,
+results/hypotheses/ridge_grid_metrics.csv,uni_q1_a30,individual predictions recovered and metrics reproduced; see results/ridge_grid,,,
+results/hypotheses/ridge_grid_metrics.csv,uni_q1_a300,individual predictions recovered and metrics reproduced; see results/ridge_grid,,,
+results/architecture_probe,all saved scenarios,"synthetic or diagnostic experiment; separate sequence-level statistics, not real forecast MAE",,,
+results/detector_validation,all saved scenarios,"synthetic or diagnostic experiment; separate sequence-level statistics, not real forecast MAE",,,
+results/detectors_matched,all saved scenarios,"synthetic or diagnostic experiment; separate sequence-level statistics, not real forecast MAE",,,

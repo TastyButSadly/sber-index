@@ -1,0 +1,38 @@
+{
+  "retrieved_at": "2026-10-09T11:04:52.848468+00:00",
+  "sources": [
+    {
+      "file": "loans.xlsx",
+      "url": "https://www.cbr.ru/vfs/statistics/pdko/int_rat/loans_ind_new.xlsx",
+      "sha256": "8423280efbc8fafc04f9b9fe295e94b9518f0e34639d74d0fafb724f7f8bba94",
+      "tls_verified": false,
+      "historical_vintage_verified": false,
+      "available_at": null
+    },
+    {
+      "file": "deposits.xlsx",
+      "url": "https://www.cbr.ru/vfs/statistics/pdko/int_rat/deposits.xlsx",
+      "sha256": "baf8bf22c7438b02729d4ac2b68845eadb669f3ed2de4b9c0f28407ebac00d1d",
+      "tls_verified": false,
+      "historical_vintage_verified": false,
+      "available_at": null
+    },
+    {
+      "file": "expectations.xlsx",
+      "url": "https://www.cbr.ru/Collection/Collection/File/54835/Infl_exp_24-11.xlsx",
+      "sha256": "93b8474d1eb9f87556e5a4eb5cb4b89ba27b04166399e1e34cd2d25f5c511fbb",
+      "tls_verified": false,
+      "historical_vintage_verified": false,
+      "available_at": null
+    }
+  ],
+  "definitions": {
+    "loan_rate": "все виды кредитов",
+    "deposit_rate": "до 1 года, кроме ''до востребова-ния''",
+    "confidence": "Consumer sentiment index, infOM survey, row 134 of source sheet 12",
+    "save_preference": "Prefer saving rather than expensive purchases, percent respondents, row 214"
+  },
+  "excluded": "Absolute credit issuance and deposit flows not present in these selected sheets; no fabricated payment dates or demographic exposures.",
+  "survey_reference_page": "https://www.cbr.ru/analytics/dkp/inflationary_expectations/Infl_exp_24-11/",
+  "vintage_warning": "Rates are current historical snapshots. November 2024 survey workbook contains retrospective history; earlier versions not verified. Lags do not prove as-of availability."
+}

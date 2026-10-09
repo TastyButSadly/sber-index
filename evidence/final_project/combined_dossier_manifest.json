@@ -1,0 +1,293 @@
+{
+  "output": "reports/all_experiments_and_hypotheses.md",
+  "assembled_at": "2026-10-09T16:06:46.504860",
+  "source_reports": 16,
+  "aggregate_tables": 41,
+  "statistics_rows": {
+    "experiment_catalog.csv": 291,
+    "point_comparisons.csv": 1472,
+    "monthly_paired_effects.csv": 5167,
+    "comparison_aliases.csv": 121,
+    "interval_score_comparisons.csv": 52,
+    "coverage_diagnostics.csv": 80,
+    "synthetic_detector_rates.csv": 33,
+    "synthetic_detector_comparisons.csv": 33,
+    "final_detector_panel_rates.csv": 80,
+    "final_detector_panel_comparisons.csv": 44
+  },
+  "bytes": 2110723,
+  "lines": 24071,
+  "source_files": [
+    {
+      "path": "reports/final_project_report.md",
+      "sha256": "23bbc8cb79c605149c3cabc41d3225d8f6cfc124823165cc2e21e6ffa55d7c3f"
+    },
+    {
+      "path": "reports/hypotheses_report.md",
+      "sha256": "9bd1799d9b91048bc5448d6bc0b18409ab59692a415b5a5c2fc3bdc94927a83d"
+    },
+    {
+      "path": "reports/architecture_plan.md",
+      "sha256": "4ef4a35817d8c8d3b904de0cd7ff87074b0f37b5800b962ced078410bc013f6f"
+    },
+    {
+      "path": "reports/point_ensemble_report.md",
+      "sha256": "e78c30e8f94c0f912064ad02ad7a80de31142af5f12247439c05bdafe80c302b"
+    },
+    {
+      "path": "reports/uncertainty_report.md",
+      "sha256": "6a9e7e2630ad88138faed551942f036efe8e8fdec01db42495785842d64cca0f"
+    },
+    {
+      "path": "reports/new_model_calibration.md",
+      "sha256": "c7cf2923790f7d817909e57edaab45e4604b02ba12f158d71d7d696a2302bd93"
+    },
+    {
+      "path": "reports/next_round_report.md",
+      "sha256": "1f9a7b1384b78e49664d38697fac214a796031b7a05fb1c3020072d111081746"
+    },
+    {
+      "path": "reports/architecture_feature_report.md",
+      "sha256": "a49c98b103b7f1dff5a908a1e39a783954d223becf979c9b42b14186fffda019"
+    },
+    {
+      "path": "reports/combined_sources_report.md",
+      "sha256": "a8cb6873a0735c416619491e9b364423f338f7bf6549ed203ccf03709322638e"
+    },
+    {
+      "path": "reports/generalization_report.md",
+      "sha256": "f65cbb30ef9859bfa201882ca452b8df554d3addc0c798f85506a9c047d44ad4"
+    },
+    {
+      "path": "reports/forecast_diagnostics.md",
+      "sha256": "1bb3d5d33042fa965e10fd04b0be78be42f56e40a5857c40031401a1570e44a6"
+    },
+    {
+      "path": "reports/2025_sources_audit.md",
+      "sha256": "d05a87edb379526c8bd2fa3ac23b0c937e64abc684dd60575446cbc45b979bbb"
+    },
+    {
+      "path": "reports/event_features_research.md",
+      "sha256": "8fe26acdee49686d9e4e3f7797baff5e90b974891a7930d089a14c397a5a3364"
+    },
+    {
+      "path": "reports/consumption_factors_and_data_mechanism.md",
+      "sha256": "3a3a03201c25aa8893a754c5295535d48428b8764b7cbe343ff9ae21686a97c7"
+    },
+    {
+      "path": "reports/full_calendar_report.md",
+      "sha256": "3bead55ffe7f03aa96f0130ea5a23aa202d8340a808908a2b7d199d2de1d4133"
+    },
+    {
+      "path": "reports/residual_economy_report.md",
+      "sha256": "b0870c37a8a7051ad0ca86f2448946fcff9678dbe92cfe7c79d9b62a91f3ba6d"
+    },
+    {
+      "path": "results/statistics/experiment_catalog.csv",
+      "sha256": "0421a4183d24d77d1a01b23577fb4683d7dec77dad333fae7dd849f909f2bb67"
+    },
+    {
+      "path": "results/statistics/point_comparisons.csv",
+      "sha256": "b095e2a82ace689f093022fe6cc5dc8b0b7f97af2660a57df82edb70eb257e95"
+    },
+    {
+      "path": "results/statistics/monthly_paired_effects.csv",
+      "sha256": "911512e3b36cbdb6618e9cb15caf3a94edf3daa4f01b2d3477d680d48eaf439d"
+    },
+    {
+      "path": "results/statistics/comparison_aliases.csv",
+      "sha256": "b21f738ee793bfb93c8fb1df1103c3aaad3917a7873118b69d7682d374b96c23"
+    },
+    {
+      "path": "results/statistics/interval_score_comparisons.csv",
+      "sha256": "360a610e722fc3b31d43bd5dd4187e9692e4c088b51e727351d20a21ba148bed"
+    },
+    {
+      "path": "results/statistics/coverage_diagnostics.csv",
+      "sha256": "6107f1a550bfd77a6e61a902660af0212a64cc650166d846924664fb31c9e809"
+    },
+    {
+      "path": "results/statistics/synthetic_detector_rates.csv",
+      "sha256": "a4380c340e03b6fa40aa87df7ff5c55218044da94758dfb211b78e3d5316ed76"
+    },
+    {
+      "path": "results/statistics/synthetic_detector_comparisons.csv",
+      "sha256": "c155f7d0ba04625903ebeceaf5d884e2c190de78f91cb875f872c1bbde481d46"
+    },
+    {
+      "path": "results/statistics/final_detector_panel_rates.csv",
+      "sha256": "288c6cbc35d0090be756e7ea0c92670dfd97166a5cde35e5e1b4d6f4299716cf"
+    },
+    {
+      "path": "results/statistics/final_detector_panel_comparisons.csv",
+      "sha256": "cc0bba1301b82b9ec4243a8d628bbd722a506800a1f0f795edfc858dc72e23fc"
+    },
+    {
+      "path": "results/architecture_extensions/ablation_metrics.csv",
+      "sha256": "97ad27212cf32afa0b62cf53cf80694d71cc132c078f9c6867a99cfaccde969c"
+    },
+    {
+      "path": "results/architecture_extensions/metrics.csv",
+      "sha256": "f0d3fe47d16b5bb9ff5bc04d8c312d92d2bb0e86ff768765bd80d48ef58e5f0f"
+    },
+    {
+      "path": "results/architecture_probe/complementarity.csv",
+      "sha256": "e747398f21b78f4e7638d7d658dbdb57529d304f651c5d7acce6dafcc4f16722"
+    },
+    {
+      "path": "results/architecture_probe/factor_local_matrix.csv",
+      "sha256": "22b9c85f874aea6af9318e13dec4728b127b48577f7c2c1b059ad8596b44456b"
+    },
+    {
+      "path": "results/architecture_probe/fixed_combination.csv",
+      "sha256": "4527f15b6df0d36ed74269a3f47a1c2d486c3de75c7fd627e20298223f3f92be"
+    },
+    {
+      "path": "results/baselines/metrics.csv",
+      "sha256": "7ead501db33b9f3cdd2df3621c256df5f59755359be3f2a6d0136991eab5edc2"
+    },
+    {
+      "path": "results/baselines/paired_metrics.csv",
+      "sha256": "a878e91d66a6179c4d17f099635a82c53f978d06df04e2d44fb4f6b3df016fd8"
+    },
+    {
+      "path": "results/chronos_cross/metrics.csv",
+      "sha256": "c5b4220f67033504bc62238ac8d1f7c90995e0e0415c5f9d857dba7ab076c4df"
+    },
+    {
+      "path": "results/chronos_multivariate/metrics.csv",
+      "sha256": "e3785fb4aeccb92e0edf606f1ead141ac7b99302fe23ef65088bda1c69d18db1"
+    },
+    {
+      "path": "results/chronos_residual/metrics.csv",
+      "sha256": "df7b53d8b1ee09ef913b708a7905faeed864a8e0155dbe2675bd818e79fd73dc"
+    },
+    {
+      "path": "results/chronos_smoke/metrics.csv",
+      "sha256": "f3b5879e783cc7194013e2860af27ecb0bb1960928dd0674d434a494bdcc13da"
+    },
+    {
+      "path": "results/chronos_univariate/metrics.csv",
+      "sha256": "52481c24ffc4eb59cf733d423d97077c9a1ca2e0b9a6c18ba845fecdb9542de3"
+    },
+    {
+      "path": "results/combined_sources/interpretability/feature_summary.csv",
+      "sha256": "96904994feccec97e80c22a8634bd226c7daaf0b768cfa3f24e506de4036542c"
+    },
+    {
+      "path": "results/combined_sources/metrics.csv",
+      "sha256": "b2bfaf88551bef5c66c1d0cfe232a4c0c66708a2a15aa38f3f19df3d2046ea13"
+    },
+    {
+      "path": "results/contest_horizons/metrics.csv",
+      "sha256": "3defcb652e1226c5f8f8e446c2a7a73887468942363f3f0bbbbf9277d77864b1"
+    },
+    {
+      "path": "results/contest_horizons/paired_metrics.csv",
+      "sha256": "3c4e8882ab064a287483d4a2212f4b6f7c040ad82ed7c0f27fa403b2d3e279bb"
+    },
+    {
+      "path": "results/detector_validation/synthetic_metrics.csv",
+      "sha256": "d7f3cb8441a254a632e8a166636e823c95fe489636ce716bfae6a53f57b75530"
+    },
+    {
+      "path": "results/detectors_matched/synthetic_metrics.csv",
+      "sha256": "8eebc2561a7420a31eaecac2e6e063c40a805963c5838c5db0566bfbc882ded7"
+    },
+    {
+      "path": "results/full_calendar/metrics.csv",
+      "sha256": "f9c25cd9dda08d599f0ce1a32959fd6a30d840e81afdf88e048326dd68470f8e"
+    },
+    {
+      "path": "results/generalization/fold_metrics.csv",
+      "sha256": "36b357ce227104a1fc29a7ab108a6534fe5c4b7272ecfefc7b92e470a675e81d"
+    },
+    {
+      "path": "results/generalization/metrics.csv",
+      "sha256": "82bb146866dcb553bbea366bc3f6eb88c6c02af9a9f90577193e4b1728a02e4c"
+    },
+    {
+      "path": "results/generalization/regional_metrics.csv",
+      "sha256": "244ccd02adc4cd4a07787311afe4e6fb7697fbe875fd2a3c471e02effb3b5d97"
+    },
+    {
+      "path": "results/hypotheses/metrics.csv",
+      "sha256": "a5d42c9aa8a1fb20f1df0a33b309d1506b08de3df9fee95f9bb679dd4c93063d"
+    },
+    {
+      "path": "results/hypotheses/ridge_grid_metrics.csv",
+      "sha256": "05287c3a5b0748fd88ddc850701a1af862f616b15d79bc870e0ff2f5cc6c934e"
+    },
+    {
+      "path": "results/hypothesis_analysis/monthly_metrics.csv",
+      "sha256": "c8c432c755ae1f5c3d5f9600d5da51c600cae53e97a3701977d9c83dde939bea"
+    },
+    {
+      "path": "results/hypothesis_analysis/summary.csv",
+      "sha256": "20f45a15b8a3ff08aac6ef1567248c30cca6d49ed654a6f38963e84b3f917cae"
+    },
+    {
+      "path": "results/interpretability/feature_summary.csv",
+      "sha256": "730966ab2849bc86004fc127a164b830ae3bf66fe05e1aab1aee409d4a4b09ce"
+    },
+    {
+      "path": "results/new_model_calibration/interval_metrics.csv",
+      "sha256": "15ccc46ce1ed6630997b051fc71c2d6c6ed45348be5be2ddfddb475595a4ec8b"
+    },
+    {
+      "path": "results/new_model_calibration/point_metrics.csv",
+      "sha256": "cfc4d40c98ee9e0f598506959af8a5f2a9138a5da666fbad0f0b760690ae9d98"
+    },
+    {
+      "path": "results/next_forecast_checks/metrics.csv",
+      "sha256": "d95a5a3ad92d481ee72115e2c4afd95dc357f57730905bb1612cea27a77c81b4"
+    },
+    {
+      "path": "results/point_ensemble/horizon_metrics.csv",
+      "sha256": "8178cefb2424c8eb666ed43f0fe410b2a801c1f4bdc760295b97ece42d6fbb45"
+    },
+    {
+      "path": "results/point_ensemble/metrics.csv",
+      "sha256": "9940383473767cc1529c210f8fab12097e43987116fa6162dff4e38c225e2113"
+    },
+    {
+      "path": "results/point_ensemble/selected_metrics.csv",
+      "sha256": "ef4f4e84960ef5da0b1d1fa59d7ad15aa8fae28110f7b19d6454b0f9348ac4a2"
+    },
+    {
+      "path": "results/point_ensemble/target_month_metrics.csv",
+      "sha256": "8ba5f7764c3196510b901d2639de77d3267d535a80eb50c1df2832cddde095d0"
+    },
+    {
+      "path": "results/prophet_smoke/metrics.csv",
+      "sha256": "bcdb4f03d5f821362ed4d13cb0dc2d5a9978bd81ba10ec98e608f18801720f2d"
+    },
+    {
+      "path": "results/residual_economy/metrics.csv",
+      "sha256": "8366085f5ad35880a5c45be8439aab13d7a5569c23fe4e51e4176fa127df9519"
+    },
+    {
+      "path": "results/structural_interpretability/feature_summary.csv",
+      "sha256": "6825df1bb0dbcc0c9955299d97f2398834e10e38a7ecc60e3da909d6766f0c73"
+    },
+    {
+      "path": "results/tabpfn35_panel_pilot/metrics.csv",
+      "sha256": "c1f8410fdc687525b6c54a132ad04739ce320af5ecb9fb67eaff15d5261bc6cc"
+    },
+    {
+      "path": "results/tabpfn35_pilot/metrics.csv",
+      "sha256": "501d77d0a6f8e77ced2fcc304669ddc198a3c7f4540310840f2ff9ec9f703044"
+    },
+    {
+      "path": "results/uncertainty/aggregate_metrics.csv",
+      "sha256": "0fb21b06fb5e8533e2472eadf67cbfe7418a53d9fb2e3a3960eb7171a293622c"
+    },
+    {
+      "path": "results/uncertainty/metrics.csv",
+      "sha256": "26cb0a212305102936d9ca8ba743d983644d787f5ee7fcd71ba03b97325f5726"
+    }
+  ],
+  "sha256": "9471214b483973c3f8425ed40daf1d7c136724685a82b8667fc816ddffc28940",
+  "new_experiments_run": false,
+  "original_files_modified": false
+}

@@ -1,0 +1,82 @@
+{
+  "config": {
+    "point_model": "structure_macro_prices_wages",
+    "horizons": [
+      1,
+      2,
+      3
+    ],
+    "robust_variants": [
+      "component_median",
+      "ridge_light",
+      "seasonal_blend"
+    ],
+    "ridge_light_weights_bolt_ridge_seasonal": [
+      0.4,
+      0.2,
+      0.4
+    ],
+    "seasonal_blend_weight": 0.5,
+    "nominal_levels": [
+      0.5,
+      0.8,
+      0.9,
+      0.95
+    ],
+    "interval_methods": [
+      "global_log",
+      "horizon_log",
+      "adaptive_log"
+    ],
+    "interval_first_origin": "2024-06-01",
+    "calibration_target_months": 2,
+    "scale_shrinkage_pseudocount": 6,
+    "scale_floor_log": 0.005,
+    "primary_window": "public_origins_jun_sep",
+    "secondary_window": "later_origins",
+    "case_rules": [
+      "negative_surprise",
+      "positive_surprise",
+      "national_movement_low_local_surprise",
+      "local_peer_surprise"
+    ],
+    "case_news_policy": "Selection and category/peer explanations saved before external event lookup; unexplained cases retained.",
+    "mobility_hypothesis": "Monthly municipal mobility change at origin predicts next-month error; require stable geographic keys, monthly history and verified releases.",
+    "availability": "Frozen cached point model; observed-prefix prequential research. Target release dates and external vintage timestamps unknown. Balanced cohort selected retrospectively.",
+    "selection": "No hyperparameter search or new model families. All robust variants retained. Main model frozen before this round.",
+    "benchmark": {
+      "methods": [
+        "cusum",
+        "page_hinkley",
+        "ewma",
+        "conformal_bh"
+      ],
+      "calibration_seed": 202610091,
+      "reference_seed": 202610090,
+      "evaluation_seed": 202610092,
+      "calibration_panels": 20,
+      "evaluation_panels": 20,
+      "municipalities_per_panel": 2016,
+      "target_false_alerts_per_mo_month": 0.03,
+      "notification_refractory_months": 3,
+      "event_index": 5,
+      "hit_window_months": 4,
+      "affected_fraction": 0.1,
+      "log_step": 0.15,
+      "log_drift_per_month": 0.04,
+      "log_temporary_shock": 0.2,
+      "temporary_duration_months": 2,
+      "scenarios": [
+        "control",
+        "step",
+        "drift",
+        "temporary",
+        "national"
+      ],
+      "scope": "Independent resampled panels conditional on the real fixed background. Null means no added change; real background may contain unlabelled events. After-observation detection, not early forecast. BH is audited empirically; dependent scores do not establish a universal FDR guarantee."
+    }
+  },
+  "started_at": "2026-10-09T12:24:41.137595+00:00",
+  "source_sha256": "77834eec18ed1ca077a8dbd893472d6ae9155193a51071bd267d4900fd60f48d",
+  "decision_time": "origin month end in observed-prefix simulation; actual publication cutoff unverified"
+}

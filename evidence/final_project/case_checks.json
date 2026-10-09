@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "selection_frozen_before_news": true,
+  "peers_use_only_origin_features": true,
+  "category_yoy_contributions_add_up": true,
+  "mobility_ablation_not_fabricated": true,
+  "real_event_precision_recall_unavailable": true
+}

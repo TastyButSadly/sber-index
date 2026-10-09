@@ -1,0 +1,147 @@
+[
+  {
+    "path": "results/architecture_extensions/ablation_predictions.parquet",
+    "sha256": "adaf8cc3223e69d711571e0d17165f5a77d4effa6c8dd078e9d5942d1733907d",
+    "rows": 163296
+  },
+  {
+    "path": "results/architecture_extensions/predictions.parquet",
+    "sha256": "10f84d7db5352b8d65c91d1c214a6f91d56206f4fb9aa3ded5a79fb5900a60ff",
+    "rows": 544320
+  },
+  {
+    "path": "results/baselines/predictions.parquet",
+    "sha256": "85451edc5b6f80a7039cc232e41832e248bb67eb46c613cdff1c4f6ef714bf64",
+    "rows": 376992
+  },
+  {
+    "path": "results/chronos_cross/predictions.parquet",
+    "sha256": "ba315d96fc13731c167aa5c318579d7d711383ed1339e98eec97c33c00f0c8e5",
+    "rows": 82656
+  },
+  {
+    "path": "results/chronos_multivariate/predictions.parquet",
+    "sha256": "95628cd7f2fbeb94fc6f58ea815deb8b049cfb2a840c853854a58ae10be21426",
+    "rows": 82656
+  },
+  {
+    "path": "results/chronos_residual/predictions.parquet",
+    "sha256": "dcd38e8d04b7678d88b781d37796e43d6dea69c2e43eab61376fb346beef6de2",
+    "rows": 82656
+  },
+  {
+    "path": "results/chronos_smoke/predictions.parquet",
+    "sha256": "bea39d9774d5d7b76f246aeabe7a8288056c79a14e18d779606b89f712bcc1e4",
+    "rows": 32
+  },
+  {
+    "path": "results/chronos_univariate/predictions.parquet",
+    "sha256": "6a73618ad6d40b8ac7d86d2bc9f85457f0dd3844fa2f00bd8b43a41a94616390",
+    "rows": 82656
+  },
+  {
+    "path": "results/combined_sources/predictions.parquet",
+    "sha256": "77834eec18ed1ca077a8dbd893472d6ae9155193a51071bd267d4900fd60f48d",
+    "rows": 598752
+  },
+  {
+    "path": "results/contest_horizons/predictions.parquet",
+    "sha256": "a3d6b8108f03179f78e27457ff193f662bd8987926c1fbeaa8809bc581966809",
+    "rows": 4608
+  },
+  {
+    "path": "results/final_project/interval_predictions.parquet",
+    "sha256": "dbcba29cda641ed0842a91933efda96276fd921c177da6a81ca11311ae54f76b",
+    "rows": 362880
+  },
+  {
+    "path": "results/final_project/predictions.parquet",
+    "sha256": "e34ff3df66e5bc03b53ca973e1b329543fa83f3b4fdeb779a9c14b6c4a23a994",
+    "rows": 217728
+  },
+  {
+    "path": "results/formula_variants/predictions.parquet",
+    "sha256": "ecaea02bf3d772c356510c9b7ce1a242fe2e3cb7230a4f4e86c89b3e120be2e7",
+    "rows": 516096
+  },
+  {
+    "path": "results/full_calendar/predictions.parquet",
+    "sha256": "ebfaae6e1f57a2efb611967f032ce1bbe4e903e48ac599fcd816d7c0279d2805",
+    "rows": 272160
+  },
+  {
+    "path": "results/generalization/predictions.parquet",
+    "sha256": "c3419819b79828b68df8cf4cbb1542f9244ead38c2abe0d8996c522de15a44a3",
+    "rows": 181440
+  },
+  {
+    "path": "results/hypotheses/predictions.parquet",
+    "sha256": "dd9ec2f59c42e5f5989db5f7a455b60f3a6feb28b72a2224be20788da4547cc1",
+    "rows": 1931328
+  },
+  {
+    "path": "results/hypothesis_analysis/selected_ensemble_predictions.parquet",
+    "sha256": "83f582f77efabea32f299c22d08445042354991ca1be005162ce3d28e22c8e1d",
+    "rows": 54432
+  },
+  {
+    "path": "results/new_model_calibration/corrected_point_predictions.parquet",
+    "sha256": "9e931b9f8e8b252b4536560cf4389de6afba45db9a59c70cf15e3df77198aeef",
+    "rows": 241920
+  },
+  {
+    "path": "results/new_model_calibration/interval_predictions.parquet",
+    "sha256": "d07199ac88e37dbf6fec6d601b97bbd5f9d618891fc2d58ce24e2fbdec24c148",
+    "rows": 725760
+  },
+  {
+    "path": "results/next_forecast_checks/predictions.parquet",
+    "sha256": "351e60ac4aac3502847b7ce4eff9f47b2ee7f0ba6863366793d1b45003be0e2f",
+    "rows": 435456
+  },
+  {
+    "path": "results/point_ensemble/all_candidate_predictions.parquet",
+    "sha256": "b3b6fabf6776235e937b72f01b2663a8b966efd8a36a7dadfd9dd34d458602e8",
+    "rows": 870912
+  },
+  {
+    "path": "results/point_ensemble/predictions.parquet",
+    "sha256": "9e18e789d8b0353ef847d15980346dd72c7e02f5f51f100fd8feed58840c08f2",
+    "rows": 574560
+  },
+  {
+    "path": "results/prophet_smoke/predictions.parquet",
+    "sha256": "2b3829a318646375a0200dc05c95b688577e86f28873d11cd9f575d8d10c9593",
+    "rows": 32
+  },
+  {
+    "path": "results/reference_audit/predictions.parquet",
+    "sha256": "e898df58c5893acf7b3836ea691bd52aff04401e1cd345ffbc4c2e398ed5056b",
+    "rows": 2334528
+  },
+  {
+    "path": "results/residual_economy/predictions.parquet",
+    "sha256": "6e06de2410f9e96a283a3723bb3a0bf7b9035e18f031c5f0fa98c4e5e477bbae",
+    "rows": 435456
+  },
+  {
+    "path": "results/ridge_grid/predictions.parquet",
+    "sha256": "d2dcbad82565ceb3746825bdc5aa6a5ec2eeaec5cd86de604fe0ecdbadf12f54",
+    "rows": 1548288
+  },
+  {
+    "path": "results/tabpfn35_panel_pilot/predictions.parquet",
+    "sha256": "111ab8dcf3552ea0a3706219225fc2d456a105b2e0a0772cdf9b2b5394900ade",
+    "rows": 3072
+  },
+  {
+    "path": "results/tabpfn35_pilot/predictions.parquet",
+    "sha256": "9a070cfa3c9155100153266181030ceaf8c05f05d3608eae60664a9b14e9f558",
+    "rows": 768
+  },
+  {
+    "path": "results/uncertainty/predictions.parquet",
+    "sha256": "04915b319a4f81d02ffda91b72fb7bf746b54eeb359ed157a8e34a8aa1273fab",
+    "rows": 120960
+  }
+]

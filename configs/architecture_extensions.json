@@ -1,0 +1,12 @@
+{
+  "horizons": [1, 2, 3],
+  "ridge_alpha": 3.0,
+  "sample_weight_power": 1.5,
+  "extra_feature_scale": 0.1,
+  "macro_feature_scale": 0.03,
+  "huber_epsilon": 1.35,
+  "huber_alpha": 3.0,
+  "hist_mae": {"max_iter": 100, "max_leaf_nodes": 7, "learning_rate": 0.05, "l2_regularization": 10.0, "min_samples_leaf": 64},
+  "early_target_cutoff": "2024-05-01",
+  "warning": "exploratory on already inspected history; latest geographic mapping and conservatively lagged macro snapshots"
+}

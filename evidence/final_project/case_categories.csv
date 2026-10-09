@@ -1,0 +1,25 @@
+﻿case_rule,territory_id,target,category,actual_rub,year_ago_rub,change_yoy_rub,interpretation
+negative_surprise,542,2024-12-01,Здоровье,888,887,1.0,observed category YoY contribution; not a causal decomposition of ensemble prediction error
+negative_surprise,542,2024-12-01,Маркетплейсы,4822,2662,2160.0,observed category YoY contribution; not a causal decomposition of ensemble prediction error
+negative_surprise,542,2024-12-01,Общественное питание,314,466,-152.0,observed category YoY contribution; not a causal decomposition of ensemble prediction error
+negative_surprise,542,2024-12-01,Продовольствие,10873,11015,-142.0,observed category YoY contribution; not a causal decomposition of ensemble prediction error
+negative_surprise,542,2024-12-01,Транспорт,547,758,-211.0,observed category YoY contribution; not a causal decomposition of ensemble prediction error
+negative_surprise,542,2024-12-01,Other categories,4506,4988,-482.0,total minus named categories
+positive_surprise,2145,2024-12-01,Здоровье,1350,998,352.0,observed category YoY contribution; not a causal decomposition of ensemble prediction error
+positive_surprise,2145,2024-12-01,Маркетплейсы,12010,6612,5398.0,observed category YoY contribution; not a causal decomposition of ensemble prediction error
+positive_surprise,2145,2024-12-01,Общественное питание,360,210,150.0,observed category YoY contribution; not a causal decomposition of ensemble prediction error
+positive_surprise,2145,2024-12-01,Продовольствие,18128,16705,1423.0,observed category YoY contribution; not a causal decomposition of ensemble prediction error
+positive_surprise,2145,2024-12-01,Транспорт,450,586,-136.0,observed category YoY contribution; not a causal decomposition of ensemble prediction error
+positive_surprise,2145,2024-12-01,Other categories,9590,4646,4944.0,total minus named categories
+national_movement_low_local_surprise,1909,2024-11-01,Здоровье,1270,1251,19.0,observed category YoY contribution; not a causal decomposition of ensemble prediction error
+national_movement_low_local_surprise,1909,2024-11-01,Маркетплейсы,4174,3844,330.0,observed category YoY contribution; not a causal decomposition of ensemble prediction error
+national_movement_low_local_surprise,1909,2024-11-01,Общественное питание,324,287,37.0,observed category YoY contribution; not a causal decomposition of ensemble prediction error
+national_movement_low_local_surprise,1909,2024-11-01,Продовольствие,10318,10037,281.0,observed category YoY contribution; not a causal decomposition of ensemble prediction error
+national_movement_low_local_surprise,1909,2024-11-01,Транспорт,1079,1085,-6.0,observed category YoY contribution; not a causal decomposition of ensemble prediction error
+national_movement_low_local_surprise,1909,2024-11-01,Other categories,5240,3567,1673.0,total minus named categories
+local_peer_surprise,1329,2024-12-01,Здоровье,935,903,32.0,observed category YoY contribution; not a causal decomposition of ensemble prediction error
+local_peer_surprise,1329,2024-12-01,Маркетплейсы,6354,4419,1935.0,observed category YoY contribution; not a causal decomposition of ensemble prediction error
+local_peer_surprise,1329,2024-12-01,Общественное питание,286,218,68.0,observed category YoY contribution; not a causal decomposition of ensemble prediction error
+local_peer_surprise,1329,2024-12-01,Продовольствие,12302,12364,-62.0,observed category YoY contribution; not a causal decomposition of ensemble prediction error
+local_peer_surprise,1329,2024-12-01,Транспорт,798,719,79.0,observed category YoY contribution; not a causal decomposition of ensemble prediction error
+local_peer_surprise,1329,2024-12-01,Other categories,4571,5273,-702.0,total minus named categories

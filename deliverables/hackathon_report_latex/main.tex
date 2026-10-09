@@ -1,0 +1,610 @@
+% !TeX program = xelatex
+% Standalone source: all charts are editable vector PGFPlots/TikZ graphics.
+\documentclass[12pt,a4paper,landscape]{article}
+\usepackage{fontspec,polyglossia}
+\setmainlanguage{russian}
+\setotherlanguage{english}
+\IfFontExistsTF{Arial}{\setmainfont{Arial}\setsansfont{Arial}}{\setmainfont{DejaVu Sans}\setsansfont{DejaVu Sans}}
+\IfFontExistsTF{Consolas}{\setmonofont{Consolas}\newfontfamily\cyrillicfonttt{Consolas}}{\setmonofont{DejaVu Sans Mono}\newfontfamily\cyrillicfonttt{DejaVu Sans Mono}}
+\usepackage[a4paper,landscape,left=18mm,right=18mm,top=20mm,bottom=18mm,headheight=15pt,headsep=5mm,footskip=9mm]{geometry}
+\usepackage{amsmath,amssymb,tikz,pgfplots,booktabs,array,ragged2e,enumitem,fancyhdr,hyperref}
+\usepackage{colortbl}
+\usetikzlibrary{arrows.meta,positioning,calc}
+\pgfplotsset{compat=1.18}
+\definecolor{Ink}{HTML}{183B32}
+\definecolor{Green}{HTML}{26715D}
+\definecolor{Mint}{HTML}{D9E9E0}
+\definecolor{Paper}{HTML}{F8F8F2}
+\definecolor{Appendix}{HTML}{EDF1E8}
+\definecolor{Rust}{HTML}{B2714C}
+\definecolor{Slate}{HTML}{6B8277}
+\definecolor{Rule}{HTML}{D5DFD7}
+\pagecolor{Paper}\color{Ink}
+\hypersetup{colorlinks=true,urlcolor=Green,linkcolor=Green,pdftitle={СберИндекс: прогноз расходов и сигналы изменений},pdfauthor={Исследовательский проект СберИндекс}}
+\setlength{\parindent}{0pt}\setlength{\parskip}{2.5mm}
+\setlength{\emergencystretch}{3em}
+\setlength{\tabcolsep}{2.5pt}
+\hyphenpenalty=3000\exhyphenpenalty=3000
+\raggedbottom
+\setlist[itemize]{leftmargin=5mm,itemsep=3mm,topsep=2mm,label=\textcolor{Green}{\textbullet}}
+\pagestyle{fancy}\fancyhf{}
+\fancyhead[L]{\fontsize{11}{13}\selectfont\color{Slate} СБЕРИНДЕКС}
+\fancyhead[R]{}
+\fancyfoot[R]{\fontsize{11}{13}\selectfont\color{Slate}\thepage}
+\renewcommand{\headrulewidth}{.4pt}\renewcommand{\footrulewidth}{0pt}
+\newcommand{\PageHead}[2]{{\fontsize{27}{32}\selectfont\bfseries #2\par}}
+\newcommand{\Aside}[1]{\par{\fontsize{15}{19}\selectfont\bfseries\color{Green}#1\par}\vspace{2mm}}
+\newcommand{\Source}[1]{{\fontsize{11}{14}\selectfont\color{Slate}\RaggedRight #1\par}}
+\newcommand{\Takeaway}[1]{\par\vspace{3mm}\textcolor{Rule}{\rule{\linewidth}{.6pt}}\par\vspace{1mm}{\fontsize{15}{20}\selectfont\bfseries\color{Green}#1\par}}
+\newcommand{\Code}[1]{{\fontsize{12}{16}\selectfont\ttfamily #1}}
+\pgfplotsset{ReportAxis/.style={width=.98\linewidth,height=78mm,axis lines=left,axis line style={Rule},tick style={draw=none},tick label style={font=\fontsize{12}{15}\selectfont,color=Ink},label style={font=\fontsize{12}{16}\selectfont,color=Ink},legend style={draw=none,fill=none,font=\fontsize{12}{16}\selectfont,at={(.5,-.31)},anchor=north,legend cell align=left,column sep=6mm,row sep=2mm,nodes={inner xsep=1.5mm}},grid=major,grid style={Rule,thin},scaled ticks=false,/pgf/number format/fixed,/pgf/number format/precision=0,/pgf/number format/1000 sep={\,},enlarge x limits=.04}}
+
+\newcommand{\ChartCaption}[1]{\par\vspace{2mm}{\fontsize{12}{16}\selectfont\color{Ink}\RaggedRight #1\par}}
+\newcommand{\Note}[1]{\par\vspace{4mm}{\fontsize{12}{16}\selectfont\color{Ink}\RaggedRight #1\par}}
+\newcommand{\MetricTile}[3]{\begin{minipage}[t][46mm][t]{.435\linewidth}\vspace{0pt}\RaggedRight{\fontsize{37}{43}\selectfont\bfseries\color{Green}#1\par}\vspace{2mm}{\fontsize{17}{21}\selectfont\bfseries #2\par}\vspace{2mm}{\fontsize{13}{17}\selectfont #3\par}\end{minipage}}
+\begin{document}
+\fontsize{14}{19}\selectfont\RaggedRight
+\thispagestyle{empty}\pagecolor{Ink}\color{Paper}
+{\fontsize{14}{18}\selectfont СБЕРИНДЕКС}\par
+\par\vspace{39mm}
+{\fontsize{42}{49}\selectfont\bfseries Прогноз расходов\par и сигналы изменений\par}
+\clearpage\pagecolor{Paper}\color{Ink}
+
+\clearpage\PageHead{Задача}{Что мы решаем}\par\vspace{7mm}
+
+По ежемесячным безналичным расходам оцениваем будущую динамику муниципалитета и выделяем изменения, которые стоит проверить аналитику.
+\par\vspace{10mm}
+\begin{minipage}[t]{.30\linewidth}\vspace{0pt}\RaggedRight
+\Aside{Сколько ожидаем}
+Прогноз расходов на 1-3 месяца. Он учитывает сезонность, общую экономическую динамику и историю территории.
+\par\vspace{5mm}\Aside{Для чего}
+Задать ориентир для планирования и последующего сравнения с фактом.
+\end{minipage}\hfill
+\begin{minipage}[t]{.30\linewidth}\vspace{0pt}\RaggedRight
+\Aside{Каков диапазон}
+Интервал вокруг прогноза. Его ширина связана с прошлой ошибкой и выбранным уровнем покрытия.
+\par\vspace{5mm}\Aside{Для чего}
+Оценить возможный разброс будущих значений и рассмотреть несколько сценариев.
+\end{minipage}\hfill
+\begin{minipage}[t]{.30\linewidth}\vspace{0pt}\RaggedRight
+\Aside{Где изменился режим}
+После появления новых данных детектор проверяет, стала ли последовательность отклонений необычной для этой территории.
+\par\vspace{5mm}\Aside{Для чего}
+Выделить муниципалитеты для разбора по категориям расходов и экономическому контексту.
+\end{minipage}
+
+
+\clearpage\PageHead{Данные}{Какие данные использует модель}\par\vspace{7mm}
+
+\begin{minipage}[t]{.47\linewidth}\par\vspace{0pt}\RaggedRight
+{\fontsize{36}{42}\selectfont\bfseries\color{Green}2\,016}\par\Aside{Муниципалитетов}
+Ежемесячные средние безналичные расходы по данным СберИндекса. Муниципалитет далее обозначаем как МО.
+\par\vspace{5mm}\Aside{24 месяца наблюдений}
+Январь 2023 - декабрь 2024. Полная панель: 48\,384 муниципальных месяца.
+\end{minipage}\hfill
+\begin{minipage}[t]{.47\linewidth}\par\vspace{0pt}\RaggedRight
+\Aside{Что прогнозируем}
+Общий показатель расходов в~рублях на один, два и три месяца вперёд. Дополнительно проверены горизонты 6 и 12 месяцев.
+\par\vspace{5mm}\Aside{Что помогает прогнозу}
+Пять категорий расходов, национальные макропоказатели, региональные цены и зарплаты.
+\par\vspace{5mm}\Aside{Что означает доля категории}
+Расходы на категорию, делённые на общие расходы. Например, 5\,000 из 25\,000 рублей на продукты - доля 20\%.
+\end{minipage}
+\Takeaway{Модель учитывает и размер расходов, и то, как устроено потребление}
+
+
+
+\clearpage\PageHead{Результат для аналитика}{Как читать результат решения}\par\vspace{7mm}
+
+\begin{minipage}[t]{.47\linewidth}\vspace{0pt}\RaggedRight
+\Aside{До появления факта}
+Для каждого муниципалитета и будущего месяца получаем \textbf{прогноз расходов в рублях} и \textbf{границы интервала}.
+\par\vspace{6mm}
+Прогноз - ожидаемый уровень. Интервал показывает разброс: при уровне 90\% проверяем, какая доля фактических значений попадает между границами.
+\end{minipage}\hfill
+\begin{minipage}[t]{.47\linewidth}\vspace{0pt}\RaggedRight
+\Aside{После появления факта}
+Сравниваем новые расходы с прогнозом. Отделяем общий сдвиг всех территорий и учитываем обычный масштаб ошибки данного МО.
+\par\vspace{6mm}
+\textbf{Уведомление} возникает при превышении порога детектора изменений. Оно выделяет территорию для проверки: рядом рассматриваем факт, прогноз, историю и категории расходов.
+\end{minipage}
+\par\vspace{9mm}\Aside{Что именно проверяем в экспериментах}
+Ошибка прогноза в рублях, попадание фактов в интервал и доля изменений, которые обнаруживает детектор. Для каждого из трёх результатов используется своя проверка.
+
+
+\clearpage\PageHead{Данные}{Общая динамика и различия территорий}\par\vspace{7mm}
+\begin{minipage}[t]{.62\linewidth}\par\vspace{0pt}\RaggedRight\begin{tikzpicture}\begin{axis}[ReportAxis,width=.86\linewidth,legend columns=1,xtick={1,7,13,19,24},xticklabels={01.23,07.23,01.24,07.24,12.24},ytick distance=5,ylabel={тыс. руб.},xlabel={Месяц наблюдения}]
+\addplot[draw=none,fill=Mint,forget plot] coordinates {(1.0000,26.63050) (2.0000,27.84650) (3.0000,30.63425) (4.0000,28.76225) (5.0000,29.92425) (6.0000,30.48375) (7.0000,31.54500) (8.0000,32.18875) (9.0000,30.18900) (10.0000,31.16700) (11.0000,31.80050) (12.0000,37.43600) (13.0000,29.27800) (14.0000,32.14125) (15.0000,35.48850) (16.0000,34.55225) (17.0000,35.21400) (18.0000,36.11175) (19.0000,37.03825) (20.0000,37.56050) (21.0000,34.86225) (22.0000,36.47675) (23.0000,36.58800) (24.0000,42.99200) (24.0000,27.28175) (23.0000,22.81475) (22.0000,22.91350) (21.0000,21.60800) (20.0000,23.50725) (19.0000,23.25450) (18.0000,22.62700) (17.0000,22.40650) (16.0000,22.20700) (15.0000,22.56075) (14.0000,20.59825) (13.0000,18.35950) (12.0000,24.02775) (11.0000,20.01400) (10.0000,19.53325) (9.0000,18.91800) (8.0000,20.34100) (7.0000,20.08100) (6.0000,19.29675) (5.0000,19.20500) (4.0000,18.68450) (3.0000,20.56875) (2.0000,19.08500) (1.0000,17.84550)} \closedcycle;
+\addplot[Green,line width=2.5pt,] coordinates {(1.0000,20.63250) (2.0000,22.05600) (3.0000,23.95850) (4.0000,21.95550) (5.0000,22.56600) (6.0000,22.75700) (7.0000,23.76950) (8.0000,23.96400) (9.0000,22.32450) (10.0000,23.15000) (11.0000,23.65750) (12.0000,28.22100) (13.0000,21.68250) (14.0000,24.21950) (15.0000,26.66600) (16.0000,26.07050) (17.0000,26.37150) (18.0000,26.84550) (19.0000,27.62600) (20.0000,27.98100) (21.0000,25.89900) (22.0000,27.21850) (23.0000,27.18150) (24.0000,32.49650)};\addlegendentry{Медиана}
+\addplot[Rust,line width=2pt] coordinates {(1.0000,26.63050) (2.0000,27.84650) (3.0000,30.63425) (4.0000,28.76225) (5.0000,29.92425) (6.0000,30.48375) (7.0000,31.54500) (8.0000,32.18875) (9.0000,30.18900) (10.0000,31.16700) (11.0000,31.80050) (12.0000,37.43600) (13.0000,29.27800) (14.0000,32.14125) (15.0000,35.48850) (16.0000,34.55225) (17.0000,35.21400) (18.0000,36.11175) (19.0000,37.03825) (20.0000,37.56050) (21.0000,34.86225) (22.0000,36.47675) (23.0000,36.58800) (24.0000,42.99200)};\addlegendentry{75-й перцентиль}
+\end{axis}\end{tikzpicture}\ChartCaption{Средние расходы по МО, тыс. руб. Зелёная линия - медиана; коричневая - 75-й перцентиль. Полоса - центральные 50\% территорий.}\end{minipage}\hfill\begin{minipage}[t]{.33\linewidth}\par\vspace{0pt}\RaggedRight{\fontsize{40}{44}\selectfont\bfseries\color{Green} 48\,384}\par\vspace{2mm}Муниципальных месяцев в~полной панели\par\vspace{7mm}\Aside{Что измеряем}
+Опубликованный показатель средних безналичных расходов. Total и пять наблюдаемых категорий\par\vspace{4mm}\end{minipage}\Takeaway{Общую траекторию и локальные отклонения моделируем отдельно}
+
+
+
+\clearpage\PageHead{Механизм}{Локальная динамика требует своей модели}\par\vspace{7mm}
+\begin{minipage}[t]{.62\linewidth}\par\vspace{0pt}\RaggedRight\begin{tikzpicture}\begin{axis}[ReportAxis,width=.86\linewidth,legend columns=1,xtick={1,4,7,10,12},xticklabels={янв.,апр.,июл.,окт.,дек.},ytick distance=5,ylabel={Годовой рост, \%},xlabel={Месяц 2024 года}]
+\addplot[draw=none,fill=Mint,forget plot] coordinates {(1.0000,17.46816) (2.0000,21.24174) (3.0000,21.97989) (4.0000,25.58583) (5.0000,22.67017) (6.0000,24.08160) (7.0000,21.88052) (8.0000,21.90066) (9.0000,20.33482) (10.0000,23.12296) (11.0000,20.10666) (12.0000,19.86061) (12.0000,7.99789) (11.0000,7.86607) (10.0000,11.12467) (9.0000,8.39220) (8.0000,10.13545) (7.0000,9.99641) (6.0000,11.86483) (5.0000,10.66730) (4.0000,12.41075) (3.0000,3.09044) (2.0000,1.27526) (1.0000,-3.02091)} \closedcycle;
+\addplot[Green,line width=2.5pt,] coordinates {(1.0000,7.20643) (2.0000,11.22282) (3.0000,12.67612) (4.0000,19.22071) (5.0000,17.23404) (6.0000,18.44575) (7.0000,16.52150) (8.0000,16.22970) (9.0000,14.70146) (10.0000,16.83713) (11.0000,14.17397) (12.0000,14.66119)};\addlegendentry{Медиана}
+\addplot[Rust,line width=2pt] coordinates {(1.0000,17.46816) (2.0000,21.24174) (3.0000,21.97989) (4.0000,25.58583) (5.0000,22.67017) (6.0000,24.08160) (7.0000,21.88052) (8.0000,21.90066) (9.0000,20.33482) (10.0000,23.12296) (11.0000,20.10666) (12.0000,19.86061)};\addlegendentry{90-й перцентиль}
+\end{axis}\end{tikzpicture}\ChartCaption{Годовое изменение расходов в 2024 году. Зелёная линия - медиана; коричневая - 90-й перцентиль. Полоса - 10-й и 90-й процентили между МО.}\end{minipage}\hfill\begin{minipage}[t]{.33\linewidth}\par\vspace{0pt}\RaggedRight\Aside{Сопоставимые изменения}
+Для каждого МО считаем рост к~тому же месяцу предыдущего года. Это отделяет динамику от масштаба расходов\par\vspace{4mm}\Aside{Архитектурный вывод}
+Национальный фактор описывает общий режим, локальные эксперты - траекторию конкретного МО\par\vspace{4mm}\end{minipage}
+
+
+
+\clearpage\PageHead{Протокол}{Каждый прогноз начинается с~известной истории}\par\vspace{7mm}
+
+\begin{tikzpicture}[x=1mm,y=1mm,every node/.style={font=\fontsize{15}{20}\selectfont}]
+\fill[Mint] (0,8) rectangle (123,47);
+\draw[Green,line width=1.5pt,-{Latex[length=3mm]}] (0,25)--(253,25);
+\node[anchor=west,font=\bfseries] at (8,39) {Наблюдённая история};
+\node[anchor=west] at (8,14) {Обучение и прошлые ошибки};
+\foreach \x/\lab in {123/июнь,163/июль,203/август,243/сентябрь}{\draw[Ink] (\x,21)--(\x,29);\node[anchor=north] at (\x,18) {\lab};}
+\node[anchor=south,font=\bfseries\color{Green}] at (163,32) {$h=1$};
+\node[anchor=south,font=\bfseries\color{Green}] at (203,32) {$h=2$};
+\node[anchor=south,font=\bfseries\color{Green}] at (243,32) {$h=3$};
+\end{tikzpicture}
+\par\vspace{6mm}
+\begin{minipage}[t]{.47\linewidth}\par\vspace{0pt}\RaggedRight\Aside{Единый список прогнозов}
+Последний известный месяц - точка выпуска прогноза. От неё считаем горизонт: один, два или три месяца. Модели сравниваем на одинаковых территориях и целевых месяцах.
+\end{minipage}\hfill
+\begin{minipage}[t]{.47\linewidth}\par\vspace{0pt}\RaggedRight\Aside{Проверка на двух периодах}
+Первый период: прогнозы выпущены в~июне-сентябре 2024 года (24\,192 строки). Второй: в~октябре-ноябре (6\,048 строк). Каждый выпуск использует только предшествующую историю.
+\end{minipage}
+\Takeaway{На каждом выпуске используются только данные предшествующей истории}
+
+
+
+
+\clearpage\PageHead{Архитектура}{1. Подготавливаем историю и общий прогноз}\par\vspace{7mm}
+
+\begin{tikzpicture}[x=1mm,y=1mm,box/.style={draw=Rule,fill=Mint,text width=66mm,minimum height=15mm,align=center,font=\fontsize{15}{19}\selectfont},arr/.style={Green,line width=1.2pt,-{Latex[length=3mm]}}]
+\node[box] (a) at (35,0) {История до выпуска};
+\node[box] (b) at (125,0) {Общий и локальный ряд};
+\node[box] (c) at (215,0) {Прогноз общего фактора};
+\draw[arr] (a.east)--(b.west);\draw[arr] (b.east)--(c.west);
+\end{tikzpicture}\par\vspace{7mm}
+\begin{minipage}[t]{.30\linewidth}\par\vspace{0pt}\RaggedRight
+\Aside{История до текущего месяца}
+Для каждого МО берём общий расход и пять категорий. Всё после точки выпуска прогноза исключаем до расчёта признаков и обучения.
+\par\vspace{5mm}\Aside{Результат этапа}
+Известная история каждой территории и доступные экономические показатели.
+\end{minipage}\hfill
+\begin{minipage}[t]{.30\linewidth}\par\vspace{0pt}\RaggedRight
+\Aside{Логарифм и отклонение}
+Переводим расходы в~логарифмы. В каждом месяце вычитаем медиану по МО: остаётся локальный ряд, который получает модель.
+\par\vspace{5mm}\Aside{Результат этапа}
+$r_{i,t}=\log y_{i,t}-F_t$, где $F_t$ - медиана логарифмов.
+\end{minipage}\hfill
+\begin{minipage}[t]{.30\linewidth}\par\vspace{0pt}\RaggedRight
+\Aside{Прогноз общего фактора}
+Берём уровень того же месяца прошлого года и добавляем сглаженный годовой темп панели. Недавние месяцы имеют больший вес (EMA).
+\par\vspace{5mm}\Aside{Результат этапа}
+Общий прогноз $\widehat F_{t+h}$ для горизонтов 1, 2 и 3 месяца.
+\end{minipage}
+\par\vspace{10mm}\Aside{Почему используем логарифм}
+Рост на 10\% даёт одну и ту же прибавку $\log(1{,}1)$ и для малых, и для крупных МО. Так модели сравнивают относительную динамику, а не только размер расходов.
+
+
+
+\clearpage\PageHead{Архитектура}{2. Получаем три прогноза и смешиваем их}\par\vspace{7mm}
+
+\begin{minipage}[t]{.30\linewidth}\par\vspace{0pt}\RaggedRight
+\Aside{Chronos-Bolt: 40\%}
+Предобученная модель временных рядов. Получает историю локального отклонения общего расхода и выдаёт медианный прогноз этого отклонения.
+\par\vspace{4mm}\Aside{Что добавляет}
+Узнаёт форму траектории из своей предварительной подготовки; на нашей панели веса Bolt не дообучаются.
+\end{minipage}\hfill
+\begin{minipage}[t]{.30\linewidth}\par\vspace{0pt}\RaggedRight
+\Aside{Ridge: 20\%}
+Обучаем отдельную регрессию для каждого горизонта на общей панели МО. Цель - будущее локальное отклонение расходов.
+\par\vspace{4mm}\Aside{Что получает}
+Текущие, прошлые и сезонные отклонения категорий, их изменения, логарифмы долей, макро, ИПЦ и зарплату.
+\end{minipage}\hfill
+\begin{minipage}[t]{.30\linewidth}\par\vspace{0pt}\RaggedRight
+\Aside{Сезонная модель: 40\%}
+Берёт расходы того же месяца прошлого года и средний индивидуальный годовой темп за три последних месяца. Общий темп приводится к~той же EMA-оценке.
+\par\vspace{4mm}\Aside{Что добавляет}
+Сохраняет собственную сезонность территории и устойчивый годовой ориентир.
+\end{minipage}
+\par\vspace{8mm}\Aside{Как получаем итог}
+К локальным прогнозам возвращаем общий фактор и переводим результат в~рубли: $\widehat y_i=\exp(\widehat F+\widehat r_i)$. Затем смешиваем уже рублёвые прогнозы.
+\par\vspace{3mm}{\fontsize{20}{26}\selectfont $\widehat y=0{,}4\widehat y_{\mathrm{Bolt}}+0{,}2\widehat y_{\mathrm{Ridge}}+0{,}4\widehat y_{\mathrm{season}}$}\par
+
+
+
+\clearpage\PageHead{Путь к~решению}{Главный прирост дала структура расходов}\par\vspace{7mm}
+\begin{minipage}[t]{.62\linewidth}\par\vspace{0pt}\RaggedRight\begin{tikzpicture}\begin{axis}[ReportAxis,width=.75\linewidth,xmin=695,xtick distance=10,xmax=726,ytick={1,2,3,4,5},yticklabels={{EMA-ансамбль},{+ Доли категорий},{+ Макро},{+ ИПЦ и зарплата},{Вес 40/20/40}},ymin=.5,ymax=5.5,y dir=reverse,xlabel={MAE, руб.},ymajorgrids=false,legend columns=1]
+\addplot[only marks,mark=*,mark size=3.5pt,Green] coordinates {(719.4868,1.00000) (708.2537,2.00000) (707.7773,3.00000) (706.9075,4.00000) (702.6774,5.00000)};\addlegendentry{Июнь-сентябрь}
+\end{axis}\end{tikzpicture}\ChartCaption{MAE сохранённых конфигураций, руб. Прогнозы выпущены в~июне-сентябре 2024; горизонты 1-3 месяца.}\end{minipage}\hfill\begin{minipage}[t]{.33\linewidth}\par\vspace{0pt}\RaggedRight{\fontsize{40}{44}\selectfont\bfseries\color{Green} 11,2}\par\vspace{2mm}Рубля снижения MAE после добавления долей категорий\par\vspace{7mm}\Aside{Экономический смысл}
+Структура расходов помогает отличать территории с~похожим total, но разной динамикой продовольствия и маркетплейсов\par\vspace{4mm}\Aside{Дальнейшая настройка}
+Макро, ИПЦ и зарплата дополняют Ridge. Фиксированные веса уменьшают зависимость от одной модели\par\vspace{4mm}\end{minipage}\Takeaway{Последовательные абляции отделяют вклад данных от вклада архитектуры}
+
+
+
+\clearpage\PageHead{Качество}{Ошибка ансамбля в~двух периодах}\par\vspace{7mm}
+\begin{minipage}[t]{.62\linewidth}\par\vspace{0pt}\RaggedRight\begin{tikzpicture}\begin{axis}[ReportAxis,width=.75\linewidth,xmin=680,xtick distance=50,xmax=960,ytick={1,2,3,4},yticklabels={{Равные веса},{40/20/40},{Медиана},{Сезонная смесь}},ymin=.5,ymax=4.5,y dir=reverse,xlabel={MAE, руб.},ymajorgrids=false,legend columns=1]
+\addplot[only marks,mark=*,mark size=3.5pt,Green] coordinates {(706.9075,0.91000) (702.6774,1.91000) (743.1349,2.91000) (765.8001,3.91000)};\addlegendentry{Июнь-сентябрь}
+\addplot[only marks,mark=*,mark size=3.5pt,Rust] coordinates {(854.4253,1.09000) (834.9989,2.09000) (931.0749,3.09000) (828.4692,4.09000)};\addlegendentry{Октябрь-ноябрь}
+\end{axis}\end{tikzpicture}\ChartCaption{MAE - средняя абсолютная ошибка прогноза в рублях. Июнь-сентябрь и октябрь-ноябрь 2024. Для каждого периода модели сравниваются на одинаковых фактах.}\end{minipage}\hfill\begin{minipage}[t]{.33\linewidth}\par\vspace{0pt}\RaggedRight{\fontsize{40}{44}\selectfont\bfseries\color{Green} 702,7}\par\vspace{2mm}MAE комбинации 40/20/40 в~июне-сентябре\par\vspace{7mm}{\fontsize{40}{44}\selectfont\bfseries\color{Green} 835,0}\par\vspace{2mm}MAE той же комбинации в~октябре-ноябре\par\vspace{7mm}\Aside{Принцип выбора}
+Сравниваем ошибку в~обоих периодах. Весовая комбинация задана заранее, без дополнительного поиска по поздним фактам\par\vspace{4mm}\end{minipage}
+
+
+
+\clearpage\PageHead{Горизонты}{Ошибка растёт с~горизонтом и зависит от режима}\par\vspace{7mm}
+\begin{minipage}[t]{.62\linewidth}\par\vspace{0pt}\RaggedRight\begin{tikzpicture}\begin{axis}[ReportAxis,width=.75\linewidth,xmin=550,xtick distance=100,xmax=1080,ytick={1,2,3},yticklabels={{1 месяц},{2 месяца},{3 месяца}},ymin=.5,ymax=3.5,y dir=reverse,xlabel={MAE, руб.},ymajorgrids=false,legend columns=1]
+\addplot[only marks,mark=*,mark size=3.5pt,Green] coordinates {(604.3828,0.91000) (706.6567,1.91000) (809.6830,2.91000)};\addlegendentry{Июнь-сентябрь}
+\addplot[only marks,mark=*,mark size=3.5pt,Rust] coordinates {(770.5128,1.09000) (1022.2501,2.09000) (nan,3.09000)};\addlegendentry{Октябрь-ноябрь}
+\end{axis}\end{tikzpicture}\ChartCaption{MAE по горизонту, руб. Равновесный ансамбль; в~октябре-ноябре наблюдаются факты для горизонтов 1 и 2 месяца.}\end{minipage}\hfill\begin{minipage}[t]{.33\linewidth}\par\vspace{0pt}\RaggedRight\Aside{Короткий прогноз}
+На один месяц вперёд MAE ансамбля с равными весами составляет 604~руб. в~июне-сентябре\par\vspace{4mm}\Aside{Поздний период}
+При горизонте два месяца ошибка выше. Такая разбивка показывает, где полезнее настройка общего фактора\par\vspace{4mm}\Aside{Практическое применение}
+Короткие горизонты подходят для оперативного мониторинга; дальние оцениваем отдельно\par\vspace{4mm}\end{minipage}
+
+
+
+\clearpage\PageHead{Устойчивость}{Смотрим на перенос между периодами}\par\vspace{7mm}
+\begin{minipage}[t]{.62\linewidth}\par\vspace{0pt}\RaggedRight\begin{tikzpicture}\begin{axis}[ReportAxis,width=.86\linewidth,xtick={1,2,3},xticklabels={Равные веса,40/20/40,Сезонность},ymin=0,ymax=25,ytick={0,5,10,15,20,25},ylabel={Рост MAE, \%},xlabel={Фиксированная конфигурация},xmajorgrids=false]
+\addplot[Green,line width=1.5pt,mark=*] coordinates {(1,20.8680)(2,18.8311)(3,8.1835)};
+\end{axis}\end{tikzpicture}\ChartCaption{Изменение MAE между двумя периодами, \%. Меньшее значение означает меньший рост ошибки.}\end{minipage}\hfill\begin{minipage}[t]{.33\linewidth}\par\vspace{0pt}\RaggedRight{\fontsize{40}{44}\selectfont\bfseries\color{Green} 18,8\%}\par\vspace{2mm}Рост ошибки комбинации 40/20/40 против 20,9\% у~равных весов\par\vspace{7mm}\Aside{Компромисс}
+Сезонная смесь ещё стабильнее между периодами, но даёт более высокую ошибку июня-сентября\par\vspace{4mm}\Aside{Что выяснили}
+Рост ошибки не объясняется более дальними горизонтами: в~октябре-ноябре коротких прогнозов больше\par\vspace{4mm}\end{minipage}\Takeaway{Устойчивость требует отдельной оценки, а не только минимального среднего MAE}
+
+
+
+\clearpage\PageHead{Объяснимость}{Как объяснить границы интервала}\par\vspace{7mm}
+
+\begin{minipage}[t]{.53\linewidth}\par\vspace{0pt}\RaggedRight
+\Aside{1. Прогноз расходов}
+Центральная оценка $\widehat y$ - ожидаемый уровень расходов муниципалитета.
+\par\vspace{6mm}\Aside{2. Обычная ошибка территории}
+Масштаб $s_i$ оценивается по завершённым прошлым прогнозам. Чем сложнее предсказывать МО, тем шире диапазон.
+\par\vspace{6mm}\Aside{3. Проверенный порог}
+Квантиль $q$ берём по отдельной недавней истории ошибок. Уровень 90\% задаёт, какую долю таких ошибок должен покрыть порог.
+\end{minipage}\hfill
+\begin{minipage}[t]{.39\linewidth}\par\vspace{0pt}\RaggedRight
+\Aside{Зональный: пример расчёта}
+Прогноз: \textbf{25\,556 руб.}\par
+Масштаб ошибки: \textbf{0,0220}\par
+Квантиль: \textbf{2,1134}\par
+\par\vspace{8mm}\Aside{90\%-й диапазон}
+{\fontsize{27}{34}\selectfont\bfseries\color{Green}24\,396-26\,772}\par
+\par\vspace{5mm}Каждая граница воспроизводится из трёх сохранённых величин.
+\end{minipage}
+\par\vspace{8mm}{\fontsize{21}{27}\selectfont $L=\widehat y\exp(-q s_i),\qquad U=\widehat y\exp(q s_i)$}\par
+
+
+
+\clearpage\PageHead{Неопределённость}{Как проверили диапазон прогноза}\par\vspace{7mm}
+\begin{minipage}[t]{.62\linewidth}\par\vspace{0pt}\RaggedRight\begin{tikzpicture}\begin{axis}[ReportAxis,width=.86\linewidth,xtick={50,60,70,80,90,100},ymin=35,ymax=100,ytick={40,50,60,70,80,90,100},xlabel={Номинальный уровень, \%},ylabel={Фактов внутри, \%},legend columns=1]
+\addplot[Slate,line width=1.5pt,dashed,forget plot] coordinates {(50.0000,50.00000) (80.0000,80.00000) (90.0000,90.00000) (95.0000,95.00000)};
+\addplot[Green,line width=1.5pt,mark=*] coordinates {(50.0000,61.38393) (80.0000,85.47867) (90.0000,92.20817) (95.0000,95.88707)};\addlegendentry{Июнь-сентябрь}
+\addplot[Rust,line width=1.5pt,mark=*] coordinates {(50.0000,40.67460) (80.0000,75.19841) (90.0000,87.86376) (95.0000,93.76653)};\addlegendentry{Октябрь-ноябрь}
+\end{axis}\end{tikzpicture}\ChartCaption{Покрытие адаптивных интервалов, \%. Пунктир - заданный уровень; линии - доля фактов внутри границ.}\end{minipage}\hfill\begin{minipage}[t]{.33\linewidth}\par\vspace{0pt}\RaggedRight\Aside{Три метода}
+Глобальный квантиль, квантиль отдельно по горизонту и адаптивный масштаб МО\par\vspace{4mm}\Aside{50 / 80 / 90 / 95\%}
+Для каждого уровня считаем долю попаданий, среднюю ширину и proper interval score\par\vspace{4mm}\Aside{90\%-й global}
+Покрытие 93,2\% в~июне-сентябре и 89,5\% в~позднем. Адаптивная версия помогает объяснить ширину конкретного МО\par\vspace{4mm}\end{minipage}
+
+
+
+\clearpage\PageHead{Мониторинг}{Зачем нужны уведомления}\par\vspace{7mm}
+
+Уведомление - сигнал аналитику, что расходы конкретного муниципалитета изменились необычным образом относительно ожидаемой траектории.
+\par\vspace{8mm}
+\begin{minipage}[t]{.47\linewidth}\vspace{0pt}\RaggedRight
+\Aside{Какое изменение ищем}
+Резкий переход на другой уровень, постепенный сдвиг или временный всплеск. Детектор анализирует последовательность ошибок после поступления фактических данных.
+\par\vspace{6mm}\Aside{Как учитываем фон}
+Общее движение панели отделяем от локального отклонения. Масштаб прошлых ошибок позволяет сопоставить спокойные и волатильные территории.
+\end{minipage}\hfill
+\begin{minipage}[t]{.47\linewidth}\vspace{0pt}\RaggedRight
+\Aside{Что делаем с сигналом}
+Проверяем историю расходов, вклад категорий и похожие МО. Затем сопоставляем наблюдаемое изменение с известными экономическими событиями.
+\par\vspace{6mm}\Aside{Как ограничиваем повторы}
+После уведомления по этому МО выдерживаем три месяца до следующего. Так длительное отклонение не порождает сигнал при каждом месячном обновлении.
+\end{minipage}
+
+
+\clearpage\PageHead{Мониторинг}{От нового факта к уведомлению}\par\vspace{7mm}
+
+\begin{minipage}[t]{.47\linewidth}\vspace{0pt}\RaggedRight
+\Aside{1. Измеряем ошибку}
+Сравниваем фактические расходы с ранее выпущенным прогнозом в логарифмической шкале.
+\par\vspace{6mm}\Aside{2. Выделяем локальное отклонение}
+Вычитаем медианную ошибку панели и делим результат на обычный масштаб ошибки МО. Получаем сопоставимый показатель необычности.
+\end{minipage}\hfill
+\begin{minipage}[t]{.47\linewidth}\vspace{0pt}\RaggedRight
+\Aside{3. Проверяем изменение во времени}
+Page-Hinkley накапливает отклонения от среднего уровня этой последовательности. Порог задаёт, когда накопленное изменение становится сигналом.
+\par\vspace{6mm}\Aside{4. Выделяем МО для проверки}
+Если порог превышен и прошла пауза между уведомлениями, фиксируем сигнал. Аналитик разбирает его по данным территории.
+\end{minipage}
+\par\vspace{8mm}\Aside{Как выбираем порог}
+Порог настраиваем на фоновых тестах без добавленных изменений. Цель - до трёх уведомлений на 100 МО за месяц. Это одно правило для всех детекторов.
+
+
+\clearpage\PageHead{Сигналы}{Как проверили обнаружение изменений}\par\vspace{7mm}
+\begin{minipage}[t]{.62\linewidth}\par\vspace{0pt}\RaggedRight\begin{tikzpicture}\begin{axis}[ReportAxis,width=.75\linewidth,height=65mm,legend style={at={(.5,-.32)},column sep=3mm,row sep=1mm},xmin=60,xtick distance=10,xmax=100,ytick={1,2,3},yticklabels={{Скачок},{Постепенный дрейф},{Временный шок}},ymin=.5,ymax=3.5,y dir=reverse,xlabel={Обнаружено, \%},ymajorgrids=false,legend columns=1]
+\addplot[only marks,mark=*,mark size=3.5pt,Green] coordinates {(96.1692,0.73000) (95.5473,1.73000) (94.4527,2.73000)};\addlegendentry{Page--Hinkley}
+\addplot[only marks,mark=*,mark size=3.5pt,Slate] coordinates {(87.6119,0.91000) (87.0398,1.91000) (86.9403,2.91000)};\addlegendentry{CUSUM}
+\addplot[only marks,mark=*,mark size=3.5pt,Rust] coordinates {(80.6716,1.09000) (80.8706,2.09000) (79.6020,3.09000)};\addlegendentry{EWMA}
+\addplot[only marks,mark=*,mark size=3.5pt,Ink] coordinates {(71.3184,1.27000) (69.6766,2.27000) (70.4726,3.27000)};\addlegendentry{Conformal-BH}
+\end{axis}\end{tikzpicture}\ChartCaption{Доля добавленных изменений, обнаруженных за четыре месяца. Все методы настроены под одинаковую частоту фоновых уведомлений.}\end{minipage}\hfill\begin{minipage}[t]{.33\linewidth}\par\vspace{0pt}\RaggedRight
+\Aside{Как сравнивали}
+В реальные ряды ошибок добавили три типа изменений с известным моментом начала. Считаем долю обнаруженных изменений и время до первого уведомления.
+\par\vspace{5mm}\Aside{Что выбрали}
+Page-Hinkley обнаруживает наибольшую долю изменений во всех трёх сценариях. CUSUM быстрее реагирует на обнаруженные скачки.
+\end{minipage}
+
+
+\clearpage\PageHead{Разбор отклонения}{Разбор отклонения: Зональный}\par\vspace{7mm}
+\begin{minipage}[t]{.62\linewidth}\par\vspace{0pt}\RaggedRight\begin{tikzpicture}\begin{axis}[ReportAxis,width=.86\linewidth,xtick={1,7,13,19,24},xticklabels={01.23,07.23,01.24,07.24,12.24},ytick distance=5,ylabel={тыс. руб.},xlabel={Месяц наблюдения},legend columns=1]
+\addplot[draw=none,fill=Mint,forget plot] coordinates {(19.0000,21.74460) (20.0000,22.46377) (21.0000,19.82930) (22.0000,20.85504) (23.0000,21.63455) (24.0000,26.77239) (24.0000,24.39554) (23.0000,19.28825) (22.0000,18.43808) (21.0000,18.00831) (20.0000,19.81535) (19.0000,18.90017)} \closedcycle;
+\addplot[Ink,line width=1.5pt,] coordinates {(1.0000,15.20700) (2.0000,16.15000) (3.0000,17.73200) (4.0000,14.02200) (5.0000,14.96700) (6.0000,15.06700) (7.0000,15.27700) (8.0000,16.28600) (9.0000,14.06000) (10.0000,14.87700) (11.0000,15.68400) (12.0000,20.77600) (13.0000,15.20300) (14.0000,17.74900) (15.0000,18.58000) (16.0000,19.99100) (17.0000,19.82700) (18.0000,19.77600) (19.0000,21.36400) (20.0000,21.06800) (21.0000,19.05100) (22.0000,20.61800) (23.0000,20.45000) (24.0000,21.95000)};\addlegendentry{Факт}
+\addplot[Rust,line width=1.5pt,mark=*] coordinates {(19.0000,20.27256) (20.0000,21.09805) (21.0000,18.89688) (22.0000,19.60936) (23.0000,20.42774) (24.0000,25.55635)};\addlegendentry{Прогноз}
+\end{axis}\end{tikzpicture}\ChartCaption{Зональный. Факт и прогноз на месяц вперёд, тыс. руб. Полоса - адаптивный 90\%-й интервал.}\end{minipage}\hfill\begin{minipage}[t]{.33\linewidth}\par\vspace{0pt}\RaggedRight\Aside{Зональный, Алтайский край}
+В Зональном расходы выросли год к~году, но декабрь оказался ниже ожидаемой траектории. Рост маркетплейсов сосуществует со снижением ряда других категорий\par\vspace{4mm}\Aside{Что видит аналитик}
+Факт: \textbf{21\,950~руб.}\par Прогноз: \textbf{25\,556~руб.}\par Факт ниже нижней границы диапазона. Для разбора сравниваем изменения категорий.\par\vspace{4mm}\end{minipage}
+
+
+
+\clearpage\PageHead{Разбор отклонения}{Разбор отклонения: Кедровый}\par\vspace{7mm}
+\begin{minipage}[t]{.62\linewidth}\par\vspace{0pt}\RaggedRight\begin{tikzpicture}\begin{axis}[ReportAxis,width=.86\linewidth,xtick={1,7,13,19,24},xticklabels={01.23,07.23,01.24,07.24,12.24},ytick distance=5,ylabel={тыс. руб.},xlabel={Месяц наблюдения},legend columns=1]
+\addplot[draw=none,fill=Mint,forget plot] coordinates {(19.0000,34.77829) (20.0000,34.53627) (21.0000,30.98666) (22.0000,30.93710) (23.0000,31.61810) (24.0000,36.27110) (24.0000,33.63401) (23.0000,28.11469) (22.0000,28.92988) (21.0000,28.27256) (20.0000,31.91455) (19.0000,30.89254)} \closedcycle;
+\addplot[Ink,line width=1.5pt,] coordinates {(1.0000,23.01000) (2.0000,25.58800) (3.0000,28.45600) (4.0000,26.06900) (5.0000,25.32500) (6.0000,27.31400) (7.0000,29.02400) (8.0000,28.37100) (9.0000,26.27500) (10.0000,26.09700) (11.0000,26.37500) (12.0000,29.75700) (13.0000,23.23300) (14.0000,28.04900) (15.0000,29.98200) (16.0000,30.96400) (17.0000,29.45200) (18.0000,32.13000) (19.0000,33.24600) (20.0000,30.91100) (21.0000,29.67900) (22.0000,28.99200) (23.0000,30.52700) (24.0000,41.88800)};\addlegendentry{Факт}
+\addplot[Rust,line width=1.5pt,mark=*] coordinates {(19.0000,32.77789) (20.0000,33.19954) (21.0000,29.59852) (22.0000,29.91666) (23.0000,29.81498) (24.0000,34.92767)};\addlegendentry{Прогноз}
+\end{axis}\end{tikzpicture}\ChartCaption{Кедровый. Факт и прогноз на месяц вперёд, тыс. руб. Полоса - адаптивный 90\%-й интервал.}\end{minipage}\hfill\begin{minipage}[t]{.33\linewidth}\par\vspace{0pt}\RaggedRight\Aside{Кедровый, Томская область}
+В Кедровом декабрьский факт заметно выше прогноза. Основной вклад в~наблюдаемый рост год к~году дают маркетплейсы; похожие территории не повторяют силу всплеска\par\vspace{4mm}\Aside{Что видит аналитик}
+Факт: \textbf{41\,888~руб.}\par Прогноз: \textbf{34\,928~руб.}\par Факт выше верхней границы диапазона. Для разбора смотрим маркетплейсы и похожие территории.\par\vspace{4mm}\end{minipage}
+
+
+
+\clearpage\PageHead{Новости}{Как используем новости и события}\par\vspace{7mm}
+
+\begin{tikzpicture}[x=1mm,y=1mm,every node/.style={font=\fontsize{14}{19}\selectfont,align=center}]
+\draw[Green,line width=1.5pt,-{Latex[length=3mm]}] (8,28)--(251,28);
+\foreach \x in {30,126,218}{\draw[Green,line width=1.3pt] (\x,23)--(\x,33);}
+\node[anchor=south,font=\bfseries] at (30,41) {30 июня};\node[anchor=north] at (30,18) {Прогноз по\\известной истории};
+\node[anchor=south,font=\bfseries] at (126,41) {26 июля};\node[anchor=north] at (126,18) {Опубликовано\\решение ЦБ};
+\node[anchor=south,font=\bfseries] at (218,41) {29 июля};\node[anchor=north] at (218,18) {Решение\\вступает в~силу};
+\end{tikzpicture}\par\vspace{9mm}
+\begin{minipage}[t]{.47\linewidth}\par\vspace{0pt}\RaggedRight\Aside{Реестр источников}
+Семь официальных сообщений Банка России и МЧС: дата публикации, начало действия, тип события, территориальный охват и ссылка
+\end{minipage}\hfill
+\begin{minipage}[t]{.47\linewidth}\par\vspace{0pt}\RaggedRight
+Ставка, известная на момент прогноза, входит в экономические признаки. Официальные сообщения помогают разобрать отклонения и составляют отдельный показатель новостного риска.
+\end{minipage}
+\Takeaway{Данные присоединяем по моменту публикации, а не задним числом по дате события}
+
+
+\Note{Официальные страницы Банка России и МЧС. Пример решения ЦБ от 26.07.2024. Формат реестра и правило as-of приведены в~приложении}
+
+
+\clearpage\PageHead{Конкурсные горизонты}{Как меняется прогноз на длинном горизонте}\par\vspace{7mm}
+\begin{minipage}[t]{.62\linewidth}\par\vspace{0pt}\RaggedRight\begin{tikzpicture}\begin{axis}[ReportAxis,width=.75\linewidth,xmin=900,xtick distance=2000,xmax=8500,ytick={1,2,3,4},yticklabels={{1 месяц},{3 месяца},{6 месяцев},{12 месяцев}},ymin=.5,ymax=4.5,y dir=reverse,xlabel={MAE, руб.},ymajorgrids=false,legend columns=1]
+\addplot[only marks,mark=*,mark size=3.5pt,Green] coordinates {(1315.8368,0.82000) (1826.0896,1.82000) (2718.7308,2.82000) (4935.6947,3.82000)};\addlegendentry{Портфель}
+\addplot[only marks,mark=*,mark size=3.5pt,Slate] coordinates {(3935.2921,1.00000) (4139.9255,2.00000) (4624.0905,3.00000) (7942.6118,4.00000)};\addlegendentry{Prophet}
+\addplot[only marks,mark=*,mark size=3.5pt,Rust] coordinates {(3936.4063,1.18000) (4211.4961,2.18000) (4367.0026,3.18000) (4668.5391,4.18000)};\addlegendentry{Сезонный прогноз}
+\end{axis}\end{tikzpicture}\ChartCaption{MAE на общей выборке 128 МО, руб. Портфель, собственная реализация Prophet и сезонный прогноз.}\end{minipage}\hfill\begin{minipage}[t]{.33\linewidth}\par\vspace{0pt}\RaggedRight\Aside{Общие ключи}
+128 МО и одни и те же факты для каждого метода. По 512 прогнозов на h=1/3, 384 на h=6 и 128 на h=12\par\vspace{4mm}\Aside{Результат}
+Проверенный портфель даёт меньшую MAE, чем наша реализация Prophet, на всех четырёх горизонтах\par\vspace{4mm}\Aside{Дальний горизонт}
+На 12 месяцах сезонный прогноз оказывается сильнее портфеля. Долгосрочное планирование требует отдельного выбора компонентов\par\vspace{4mm}\end{minipage}
+
+
+
+\clearpage\PageHead{Результат}{Результаты решения}\par\vspace{7mm}
+
+\fcolorbox{Mint}{Mint}{\begin{minipage}{.965\linewidth}\par\vspace{5mm}\hspace{4mm}
+\MetricTile{702,7 ₽}{Средняя ошибка прогноза}{Проверка с~июня по сентябрь 2024}\hfill
+\MetricTile{18,8\%}{Рост ошибки в~конце года}{При переносе на октябрь и ноябрь}\hspace{4mm}\par\vspace{3mm}\par\hspace{4mm}
+\MetricTile{89,5\%}{Фактов внутри интервала}{При заданном уровне 90\%, октябрь-ноябрь}\hfill
+\MetricTile{96,2\%}{Обнаруженных скачков}{На тесте изменений в~реальных рядах}\hspace{4mm}\par\vspace{3mm}
+\end{minipage}}
+\par\vspace{5mm}
+Прогноз показывает ожидаемые расходы, интервал - диапазон возможных значений, а детектор - отклонения после поступления новых данных.
+
+
+
+\clearpage\PageHead{Заключение}{Выводы}\par\vspace{7mm}
+\begin{minipage}[t]{.47\linewidth}\vspace{0pt}\RaggedRight
+\Aside{Структура потребления улучшает прогноз}
+Добавление долей категорий снизило MAE с \textbf{719,5 до 708,3 руб.} Территории с похожими общими расходами могут различаться по потреблению. Поэтому модель учитывает доли категорий и их изменения.
+\par\vspace{6mm}\Aside{Качество проверяем в нескольких периодах}
+Ансамбль 40/20/40 дал MAE \textbf{702,7 руб.} в июне-сентябре и \textbf{835,0 руб.} в октябре-ноябре. Для прогноза на 1-3 месяца используем эту комбинацию и оцениваем ошибку отдельно по периоду и горизонту.
+\end{minipage}\hfill
+\begin{minipage}[t]{.47\linewidth}\vspace{0pt}\RaggedRight
+\Aside{Интервал нужен для планирования}
+90\%-й глобальный интервал покрыл \textbf{89,5\%} фактов в октябре-ноябре. Центральный прогноз задаёт ожидаемый уровень, границы - диапазон для сценариев. Ширину рассчитываем по прошлым ошибкам и проверяем на новых фактах.
+\par\vspace{6mm}\Aside{Сигнал объясняем по локальным данным}
+После поступления факта отделяем общее движение панели от отклонения МО. Page-Hinkley обнаружил \textbf{96,2\%} скачков в тесте. Сработавший сигнал разбираем по категориям расходов и похожим территориям.
+\end{minipage}
+\par\vspace{9mm}\Aside{Как применять решение каждый месяц}
+Обновить историю, выпустить прогноз и интервал. После появления факта измерить ошибку, проверить локальный сигнал и разобрать отклонение по категориям и экономическому контексту.
+
+
+\clearpage\thispagestyle{empty}\pagecolor{Ink}\color{Paper}
+{\fontsize{14}{18}\selectfont СБЕРИНДЕКС}\par
+\vspace{39mm}
+{\fontsize{42}{49}\selectfont\bfseries Приложения\par}
+
+\clearpage\pagecolor{Appendix}\color{Ink}\PageHead{Приложение A}{Карта экспериментов и принятых решений}\par\vspace{7mm}
+{\fontsize{12}{16}\selectfont\renewcommand{\arraystretch}{1.18}\begin{tabular}{@{}>{\RaggedRight\arraybackslash}p{61.8mm}>{\RaggedRight\arraybackslash}p{91.2mm}>{\RaggedRight\arraybackslash}p{85.5mm}@{}}\toprule Что проверяли & Что получили & Роль в~решении\\\midrule Ridge, CatBoost, PLS, группы МО & Сезонно-панельная конструкция устойчива & Выбрали компактную локальную регрессию\\
+Bolt и Chronos-2 & Архитектура входа влияет на качество & Bolt включён как локальный эксперт\\
+Доли расходов и макро & Основной сигнал - структура категорий & Включены в Ridge\\
+ИПЦ и региональная зарплата & Небольшой совместный эффект & Исследовательская структурная база\\
+Календарь и 7 финансовых надстроек & Стабильного выигрыша не дали & Зафиксированы как отрицательные абляции\\
+Purge, географические folds, синтетика & Измерен перенос между режимами & Использованы для выбора протокола\\
+Conformal и детекторы & Разные компромиссы ширины и recall & Отдельные контуры неопределённости\\\bottomrule\end{tabular}}\par\vspace{7mm}
+
+
+
+\clearpage\PageHead{Приложение B}{Foundation-модели: проверяли способ использования}\par\vspace{7mm}
+
+\begin{minipage}[t]{.47\linewidth}\par\vspace{0pt}\RaggedRight\Aside{Chronos-Bolt-base}
+Предобученная модель получает одномерный ряд локальных лог-отклонений. После прогноза добавляем общий фактор и возвращаем уровень в~рубли
+\par\vspace{4mm}\Aside{Ridge и сезонность}
+Обучаемый эксперт использует панельные признаки. Сезонный эксперт переносит индивидуальный годовой темп. Смешиваем рублёвые прогнозы
+\end{minipage}\hfill
+\begin{minipage}[t]{.47\linewidth}\par\vspace{0pt}\RaggedRight\Aside{Четыре режима Chronos-2-small}
+Одномерный total; шесть категорий одного МО; cross-learning групп рядов; локальные лог-отклонения
+\par\vspace{4mm}\Aside{Практический вывод}
+В раннем выборе веса дополнения Chronos-2 равны нулю. Это помогло сохранить компактную комбинацию. TabPFN проверен отдельно на CPU-пилотах
+\end{minipage}
+\Takeaway{Foundation-модель оцениваем в~конкретном представлении ряда и составе ансамбля}
+
+
+
+
+\clearpage\PageHead{Приложение C}{MAE и R² измеряют разные стороны качества}\par\vspace{7mm}
+{\fontsize{12}{16}\selectfont\renewcommand{\arraystretch}{1.18}\begin{tabular}{@{}>{\RaggedRight\arraybackslash}p{63.6mm}>{\RaggedRight\arraybackslash}p{38.0mm}>{\RaggedRight\arraybackslash}p{38.0mm}>{\RaggedRight\arraybackslash}p{44.6mm}>{\RaggedRight\arraybackslash}p{44.6mm}@{}}\toprule Конфигурация & MAE июн.-сен. & MAE окт.-ноя. & R² уровня, \% & R² роста, \%\\\midrule Равные веса & 706,9 & 854,4 & 99,2 & \cellcolor{Mint}\textbf{48,5}\\
+40/20/40 & \cellcolor{Mint}\textbf{702,7} & 835,0 & \cellcolor{Mint}\textbf{99,3} & 48,3\\
+Медиана & 743,1 & 931,1 & 99,1 & 45,7\\
+Сезонная смесь & 765,8 & \cellcolor{Mint}\textbf{828,5} & 99,2 & 40,1\\\bottomrule\end{tabular}}\par\vspace{7mm}
+\par\vspace{6mm}\begin{minipage}[t]{.47\linewidth}\par\vspace{0pt}\RaggedRight\Aside{Уровень}
+$R^2$ уровня отражает восстановление различий расходов между МО. На панели с~разным масштабом он высок
+\end{minipage}\hfill\begin{minipage}[t]{.47\linewidth}\par\vspace{0pt}\RaggedRight\Aside{Динамика}
+$R^2$ логарифмического годового роста фокусируется на изменении показателя. Его читаем отдельно от MAE уровня
+\end{minipage}
+\Takeaway{Основная конкурсная метрика - рублёвая MAE на совпадающих ключах}
+
+
+\Note{R² рассчитаны из сохранённых индивидуальных прогнозов. Два R² в~таблице относятся к~основному окну; MAE в~рублях}
+
+
+\clearpage\PageHead{Приложение D}{Внешние данные: проверенные абляции}\par\vspace{7mm}
+\begin{minipage}[t]{.70\linewidth}\vspace{0pt}{\fontsize{12}{16}\selectfont\renewcommand{\arraystretch}{1.18}\begin{tabular}{@{}>{\RaggedRight\arraybackslash}p{105mm}>{\RaggedRight\arraybackslash}p{35.1mm}>{\RaggedRight\arraybackslash}p{35.1mm}@{}}\toprule Добавление к~локальной модели & MAE июн.-сен. & MAE окт.-ноя.\\\midrule EMA-ансамбль без новых признаков & 719,5 & 853,5\\
+Доли расходов & 708,2 & 853,8\\
+Национальное макро & 717,1 & \cellcolor{Mint}\textbf{844,6}\\
+Доли + макро & 707,8 & 853,1\\
+Региональный ИПЦ & 719,2 & 853,2\\
+Региональная зарплата & 720,2 & 856,4\\
+Доли + макро + ИПЦ & 707,8 & 853,3\\
+Доли + макро + зарплата & \cellcolor{Mint}\textbf{706,9} & 854,2\\
+Доли + макро + ИПЦ + зарплата & \cellcolor{Mint}\textbf{706,9} & 854,4\\\bottomrule\end{tabular}}\end{minipage}\hfill\begin{minipage}[t]{.26\linewidth}\vspace{0pt}\RaggedRight \Aside{Июнь-сентябрь}\textbf{706,9 руб.} - доли категорий вместе с макро, ИПЦ и зарплатой.\par\vspace{5mm}\Aside{Октябрь-ноябрь}\textbf{844,6 руб.} - национальное макро.\par\vspace{5mm}Лучший набор признаков зависит от периода. Совместные и одиночные добавления проверяем отдельно.\end{minipage}\par\vspace{7mm}\par\vspace{7mm}\Takeaway{Совместный эффект источников оцениваем отдельно от их одиночного добавления}
+
+\Note{Фиксированные конфигурации. Региональный ИПЦ с~лагом 2 месяца, зарплата с~лагом 3; исторические версии источников - текущие снимки}
+
+
+\clearpage\PageHead{Приложение E}{Календарь и финансовые показатели}\par\vspace{7mm}
+
+\begin{minipage}[t]{.48\linewidth}\par\vspace{0pt}\RaggedRight\Aside{Производственный календарь}
+Праздники, переносы, рабочие субботы, длина месяца и непрерывные нерабочие периоды. Проверены также взаимодействия с~долями расходов
+\par\vspace{4mm}
+Лучший фиксированный локальный эффект:\par
+707,777 $\rightarrow$ 707,764~руб. MAE\par
+\par\vspace{4mm}
+\Aside{Решение}
+Такой прирост не оправдывает включение календарной надстройки в~рабочую модель
+\end{minipage}\hfill\begin{minipage}[t]{.47\linewidth}\par\vspace{0pt}\RaggedRight
+{\fontsize{12}{16}\selectfont\renewcommand{\arraystretch}{1.18}\begin{tabular}{@{}>{\RaggedRight\arraybackslash}p{57.9mm}>{\RaggedRight\arraybackslash}p{27.5mm}>{\RaggedRight\arraybackslash}p{27.5mm}@{}}\toprule Модель остатка & MAE июн.-сен. & MAE окт.-ноя.\\\midrule Без внешних рядов & 751,9 & 942,7\\
+Кредитная ставка & 738,0 & 922,1\\
+Ставка вкладов & 717,3 & 862,9\\
+Настроения & 755,2 & 977,4\\
+Все источники & 733,4 & 904,7\\
+Все + группы МО & 730,9 & 899,0\\
+Все + лаг 3 & 744,6 & 888,1\\
+Структурная база & \cellcolor{Mint}\textbf{706,9} & \cellcolor{Mint}\textbf{854,4}\\\bottomrule\end{tabular}}\par\vspace{7mm}\end{minipage}
+
+\Note{Официальные источники Банка России. Семь финансовых надстроек не вошли в~финальную точку; календарный компаратор отличается от финансового}
+
+
+\clearpage\PageHead{Приложение F}{Перенос между регионами и регуляризация}\par\vspace{7mm}
+\begin{minipage}[t]{.70\linewidth}\vspace{0pt}{\fontsize{12}{16}\selectfont\renewcommand{\arraystretch}{1.18}\begin{tabular}{@{}>{\RaggedRight\arraybackslash}p{105mm}>{\RaggedRight\arraybackslash}p{36.1mm}>{\RaggedRight\arraybackslash}p{36.1mm}@{}}\toprule Схема & MAE июн.-сен. & MAE окт.-ноя.\\\midrule Общая модель с~долями и макро & \cellcolor{Mint}\textbf{707,8} & 853,1\\
+Синтетическое масштабирование & \cellcolor{Mint}\textbf{707,8} & 853,2\\
+Purge последних целей & 722,2 & \cellcolor{Mint}\textbf{846,1}\\
+Географическое исключение & 713,6 & \cellcolor{Mint}\textbf{846,1}\\
+География + синтетика & 713,6 & 846,2\\\bottomrule\end{tabular}}\end{minipage}\hfill\begin{minipage}[t]{.26\linewidth}\vspace{0pt}\RaggedRight \Aside{Что изменилось}Синтетическое масштабирование почти не меняет MAE. Географическое исключение и purge уменьшают ошибку второго периода.\par\vspace{5mm}\Aside{Как читать}Это проверка переноса при доступной истории территории.\end{minipage}\par\vspace{7mm}
+\par\vspace{4mm}\begin{minipage}[t]{.47\linewidth}\par\vspace{0pt}\RaggedRight\Aside{Пять географических folds}
+Ridge обучается на других регионах. Известная история нового МО остаётся доступной во входах; Bolt и сезонность сохраняются
+\end{minipage}\hfill\begin{minipage}[t]{.47\linewidth}\par\vspace{0pt}\RaggedRight\Aside{Синтетика}
+Согласованные сдвиги лог-уровня проверяют масштабную эквивариантность. Доли и общий вес примеров сохраняются
+\end{minipage}
+\Takeaway{Схема обучения показывает, насколько модель переносится между регионами}
+
+
+
+
+
+\clearpage\PageHead{Приложение G}{Общий фон и локальное отклонение}\par\vspace{7mm}
+\begin{minipage}[t]{.47\linewidth}\par\vspace{0pt}\RaggedRight\Aside{Шенталинский, 2024-11}
+Факт движется вместе с~общим фоном: локальное нормализованное отклонение близко к~нулю\par\vspace{4mm}\begin{tikzpicture}\begin{axis}[ReportAxis,width=.86\linewidth,height=66mm,xtick={1,13,24},xticklabels={янв. 23,янв. 24,дек. 24},ytick distance=5,ylabel={тыс. руб.},xlabel={Месяц наблюдения}]
+\addplot[draw=none,fill=Mint,forget plot] coordinates {(19.0000,24.09858) (20.0000,23.96556) (21.0000,21.91486) (22.0000,22.82189) (23.0000,23.78497) (24.0000,28.22670) (24.0000,25.29451) (23.0000,21.69085) (22.0000,21.12437) (21.0000,20.27803) (20.0000,21.81406) (19.0000,21.73135)} \closedcycle;
+\addplot[Ink,line width=1.5pt,] coordinates {(1.0000,17.34900) (2.0000,17.64400) (3.0000,19.69800) (4.0000,18.19900) (5.0000,19.14600) (6.0000,18.89600) (7.0000,19.81000) (8.0000,19.56700) (9.0000,18.78200) (10.0000,19.00900) (11.0000,20.07100) (12.0000,23.29100) (13.0000,18.27700) (14.0000,20.36200) (15.0000,21.73800) (16.0000,21.93800) (17.0000,21.29200) (18.0000,22.16900) (19.0000,22.94600) (20.0000,21.61800) (21.0000,21.76000) (22.0000,21.75200) (23.0000,22.40500) (24.0000,26.63000)};
+\addplot[Rust,line width=1.5pt,] coordinates {(19.0000,22.88437) (20.0000,22.86452) (21.0000,21.08056) (22.0000,21.95674) (23.0000,22.71379) (24.0000,26.72041)};
+\end{axis}\end{tikzpicture}\ChartCaption{Факт и прогноз на месяц вперёд; полоса - 90\%-й интервал.}\end{minipage}\hfill\begin{minipage}[t]{.47\linewidth}\par\vspace{0pt}\RaggedRight\Aside{Судиславский, 2024-12}
+Локальное отклонение отличается от похожие территории; рост маркетплейсов сочетается со снижением прочих расходов\par\vspace{4mm}\begin{tikzpicture}\begin{axis}[ReportAxis,width=.86\linewidth,height=66mm,xtick={1,13,24},xticklabels={янв. 23,янв. 24,дек. 24},ytick distance=5,ylabel={тыс. руб.},xlabel={Месяц наблюдения}]
+\addplot[draw=none,fill=Mint,forget plot] coordinates {(19.0000,24.46802) (20.0000,24.18871) (21.0000,21.88288) (22.0000,23.19709) (23.0000,24.28755) (24.0000,28.91299) (24.0000,26.96977) (23.0000,22.75492) (22.0000,21.81862) (21.0000,20.59047) (20.0000,22.38410) (19.0000,22.00290)} \closedcycle;
+\addplot[Ink,line width=1.5pt,] coordinates {(1.0000,18.30900) (2.0000,18.73700) (3.0000,20.13300) (4.0000,18.63000) (5.0000,19.13300) (6.0000,19.41400) (7.0000,20.06600) (8.0000,20.20000) (9.0000,18.63500) (10.0000,19.77000) (11.0000,20.37100) (12.0000,23.89600) (13.0000,19.35800) (14.0000,20.36800) (15.0000,21.93700) (16.0000,22.20100) (17.0000,21.97300) (18.0000,22.39300) (19.0000,22.96700) (20.0000,22.25600) (21.0000,22.00500) (22.0000,23.30500) (23.0000,23.40700) (24.0000,25.24600)};
+\addplot[Rust,line width=1.5pt,] coordinates {(19.0000,23.20275) (20.0000,23.26891) (21.0000,21.22684) (22.0000,22.49730) (23.0000,23.50875) (24.0000,27.92448)};
+\end{axis}\end{tikzpicture}\ChartCaption{Факт и прогноз на месяц вперёд; полоса - 90\%-й интервал.}\end{minipage}
+
+
+
+\clearpage\PageHead{Приложение H}{Калибровка: покрытие, ширина и score}\par\vspace{7mm}
+{\fontsize{12}{16}\selectfont\renewcommand{\arraystretch}{1.18}\begin{tabular}{@{}>{\RaggedRight\arraybackslash}p{58.9mm}>{\RaggedRight\arraybackslash}p{46.5mm}>{\RaggedRight\arraybackslash}p{40.9mm}>{\RaggedRight\arraybackslash}p{49.4mm}>{\RaggedRight\arraybackslash}p{42.8mm}@{}}\toprule 90\%-й метод & Покр. июн.-сен. & Окт.-ноя. & Шир. июн.-сен. & Окт.-ноя.\\\midrule Global & 93,2\% & \cellcolor{Mint}\textbf{89,5\%} & 4419 & 3936\\
+По горизонту & \cellcolor{Mint}\textbf{92,2\%} & 88,4\% & 4167 & 3758\\
+Adaptive & \cellcolor{Mint}\textbf{92,2\%} & 87,9\% & \cellcolor{Mint}\textbf{4024} & \cellcolor{Mint}\textbf{3437}\\\bottomrule\end{tabular}}\par\vspace{7mm}
+\par\vspace{4mm}\begin{minipage}[t]{.47\linewidth}\par\vspace{0pt}\RaggedRight\Aside{Разделение ошибок}
+Масштаб МО оценивается на старых ошибках; квантиль - на двух недавних завершённых target-месяцах. Вес муниципальной оценки $n/(n+6)$
+\end{minipage}\hfill\begin{minipage}[t]{.47\linewidth}\par\vspace{0pt}\RaggedRight\Aside{Совместная оценка}
+Adaptive сужает среднюю ширину на 8,9\% / 12,7\%. Различие покрытия учитывает proper interval score, который штрафует выход факта за границы
+\end{minipage}
+\Takeaway{Покрытие и ширина оцениваются вместе на каждом временном периоде}
+
+
+\Note{Подсветка: покрытие ближе к 90\% и меньшая ширина. Покрытие по всей панели оцениваем отдельно от покрытия конкретного МО.}
+
+
+\clearpage\PageHead{Приложение I}{Сигналы: качество и статистическая проверка}\par\vspace{7mm}
+{\fontsize{12}{16}\selectfont\renewcommand{\arraystretch}{1.18}\begin{tabular}{@{}>{\RaggedRight\arraybackslash}p{61.8mm}>{\RaggedRight\arraybackslash}p{33.2mm}>{\RaggedRight\arraybackslash}p{33.2mm}>{\RaggedRight\arraybackslash}p{37.0mm}>{\RaggedRight\arraybackslash}p{37.0mm}>{\RaggedRight\arraybackslash}p{36.1mm}@{}}\toprule Метод & Контроль & Скачок & Задержка & Дрейф & Шок\\\midrule Page-Hinkley & \cellcolor{Mint}\textbf{2,8} & \cellcolor{Mint}\textbf{96,2\%} & 0,9 & \cellcolor{Mint}\textbf{95,5\%} & \cellcolor{Mint}\textbf{94,5\%}\\
+CUSUM & 2,9 & 87,6\% & 0,5 & 87,0\% & 86,9\%\\
+EWMA & \cellcolor{Mint}\textbf{2,8} & 80,7\% & 0,2 & 80,9\% & 79,6\%\\
+Conformal-BH & 3,0 & 71,3\% & \cellcolor{Mint}\textbf{0,1} & 69,7\% & 70,5\%\\\bottomrule\end{tabular}}\par\vspace{7mm}
+\par\vspace{5mm}\begin{minipage}[t]{.47\linewidth}\par\vspace{0pt}\RaggedRight\Aside{Единица анализа}
+20 оценочных resampled-панелей. Threshold настроен на других 20 панелях. Recall учитывает обнаружение за 4 месяца без ранней тревоги
+\end{minipage}\hfill\begin{minipage}[t]{.47\linewidth}\par\vspace{0pt}\RaggedRight\Aside{Парное сравнение}
+Recall conformal-BH ниже PH на 24,9 / 25,9 / 24,0~п.п. в~трёх сценариях; Holm $p=0{,}0044$ для каждого сравнения
+\end{minipage}
+
+
+\Note{Контроль: уведомления на 100 МО-месяцев; задержка в~месяцах среди обнаруженных скачков. Статистика условна на реальную историю фона; не на новые реальные события}
+
+
+\clearpage\PageHead{Приложение J}{Статистический протокол и условия оценки}\par\vspace{7mm}
+
+\begin{minipage}[t]{.47\linewidth}\par\vspace{0pt}\RaggedRight\Aside{Прогнозная статистика}
+В июне-сентябре шесть target-месяцев и два трёхмесячных блока. Для 40/20/40 разность MAE $-4{,}230$~руб.; 95\%-й cluster-t CI $[-16{,}271;7{,}810]$, block $p=0{,}5$, Holm $p=1$\par
+\par\vspace{3mm}
+Октябрь-ноябрь имеет один блок. История уже использована в~исследованиях; сравнения имеют exploratory-статус
+\par\vspace{3mm}\Aside{Доступность данных}
+Observed-prefix prequential не восстанавливает неизвестные исторические задержки публикаций и версии внешних рядов
+\end{minipage}\hfill\begin{minipage}[t]{.47\linewidth}\par\vspace{0pt}\RaggedRight\Aside{Сигналы и множественные тесты}
+Бюджет уведомлений не эквивалентен FDR. Диагностический BH $q=0{,}05$ дал хотя бы одну тревогу в 17/20 контрольных панелей; FDR 5\% не подтверждён\par
+\par\vspace{3mm}
+Временной common-фактор вычитается после поступления факта. Forecast в~тесте инъекций не переобучается; реальный фон может содержать неразмеченные изменения
+\par\vspace{3mm}\Aside{Реальные кейсы}
+Сильные стандартизованные отклонения не являются BH-тревогами при $q=0{,}05$. Новости описывают контекст, а не доказывают причинность
+\end{minipage}
+
+
+\Note{Полная семья реестра: 1727 точечных и 58 interval-score сравнений; объединённая доступная Holm-семья 632. Detector-семья 44}
+
+
+\clearpage\PageHead{Приложение K}{Новости и дополнительные источники}\par\vspace{7mm}
+{\fontsize{12}{16}\selectfont\renewcommand{\arraystretch}{1.18}\begin{tabular}{@{}>{\RaggedRight\arraybackslash}p{68.4mm}>{\RaggedRight\arraybackslash}p{51.3mm}>{\RaggedRight\arraybackslash}p{51.3mm}>{\RaggedRight\arraybackslash}p{67.5mm}@{}}\toprule Событие & Публикация & Действие & Охват\\\midrule Ставка ЦБ & 2023-12-22 & 2023-12-18 & national\\
+Ставка ЦБ & 2024-04-26 & 2024-04-26 & national\\
+Ставка ЦБ & 2024-07-26 & 2024-07-29 & national\\
+Ставка ЦБ & 2024-09-13 & 2024-09-16 & national\\
+Ставка ЦБ & 2024-10-25 & 2024-10-28 & national\\
+Паводок / МЧС & 2024-04-10 &  & municipal\\
+Паводок / МЧС & 2024-04-22 &  & regional\\\bottomrule\end{tabular}}\par\vspace{7mm}
+\par\vspace{5mm}\begin{minipage}[t]{.47\linewidth}\par\vspace{0pt}\RaggedRight\Aside{География и доступность}
+Территории присоединяются по ID либо региональному соответствию. Вход разрешён, если публикация не позже as-of; локальный риск учитывает возраст сообщения
+\end{minipage}\hfill\begin{minipage}[t]{.47\linewidth}\par\vspace{0pt}\RaggedRight\Aside{Мобильность}
+Проверены 594 строки и 297 названий территорий. Годовая частота не соответствует месячной гипотезе $\Delta mobility_{i,t}\rightarrow error_{i,t+1}$, поэтому источник не включён
+\end{minipage}
+
+
+\Note{Официальный реестр сообщений ЦБ/МЧС. Возраст риска до 60 дней, вес exp(-age/30). Реестр и SHA включены в~исходный комплект}
+
+\end{document}

@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "holm_family": 44,
+  "independent_calibration_evaluation_seeds": true,
+  "paired_unit": "resampled panel",
+  "threshold_target": "3 notifications per 100 MO-months on no-added-change calibration",
+  "strict_q005": "additional nominal FDR diagnostic, not a matched false-alarm-budget competitor",
+  "universal_FDR_guarantee": false,
+  "real_event_labels": false
+}

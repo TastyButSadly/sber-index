@@ -1,0 +1,14 @@
+{
+  "metric": "proper interval score in RUB; lower is better",
+  "pairs_hold_fixed": [
+    "point model",
+    "nominal level",
+    "forecast keys"
+  ],
+  "reference": "global_log",
+  "comparisons": 58,
+  "combined_holm_family_size": 632,
+  "coverage_tests": "clustered diagnostic intervals; iid binomial p-values excluded",
+  "existing_interval_score_reproduction_max_rub": 1.8189894035458565e-12,
+  "all_exploratory": true
+}
